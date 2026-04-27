@@ -1,0 +1,4 @@
+<div style="margin-bottom:0em;">
+  {{ $file := .Get "file" }}
+  {{ readFile $file | markdownify }}
+</div>

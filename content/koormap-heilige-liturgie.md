@@ -1,5 +1,5 @@
 ---
-title: "Testpagina"
+title: "Koormap H. Liturgie"
 ---
 
 {{< img   src="/koormappen/heilige-liturgie/voetnoot-bij-prokimen-melodien.jpg" alt="Voetnoot bij prokimen melodien" >}}
@@ -8,6 +8,8 @@ title: "Testpagina"
 {{< spacer >}}
 {{< include-md file="content/snippets/test-snippet.md" >}}
 {{< spacer >}}
+{{< include-md file="content/snippets/test-snippet.md" >}}
+{{< spacer >}}{{< spacer >}}{{< spacer >}}{{< spacer >}}
 {{< include-md file="content/snippets/test-snippet.md" >}}
 {{< spacer h="2.5em" >}}
 {{< include-md file="content/snippets/test-snippet.md" >}}

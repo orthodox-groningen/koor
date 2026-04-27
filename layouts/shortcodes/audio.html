@@ -1,0 +1,11 @@
+{{ $id := printf "audio-%d" (now.UnixNano) }}
+
+<audio id="{{ $id }}" src="{{ .Get "src" }}"></audio>
+
+<button onclick="document.getElementById('{{ $id }}').currentTime=0; document.getElementById('{{ $id }}').play()">
+  ▶ Afspelen
+</button>
+
+<button onclick="document.getElementById('{{ $id }}').pause()">
+  ⏸ Pauze
+</button>
