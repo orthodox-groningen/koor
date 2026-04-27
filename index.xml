@@ -5,13 +5,13 @@
 &lt;div style="height: 2em;"&gt;&lt;/div&gt;
 
 
-&lt;audio id="audio-1777299276654679781" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
+&lt;audio id="audio-1777316265900364329" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
 
-&lt;button onclick="document.getElementById('audio-1777299276654679781').currentTime=0; document.getElementById('audio-1777299276654679781').play()"&gt;
+&lt;button onclick="document.getElementById('audio-1777316265900364329').currentTime=0; document.getElementById('audio-1777316265900364329').play()"&gt;
  ▶ Afspelen
 &lt;/button&gt;
 
-&lt;button onclick="document.getElementById('audio-1777299276654679781').pause()"&gt;
+&lt;button onclick="document.getElementById('audio-1777316265900364329').pause()"&gt;
  ⏸ Pauze
 &lt;/button&gt;
 &lt;div style="height: 1em;"&gt;&lt;/div&gt;
@@ -49,13 +49,13 @@
 &lt;div style="height: 2em;"&gt;&lt;/div&gt;
 
 
-&lt;audio id="audio-1777299276654576788" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
+&lt;audio id="audio-1777316265900585806" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
 
-&lt;button onclick="document.getElementById('audio-1777299276654576788').currentTime=0; document.getElementById('audio-1777299276654576788').play()"&gt;
+&lt;button onclick="document.getElementById('audio-1777316265900585806').currentTime=0; document.getElementById('audio-1777316265900585806').play()"&gt;
  ▶ Afspelen
 &lt;/button&gt;
 
-&lt;button onclick="document.getElementById('audio-1777299276654576788').pause()"&gt;
+&lt;button onclick="document.getElementById('audio-1777316265900585806').pause()"&gt;
  ⏸ Pauze
 &lt;/button&gt;
 &lt;div style="height: 1em;"&gt;&lt;/div&gt;
