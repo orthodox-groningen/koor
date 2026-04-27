@@ -9,6 +9,8 @@ title: "Testpagina"
 {{< include-md file="content/snippets/test-snippet.md" >}}
 {{< spacer >}}
 {{< include-md file="content/snippets/test-snippet.md" >}}
+{{< spacer >}}{{< spacer >}}{{< spacer >}}{{< spacer >}}
+{{< include-md file="content/snippets/test-snippet.md" >}}
 {{< spacer h="2.5em" >}}
 {{< include-md file="content/snippets/test-snippet.md" >}}
 {{< spacer >}}
