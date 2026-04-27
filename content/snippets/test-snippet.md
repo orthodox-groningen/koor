@@ -1,0 +1,1 @@
+dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een 'echt' content .md bestand.
