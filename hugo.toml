@@ -1,0 +1,12 @@
+title = "Koormappen"
+# baseURL = "https://orthodox-groningen.github.io/koor/"
+baseURL = "http://localhost:1313/"
+defaultContentLanguage = "nl"
+languageCode = "nl-NL"
+enableGitInfo = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

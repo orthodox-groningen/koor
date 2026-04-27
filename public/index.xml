@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Koormappen</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Koormappen</description>
+    <generator>Hugo</generator>
+    <language>nl-NL</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testpagina</title>
+      <link>http://localhost:1313/test-pagina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/test-pagina/</guid>
+      <description>&lt;p&gt;Dit is een voorbeeldpagina waarin verschillende bestanden uit de centrale library worden gebruikt.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-afbeelding-tonen-pngjpg&#34;&gt;🖼️ Afbeelding tonen (PNG/JPG)&lt;/h2&gt;&#xA;&lt;p&gt;Afbeelding uit de library, direct zichtbaar in de pagina:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img &#xD;&#xA;src=&#34;http://localhost:1313/koormappen/heilige-liturgie/voetnoot-bij-prokimen-melodien.jpg&#34; &#xD;&#xA;alt=&#34;Voorbeeld afbeelding&#34; &#xD;&#xA;style=&#34;max-width:100%; height:auto;&#34; /&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-mp3-afspelen-via-knop&#34;&gt;🎵 MP3 afspelen via knop&lt;/h2&gt;&#xA;&lt;p&gt;Klik op de knop om audio af te spelen:&lt;/p&gt;&#xA;&lt;p&gt;&lt;audio id=&#34;audio1&#34; src=&#34;http://localhost:1313/koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3&#34;&gt;&lt;/audio&gt;&lt;/p&gt;&#xA;&lt;button onclick=&#34;document.getElementById(&#39;audio1&#39;).currentTime=0; document.getElementById(&#39;audio1&#39;).play()&#34;&gt;&#xD;&#xA;  ▶ Afspelen&#xD;&#xA;&lt;/button&gt;&#xD;&#xA;&lt;button onclick=&#34;document.getElementById(&#39;audio1&#39;).pause()&#34;&gt;&#xD;&#xA;  ⏸ Pauze&#xD;&#xA;&lt;/button&gt;&#xD;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-pdf-tonen-embedded-niet-downloaden&#34;&gt;📄 PDF tonen (embedded, niet downloaden)&lt;/h2&gt;&#xA;&lt;p&gt;De PDF wordt direct in de pagina weergegeven via een ingebedde viewer:&lt;/p&gt;&#xA;&lt;iframe &#xD;&#xA;  src=&#34;http://localhost:1313/koormappen/heilige-liturgie/021-prokimen-alleluja-toon-1.pdf&#34;&#xD;&#xA;  width=&#34;100%&#34; &#xD;&#xA;  height=&#34;600px&#34;&gt;&#xD;&#xA;&lt;/iframe&gt;&#xD;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;samenvatting&#34;&gt;Samenvatting&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PDF wordt ingebed via &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Afbeelding wordt getoond via &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Audio wordt bestuurd via HTML audio + knoppen&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

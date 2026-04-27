@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head><script src="/koor/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=koor/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <title>Testpagina</title>
+</head>
+<body>
+  
+  <h1>Testpagina</h1>
+  <p>Dit is een voorbeeldpagina waarin verschillende bestanden uit de centrale library worden gebruikt.</p>
+<hr>
+<h2 id="-pdf-tonen-embedded-niet-downloaden">📄 PDF tonen (embedded, niet downloaden)</h2>
+<p>De PDF wordt direct in de pagina weergegeven via een ingebedde viewer:</p>
+<iframe 
+  src="021-prokimen-alleluja-toon-1.pdf"
+  width="100%" 
+  height="600px">
+</iframe>
+C:\Git\orthodox-groningen\koor\static\koormappen\heilige liturgie
+---
+<h2 id="-afbeelding-tonen-pngjpg">🖼️ Afbeelding tonen (PNG/JPG)</h2>
+<p>Afbeelding uit de library, direct zichtbaar in de pagina:</p>
+<p><img 
+src="\koormappen\heilige liturgie\voetnoot bij prokimen melodien.jpg" 
+alt="Voorbeeld afbeelding" 
+style="max-width:100%; height:auto;" /></p>
+<hr>
+<h2 id="-mp3-afspelen-via-knop">🎵 MP3 afspelen via knop</h2>
+<p>Klik op de knop om audio af te spelen:</p>
+<p><audio id="audio1" src="\koormappen\heilige liturgie\audio\Alleluja (melodielijn) - toon 1.mp3"></audio></p>
+<button onclick="document.getElementById('audio1').play()">
+  ▶ Afspelen
+</button>
+<button onclick="document.getElementById('audio1').pause()">
+  ⏸ Pauze
+</button>
+<hr>
+<h2 id="samenvatting">Samenvatting</h2>
+<ul>
+<li>PDF wordt ingebed via <code>&lt;iframe&gt;</code></li>
+<li>Afbeelding wordt getoond via <code>&lt;img&gt;</code></li>
+<li>Audio wordt bestuurd via HTML audio + knoppen</li>
+</ul>
+
+
+</body>
+</html>
