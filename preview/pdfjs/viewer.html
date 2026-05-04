@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PDF Viewer</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    canvas {
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<script type="module">
+  import * as pdfjsLib from './pdf.mjs';
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.mjs';
+
+  const url = new URLSearchParams(window.location.search).get('file');
+
+  const loadingTask = pdfjsLib.getDocument(url);
+  const pdf = await loadingTask.promise;
+
+  for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+    const page = await pdf.getPage(pageNumber);
+
+    const viewportBase = page.getViewport({ scale: 1 });
+
+    // Fit-to-width (netter voor lezen)
+    const scale = window.innerWidth / viewportBase.width;
+    const viewport = page.getViewport({ scale });
+
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    await page.render({
+      canvasContext: ctx,
+      viewport
+    }).promise;
+
+    document.body.appendChild(canvas);
+  }
+</script>
+
+</body>
+</html>

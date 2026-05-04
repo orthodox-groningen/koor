@@ -642,13 +642,13 @@
 &lt;div style="height: 2em;"&gt;&lt;/div&gt;
 
 
-&lt;audio id="audio-1777924027976777522" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
+&lt;audio id="audio-1777927588237168323" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
 
-&lt;button onclick="document.getElementById('audio-1777924027976777522').currentTime=0; document.getElementById('audio-1777924027976777522').play()"&gt;
+&lt;button onclick="document.getElementById('audio-1777927588237168323').currentTime=0; document.getElementById('audio-1777927588237168323').play()"&gt;
  ▶ Afspelen
 &lt;/button&gt;
 
-&lt;button onclick="document.getElementById('audio-1777924027976777522').pause()"&gt;
+&lt;button onclick="document.getElementById('audio-1777927588237168323').pause()"&gt;
  ⏸ Pauze
 &lt;/button&gt;
 &lt;div style="height: 1em;"&gt;&lt;/div&gt;
