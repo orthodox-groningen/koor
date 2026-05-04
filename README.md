@@ -9,3 +9,6 @@ We gebruiken HUGO om statische websites te genereren.
 
 Als je lokaal wilt testen moet je HUGO installeren en dan run je: 
 | `hugo server --disableFastRender --cleanDestinationDir`
+
+Vergeet niet de cache van je browser te disabelen (zit mogelijk bij devtools).
+

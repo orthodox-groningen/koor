@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="pdf"></canvas>
+
+  <script type="module">
+    import * as pdfjsLib from './pdf.mjs';
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.mjs';
+
+    const url = new URLSearchParams(window.location.search).get('file');
+
+    const loadingTask = pdfjsLib.getDocument(url);
+    const pdf = await loadingTask.promise;
+
+    const page = await pdf.getPage(1);
+
+    const scale = 1.5;
+    const viewport = page.getViewport({ scale });
+
+    const canvas = document.getElementById('pdf');
+    const ctx = canvas.getContext('2d');
+
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    await page.render({
+      canvasContext: ctx,
+      viewport
+    }).promise;
+  </script>
+</body>
+</html>
