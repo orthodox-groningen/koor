@@ -1,0 +1,61 @@
+{{ $title := .Get "title" }}
+{{ $dir := .Get "dir" }}
+{{ $base := .Get "base" }}
+
+<details>
+<summary><strong>{{ $title }}</strong></summary>
+
+<br>
+
+{{/* Image */}}
+{{ $jpg := printf "static%s/%s.jpg" $dir $base }}
+{{ $png := printf "static%s/%s.png" $dir $base }}
+
+{{ if fileExists $jpg }}
+    <img src="{{ printf "%s/%s.jpg" $dir $base }}" style="max-width:100%;" />
+{{ else if fileExists $png }}
+    <img src="{{ printf "%s/%s.png" $dir $base }}" style="max-width:100%;" />
+{{ end }}
+
+{{/* Bladmuziek */}}
+{{ $pdf := printf "%s/%s.pdf" $dir $base }}
+
+<iframe
+    src="/pdfjs/viewer.html?file={{ printf "/koor%s" $pdf }}"
+    width="100%"
+    height="800px"
+    style="border: none;">
+</iframe>
+
+{{/* Audio: S, A, T, B en SATB */}}
+{{ $s := printf "static%s/%s-S.mp3" $dir $base }}
+{{ if fileExists $s }}
+    <p><strong>Sopraan</strong></p>
+    <audio controls src="{{ printf "%s/%s-S.mp3" $dir $base }}"></audio>
+{{ end }}
+
+{{ $s := printf "static%s/%s-A.mp3" $dir $base }}
+{{ if fileExists $s }}
+    <p><strong>Alt</strong></p>
+    <audio controls src="{{ printf "%s/%s-A.mp3" $dir $base }}"></audio>
+{{ end }}
+
+{{ $s := printf "static%s/%s-T.mp3" $dir $base }}
+{{ if fileExists $s }}
+    <p><strong>Tenor</strong></p>
+    <audio controls src="{{ printf "%s/%s-T.mp3" $dir $base }}"></audio>
+{{ end }}
+
+{{ $s := printf "static%s/%s-B.mp3" $dir $base }}
+{{ if fileExists $s }}
+    <p><strong>Bas</strong></p>
+    <audio controls src="{{ printf "%s/%s-B.mp3" $dir $base }}"></audio>
+{{ end }}
+
+{{ $s := printf "static%s/%s-SATB.mp3" $dir $base }}
+{{ if fileExists $s }}
+    <p><strong>SATB</strong></p>
+    <audio controls src="{{ printf "%s/%s-SATB.mp3" $dir $base }}"></audio>
+{{ end }}
+
+</details>

@@ -1,0 +1,24 @@
+{
+  "name": "koor",
+  "version": "1.0.0",
+  "description": "Deze repo is nog in ontwikkeling. Als hij klaar is bevat hij allerlei zaken ten behoeve van het koor van de orthodoxe parochie in Groningen, zoals koormappen, en audio bestanden om liederen te leren zingen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orthodox-groningen/koor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/orthodox-groningen/koor/issues"
+  },
+  "homepage": "https://github.com/orthodox-groningen/koor#readme",
+  "dependencies": {
+    "pdfjs-dist": "^5.7.284"
+  }
+}
