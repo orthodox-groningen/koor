@@ -1,4 +1,183 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Koormappen</title><link>https://orthodox-groningen.github.io/koor/preview/</link><description>Recent content on Koormappen</description><generator>Hugo</generator><language>nl-NL</language><atom:link href="https://orthodox-groningen.github.io/koor/preview/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</guid><description>&lt;p&gt;dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.&lt;/p&gt;</description></item><item><title>Koormap H. Liturgie</title><link>https://orthodox-groningen.github.io/koor/preview/koormap-heilige-liturgie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/koormap-heilige-liturgie/</guid><description>&lt;p&gt;&lt;iframe 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Koor mappen on Koormappen</title><link>https://orthodox-groningen.github.io/koor/preview/</link><description>Recent content in Koor mappen on Koormappen</description><generator>Hugo</generator><language>nl-NL</language><atom:link href="https://orthodox-groningen.github.io/koor/preview/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</guid><description>&lt;p&gt;dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.&lt;/p&gt;</description></item><item><title>Concert map</title><link>https://orthodox-groningen.github.io/koor/preview/concertmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/concertmap/</guid><description>&lt;p&gt;&lt;iframe 
+ src="./koormappen/concert/aan%20de%20stromen%20van%20babylon.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/agni%20parthene.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/bcex%20ckopsya...%20%28russisch%20met%20uitspraak%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/bcex%20ckopsya...%20%28russisch%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/bogoroditse%20devo%20-%20verheug%20u%20maagd.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/cherubijnenhymne%20%28kastorsky%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/dideba%20senda%20%28georgisch%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/gij%20allen%20die%20in%20christus%20zijt%20gedoopt%20%28lirin%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/mamao%20chveno%20-%20gebed%20%28georgisch%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/mamao%20chveno%20%28nana,%202015%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/mamao%20chveno%20%28nana%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/mamao%20tsjveno%20%28giwi%20alaznispirely%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/mijn%20smeking%20%28georgisch,%20nana%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/miluieste%20ma%20%28roemeens%20-%202%20mollen.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/Miluieste%20ma%20%28roemeens%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/mnogaja%20ljeta%20-%20drievoudig%20feestelijk.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/molitwa%20iisusowa.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/my%20soul,%20my%20soul,%20get%20up,%20why%20are%20you%20sleeping%20%28nana%20-%20georgisch%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/o%20pure%20virgin%20%28russisch%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;
+&lt;iframe 
+ src="./koormappen/concert/vai%20ra%20kargi%20sachio%20-%20happy%20easter%20%28georgisch%29.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
+ width="100%"; 
+ height="800px";
+ border="0";
+ overflow="hidden"&gt;
+&lt;/iframe&gt;
+
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;&lt;/p&gt;</description></item><item><title>Koormap H. Liturgie</title><link>https://orthodox-groningen.github.io/koor/preview/koormap-heilige-liturgie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/koormap-heilige-liturgie/</guid><description>&lt;p&gt;&lt;iframe 
  src="./koormappen/heilige-liturgie/001-voorblad.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
  width="100%"; 
  height="800px";
@@ -463,13 +642,13 @@
 &lt;div style="height: 2em;"&gt;&lt;/div&gt;
 
 
-&lt;audio id="audio-1777324051179206931" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
+&lt;audio id="audio-1777924027976777522" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
 
-&lt;button onclick="document.getElementById('audio-1777324051179206931').currentTime=0; document.getElementById('audio-1777324051179206931').play()"&gt;
+&lt;button onclick="document.getElementById('audio-1777924027976777522').currentTime=0; document.getElementById('audio-1777924027976777522').play()"&gt;
  ▶ Afspelen
 &lt;/button&gt;
 
-&lt;button onclick="document.getElementById('audio-1777324051179206931').pause()"&gt;
+&lt;button onclick="document.getElementById('audio-1777924027976777522').pause()"&gt;
  ⏸ Pauze
 &lt;/button&gt;
 &lt;div style="height: 1em;"&gt;&lt;/div&gt;
