@@ -30,31 +30,84 @@
 
   const url = new URLSearchParams(window.location.search).get('file');
 
-  const loadingTask = pdfjsLib.getDocument(url);
-  const pdf = await loadingTask.promise;
+  const pdf = await (await pdfjsLib.getDocument(url)).promise;
 
-  for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+  let scaleBase = window.innerWidth;
+
+  const canvases = [];
+  const renderTasks = new Map();
+
+  function getScale(page) {
+    const viewport = page.getViewport({ scale: 1 });
+    return scaleBase / viewport.width;
+  }
+
+  async function renderPage(pageNumber) {
+    if (renderTasks.has(pageNumber)) return;
+
     const page = await pdf.getPage(pageNumber);
-
-    const viewportBase = page.getViewport({ scale: 1 });
-
-    // Fit-to-width (netter voor lezen)
-    const scale = window.innerWidth / viewportBase.width;
+    const scale = getScale(page);
     const viewport = page.getViewport({ scale });
 
-    const canvas = document.createElement('canvas');
+    const canvas = canvases[pageNumber - 1];
     const ctx = canvas.getContext('2d');
 
     canvas.width = viewport.width;
     canvas.height = viewport.height;
 
-    await page.render({
+    const task = page.render({
       canvasContext: ctx,
       viewport
     }).promise;
 
-    document.body.appendChild(canvas);
+    renderTasks.set(pageNumber, task);
+    await task;
   }
+
+  for (let i = 1; i <= pdf.numPages; i++) {
+    const canvas = document.createElement('canvas');
+    document.body.appendChild(canvas);
+    canvases.push(canvas);
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = canvases.indexOf(entry.target);
+        renderPage(index + 1);
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.1
+  });
+
+  canvases.forEach(c => observer.observe(c));
+
+  // Zoom (Ctrl + scroll)
+  window.addEventListener('wheel', (e) => {
+    if (!e.ctrlKey) return;
+
+    e.preventDefault();
+
+    scaleBase += e.deltaY * -1.5;
+    scaleBase = Math.min(Math.max(scaleBase, 400), 3000);
+
+    // rerender visible pages
+    renderTasks.clear();
+
+    canvases.forEach((_, i) => {
+      renderPage(i + 1);
+    });
+  }, { passive: false });
+
+  // Reflow on resize
+  window.addEventListener('resize', () => {
+    scaleBase = window.innerWidth;
+    renderTasks.clear();
+    canvases.forEach((_, i) => renderPage(i + 1));
+  });
+
 </script>
 
 </body>
