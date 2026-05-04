@@ -635,48 +635,55 @@
  overflow="hidden"&gt;
 &lt;/iframe&gt;
 
-&lt;div style="height: 1em;"&gt;&lt;/div&gt;&lt;/p&gt;</description></item><item><title>Testpagina</title><link>https://orthodox-groningen.github.io/koor/preview/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/test-pagina/</guid><description>&lt;p&gt;&lt;img 
- src="./koormappen/heilige-liturgie/voetnoot-bij-prokimen-melodien.jpg" 
- alt="Voetnoot bij prokimen melodien" 
- style="max-width:100%; height:auto;" /&gt;
+&lt;div style="height: 1em;"&gt;&lt;/div&gt;&lt;/p&gt;</description></item><item><title>Testpagina</title><link>https://orthodox-groningen.github.io/koor/preview/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/test-pagina/</guid><description>&lt;hr&gt;
 &lt;div style="height: 2em;"&gt;&lt;/div&gt;
 
 
-&lt;audio id="audio-1777928244428843369" src="./koormappen/heilige-liturgie/audio/Alleluja-melodielijn-toon-1.mp3"&gt;&lt;/audio&gt;
 
-&lt;button onclick="document.getElementById('audio-1777928244428843369').currentTime=0; document.getElementById('audio-1777928244428843369').play()"&gt;
- ▶ Afspelen
-&lt;/button&gt;
 
-&lt;button onclick="document.getElementById('audio-1777928244428843369').pause()"&gt;
- ⏸ Pauze
-&lt;/button&gt;
-&lt;div style="height: 1em;"&gt;&lt;/div&gt;
-&lt;div style="margin-bottom:0em;"&gt;
- 
- dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.
-&lt;/div&gt;
-&lt;div style="height: 1em;"&gt;&lt;/div&gt;
-&lt;div style="margin-bottom:0em;"&gt;
- 
- dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.
-&lt;/div&gt;
-&lt;div style="height: 1em;"&gt;&lt;/div&gt;&lt;div style="height: 1em;"&gt;&lt;/div&gt;&lt;div style="height: 1em;"&gt;&lt;/div&gt;&lt;div style="height: 1em;"&gt;&lt;/div&gt;
-&lt;div style="margin-bottom:0em;"&gt;
- 
- dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.
-&lt;/div&gt;
-&lt;div style="height: 2.5em;"&gt;&lt;/div&gt;
-&lt;div style="margin-bottom:0em;"&gt;
- 
- dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.
-&lt;/div&gt;
-&lt;div style="height: 1em;"&gt;&lt;/div&gt;
-&lt;iframe 
- src="./koormappen/heilige-liturgie/021-prokimen-alleluja-toon-1.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0"
- width="100%"; 
- height="800px";
- border="0";
- overflow="hidden"&gt;
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;21 - Prokimen en Alleluja - toon 1&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;br&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;iframe
+ src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fheilige-liturgie%2f021-prokimen-alleluja-toon-1.pdf"
+ width="100%"
+ height="800px"
+ style="border: none;"&gt;
 &lt;/iframe&gt;
-&lt;/p&gt;</description></item></channel></rss>
+
+
+
+
+ &lt;p&gt;&lt;strong&gt;Sopraan&lt;/strong&gt;&lt;/p&gt;
+ &lt;audio controls src="./koormappen/heilige-liturgie/021-prokimen-alleluja-toon-1-S.mp3"&gt;&lt;/audio&gt;
+
+
+
+
+ &lt;p&gt;&lt;strong&gt;Alt&lt;/strong&gt;&lt;/p&gt;
+ &lt;audio controls src="./koormappen/heilige-liturgie/021-prokimen-alleluja-toon-1-A.mp3"&gt;&lt;/audio&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;/details&gt;
+&lt;div style="height: 2em;"&gt;&lt;/div&gt;
+&lt;hr&gt;</description></item></channel></rss>
