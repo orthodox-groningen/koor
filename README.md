@@ -1,4 +1,4 @@
-# koor
+# README voor de `koor`-repo.
 
 Deze repo is nog in ontwikkeling. Als hij klaar is bevat hij allerlei zaken ten behoeve van het koor van de orthodoxe parochie in Groningen, zoals koormappen, en audio bestanden om liederen te leren zingen. 
 
@@ -10,5 +10,5 @@ We gebruiken HUGO om statische websites te genereren.
 Als je lokaal wilt testen moet je HUGO installeren en dan run je: 
 | `hugo server --disableFastRender --cleanDestinationDir`
 
-Vergeet niet de cache van je browser te disabelen (zit mogelijk bij devtools).
-
+De lokale site zie je op `http://localhost:1313/koor/`,
+Vergeet niet de cache van je browser te disabelen (zit mogelijk bij devtools), zodat je wijzigingen ook daadwerkelijk/meteen terug ziet komen in je browser.
