@@ -19,10 +19,10 @@ title: "Koormap H. Liturgie"
     {{< koor-item dir="/koormappen/heilige-liturgie" base="007-2e kleine litanie"                        title="2e Kleine Litanie" >}}
     {{< spacer h="0.15em" >}}
 {{< /koor-group >}}
-{{< koor-item dir="/koormappen/heilige-liturgie" base="008-(6b) zaligsprekingen"                     title="(6) zaligsprekingen" >}}
+{{< koor-item dir="/koormappen/heilige-liturgie" base="008-(6b) zaligsprekingen"                     title="(6) Zaligsprekingen" >}}
 {{< spacer h="0.15em" >}}
 {{< koor-group title="(7) Kleine intocht met Troparen en Kondaken (zondagen)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="009-(7) kleine intocht"                       title="(7) kleine intocht" >}}
+    {{< koor-item dir="/koormappen/heilige-liturgie" base="009-(7) kleine intocht"                       title="Kleine intocht" >}}
     {{< spacer h="0.15em" >}}
     {{< koor-item dir="/koormappen/heilige-liturgie" base="010-troparion-kondakion-toon-1"               title="Troparion en Kondakion (toon-1)" >}}
     {{< spacer h="0.15em" >}}
@@ -91,13 +91,14 @@ title: "Koormap H. Liturgie"
 {{< koor-group title="(19) Eucharistische Kanon" >}}
     {{< koor-item dir="/koormappen/heilige-liturgie" base="038-(19) eucharistische kanon"                title="(19) Eucharistische Kanon" >}}
     {{< spacer h="0.15em" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="038.a-de engel heeft geroepen (balakirev)"    title="a-de engel heeft geroepen (balakirev)" >}}
+    {{< koor-item dir="/koormappen/heilige-liturgie" base="038.a-de engel heeft geroepen (balakirev)"    title="a- de engel heeft geroepen (balakirev)" >}}
     {{< spacer h="0.15em" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="038.b-over u verheugt zich - toon 8 (griekse melodie)" title="b-over u verheugt zich - toon 8 (griekse melodie)" >}}
+    {{< koor-item dir="/koormappen/heilige-liturgie" base="038.b-over u verheugt zich - toon 8 (griekse melodie)" title="b- over u verheugt zich - toon 8 (griekse melodie)" >}}
 {{< /koor-group >}}
+{{< spacer h="0.15em" >}}
 {{< koor-item dir="/koormappen/heilige-liturgie" base="039-(20 waarlijk het is waardig) in waarheid" title="(20) Waarlijk het is waardig/In waarheid" >}}
 {{< spacer h="0.15em" >}}
-{{< koor-item dir="/koormappen/heilige-liturgie" base="040-(21) en allen"                            title="(21) En Allen" >}}
+{{< koor-item dir="/koormappen/heilige-liturgie" base="040-(21) en allen"                            title="(21) En allen" >}}
 {{< spacer h="0.15em" >}}
 {{< koor-item dir="/koormappen/heilige-liturgie" base="041-(22) vragende litanie"                    title="(22) Vragende Litanie" >}}
 {{< spacer h="0.15em" >}}
@@ -106,7 +107,7 @@ title: "Koormap H. Liturgie"
     {{< spacer h="0.15em" >}}
     {{< koor-item link="https://www.universaledition.com/en/Works/Our-Father/P0213839"                   title="Onze Vader (Nana Tchikhinashvili - copyright)" >}}
     {{< spacer h="0.15em" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="043-vredeswens"                               title="vredeswens" >}}
+    {{< koor-item dir="/koormappen/heilige-liturgie" base="043-vredeswens"                               title="Vredeswens" >}}
 {{< /koor-group >}}
 {{< koor-item dir="/koormappen/heilige-liturgie" base="044-(24-25) een is heilig - communievers"     title="(24) Eén is heilig en (25) Communievers (zondag)" >}}
 {{< spacer h="0.15em" >}}
