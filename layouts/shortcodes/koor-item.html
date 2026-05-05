@@ -19,7 +19,8 @@
 
 {{/* Link naar een externe bron */}}
 {{ with .Get "link" }}
-    <div><a href="{{ . }}" target="_blank">Open externe bron</a><br/><br/></div>
+    <span><a href="{{ . }}" target="_blank">Open externe bron</a></span>
+    <br><br>
 {{ end }}
 
 {{/* Bladmuziek */}}
@@ -27,7 +28,7 @@
 {{ $pdfFile := printf "static%s" $pdf }}
 {{ if fileExists $pdfFile }}
     <iframe
-        src="/pdfjs/viewer.html?file={{ printf "/koor%s" $pdf }}"
+        src="/pdfjs/viewer.html?file={{ printf "/koor%s" $pdf }}&v={{ now.Unix }}"
         width="100%"
         height="800px"
         style="border: none;">
