@@ -1,0 +1,10 @@
+{{ $title := .Get "title" }}
+
+<details>
+<summary><strong>{{ $title }}</strong></summary>
+
+<div style="margin-left: 1em; margin-top: 0.5em;">
+    {{ .Inner }}
+</div>
+
+</details>

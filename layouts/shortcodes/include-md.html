@@ -1,4 +1,5 @@
 <div style="margin-bottom:0em;">
   {{ $file := .Get "file" }}
-  {{ readFile $file | markdownify }}
+  {{ $content := readFile $file | markdownify }}
+  {{ $content }}
 </div>
