@@ -1,0 +1,4 @@
+{
+    "git.useIntegratedAskPass": true,
+    "git.enableSmartCommit": true
+}
