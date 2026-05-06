@@ -1,10 +1,15 @@
 <!doctype html>
-<html>
+<html lang="{{ .Lang | default "nl" }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden van de orthodoxe parochie in Groningen" }}">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  {{ block "main" . }}{{ end }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
 </body>
 </html>

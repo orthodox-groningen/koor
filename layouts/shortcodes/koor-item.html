@@ -2,68 +2,91 @@
 {{ $dir := .Get "dir" }}
 {{ $base := .Get "base" }}
 
-<details>
+<details class="koor-item">
 <summary><strong>{{ $title }}</strong></summary>
 
-<br>
+<div class="koor-item-content">
 
 {{/* Image */}}
 {{ $jpg := printf "static%s/%s.jpg" $dir $base }}
 {{ $png := printf "static%s/%s.png" $dir $base }}
 
 {{ if fileExists $jpg }}
-    <img src="{{ printf "%s/%s.jpg" $dir $base }}" style="max-width:100%;" />
+    <figure class="koor-item-image">
+      <img src="{{ printf "%s/%s.jpg" $dir $base }}" alt="{{ $title }}" />
+    </figure>
 {{ else if fileExists $png }}
-    <img src="{{ printf "%s/%s.png" $dir $base }}" style="max-width:100%;" />
+    <figure class="koor-item-image">
+      <img src="{{ printf "%s/%s.png" $dir $base }}" alt="{{ $title }}" />
+    </figure>
 {{ end }}
 
 {{/* Link naar een externe bron */}}
 {{ with .Get "link" }}
-    <span><a href="{{ . }}" target="_blank">Open externe bron</a></span>
-    <br><br>
+    <div class="koor-item-external-link">
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+        Open externe bron
+      </a>
+    </div>
 {{ end }}
 
 {{/* Bladmuziek */}}
 {{ $pdf := printf "%s/%s.pdf" $dir $base }}
 {{ $pdfFile := printf "static%s" $pdf }}
 {{ if fileExists $pdfFile }}
-    <iframe
+    <div class="koor-item-pdf">
+      <iframe
         src="/pdfjs/viewer.html?file={{ printf "/koor%s" $pdf }}&v={{ now.Unix }}"
         width="100%"
-        height="800px"
-        style="border: none;">
-    </iframe>
+        height="800"
+        title="Bladmuziek voor {{ $title }}">
+      </iframe>
+    </div>
 {{ end }}
 
 {{/* Audio: S, A, T, B en SATB */}}
+<div class="koor-item-audio">
 {{ $s := printf "static%s/%s-S.mp3" $dir $base }}
 {{ if fileExists $s }}
-    <p><strong>Sopraan</strong></p>
-    <audio controls src="{{ printf "%s/%s-S.mp3" $dir $base }}"></audio>
+    <div class="audio-group">
+      <p><strong>Sopraan</strong></p>
+      <audio controls src="{{ printf "%s/%s-S.mp3" $dir $base }}" title="Sopraan"></audio>
+    </div>
 {{ end }}
 
 {{ $s := printf "static%s/%s-A.mp3" $dir $base }}
 {{ if fileExists $s }}
-    <p><strong>Alt</strong></p>
-    <audio controls src="{{ printf "%s/%s-A.mp3" $dir $base }}"></audio>
+    <div class="audio-group">
+      <p><strong>Alt</strong></p>
+      <audio controls src="{{ printf "%s/%s-A.mp3" $dir $base }}" title="Alt"></audio>
+    </div>
 {{ end }}
 
 {{ $s := printf "static%s/%s-T.mp3" $dir $base }}
 {{ if fileExists $s }}
-    <p><strong>Tenor</strong></p>
-    <audio controls src="{{ printf "%s/%s-T.mp3" $dir $base }}"></audio>
+    <div class="audio-group">
+      <p><strong>Tenor</strong></p>
+      <audio controls src="{{ printf "%s/%s-T.mp3" $dir $base }}" title="Tenor"></audio>
+    </div>
 {{ end }}
 
 {{ $s := printf "static%s/%s-B.mp3" $dir $base }}
 {{ if fileExists $s }}
-    <p><strong>Bas</strong></p>
-    <audio controls src="{{ printf "%s/%s-B.mp3" $dir $base }}"></audio>
+    <div class="audio-group">
+      <p><strong>Bas</strong></p>
+      <audio controls src="{{ printf "%s/%s-B.mp3" $dir $base }}" title="Bas"></audio>
+    </div>
 {{ end }}
 
 {{ $s := printf "static%s/%s-SATB.mp3" $dir $base }}
 {{ if fileExists $s }}
-    <p><strong>SATB</strong></p>
-    <audio controls src="{{ printf "%s/%s-SATB.mp3" $dir $base }}"></audio>
+    <div class="audio-group">
+      <p><strong>SATB</strong></p>
+      <audio controls src="{{ printf "%s/%s-SATB.mp3" $dir $base }}" title="SATB"></audio>
+    </div>
 {{ end }}
+</div>
+
+</div>
 
 </details>
