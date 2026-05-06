@@ -1,10 +1,10 @@
 {{ $title := .Get "title" }}
 
-<details>
-<summary><strong>{{ $title }}</strong></summary>
-
-<div style="margin-left: 1em; margin-top: 0.5em;">
-    {{ .Inner }}
-</div>
-
-</details>
+<section class="koor-group">
+  <details>
+    <summary><strong>{{ $title }}</strong></summary>
+    <div class="koor-group-content">
+      {{ .Inner }}
+    </div>
+  </details>
+</section>

@@ -1,7 +1,19 @@
-<h1>{{ .Title }}</h1>
+{{ define "main" }}
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
 
-{{ range .Pages }}
-  <p>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </p>
+  {{ if .Pages }}
+    <section class="pages-list">
+      <ul class="grid">
+        {{ range .Pages }}
+          <li class="grid-item">
+            <a href="{{ .RelPermalink }}" class="page-link">
+              <strong>{{ .Title }}</strong>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
 {{ end }}
