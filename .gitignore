@@ -3,3 +3,4 @@
 /.hugo_build.lock
 
 /materiaal-met-copyright/
+/node_modules/
