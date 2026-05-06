@@ -8,7 +8,6 @@ draft: false
 - [H. Liturgie](/koormap-heilige-liturgie)
 - [Concert map](/concertmap)
 
-
 ---
 
 # Test gedeelte (voor ontwikkelaars)
