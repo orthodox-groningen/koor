@@ -46,10 +46,18 @@
 
 {{/* Audio: S, A, T, B en SATB */}}
 <div class="koor-item-audio">
+{{ $s := printf "static%s/%s.mp3" $dir $base }}
+{{ if fileExists $s }}
+    <div class="audio-group">
+      <p><strong>SATB</strong></p>
+      <audio controls src="{{ printf "%s/%s.mp3" $dir $base }}" title="SATB"></audio>
+    </div>
+{{ end }}
+
 {{ $s := printf "static%s/%s-S.mp3" $dir $base }}
 {{ if fileExists $s }}
     <div class="audio-group">
-      <p><strong>Sopraan</strong></p>
+      <p><strong>S</strong></p>
       <audio controls src="{{ printf "%s/%s-S.mp3" $dir $base }}" title="Sopraan"></audio>
     </div>
 {{ end }}
@@ -57,7 +65,7 @@
 {{ $s := printf "static%s/%s-A.mp3" $dir $base }}
 {{ if fileExists $s }}
     <div class="audio-group">
-      <p><strong>Alt</strong></p>
+      <p><strong>A</strong></p>
       <audio controls src="{{ printf "%s/%s-A.mp3" $dir $base }}" title="Alt"></audio>
     </div>
 {{ end }}
@@ -65,7 +73,7 @@
 {{ $s := printf "static%s/%s-T.mp3" $dir $base }}
 {{ if fileExists $s }}
     <div class="audio-group">
-      <p><strong>Tenor</strong></p>
+      <p><strong>T</strong></p>
       <audio controls src="{{ printf "%s/%s-T.mp3" $dir $base }}" title="Tenor"></audio>
     </div>
 {{ end }}
@@ -73,16 +81,8 @@
 {{ $s := printf "static%s/%s-B.mp3" $dir $base }}
 {{ if fileExists $s }}
     <div class="audio-group">
-      <p><strong>Bas</strong></p>
+      <p><strong>B</strong></p>
       <audio controls src="{{ printf "%s/%s-B.mp3" $dir $base }}" title="Bas"></audio>
-    </div>
-{{ end }}
-
-{{ $s := printf "static%s/%s-SATB.mp3" $dir $base }}
-{{ if fileExists $s }}
-    <div class="audio-group">
-      <p><strong>SATB</strong></p>
-      <audio controls src="{{ printf "%s/%s-SATB.mp3" $dir $base }}" title="SATB"></audio>
     </div>
 {{ end }}
 </div>
