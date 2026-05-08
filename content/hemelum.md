@@ -1,7 +1,7 @@
 ---
 title: "Onderdelen van de Koormap in Hemelum"
 ---
-{{< koor-group title="(9) Prokimens en Alleluja's" >}}
+{{< koor-group title="Alleluja's" >}}
     {{< koor-item dir="/koormappen/hemelum" base="alleluja-toon-1" title="Alleluja (toon-1)" >}}
     {{< koor-item dir="/koormappen/hemelum" base="alleluja-toon-2" title="Alleluja (toon-2)" >}}
     {{< koor-item dir="/koormappen/hemelum" base="alleluja-toon-3" title="Alleluja (toon-3)" >}}
