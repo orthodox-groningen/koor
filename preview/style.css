@@ -1,0 +1,1066 @@
+/* ============================================
+   RESPONSIVE STYLESHEET FOR KOOR WEBSITE
+   Mobile-first approach
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* ============================================
+   CONTAINER & MAIN LAYOUT
+   ============================================ */
+
+main, .main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   DETAILS / SUMMARY ELEMENTS
+   ============================================ */
+
+details {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+details + details {
+  margin-top: 0.5rem;
+}
+
+summary {
+  cursor: pointer;
+  user-select: none;
+  padding: 0.1rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+summary:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+details[open] {
+  background-color: #fff;
+}
+
+details[open] > summary {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* ============================================
+   IMAGES
+   ============================================ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* ============================================
+   MEDIA / IFRAMES
+   ============================================ */
+
+iframe, video {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 4px;
+  aspect-ratio: 16 / 9;
+}
+
+/* PDF viewer specific */
+iframe[src*="pdfjs"],
+iframe[src*="pdf"] {
+  min-height: 600px;
+}
+
+@media (max-width: 640px) {
+  iframe[src*="pdfjs"],
+  iframe[src*="pdf"] {
+    min-height: 400px;
+  }
+}
+
+/* ============================================
+   AUDIO CONTROLS
+   ============================================ */
+
+audio {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0052a3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ============================================
+   LISTS
+   ============================================ */
+
+ul, ol {
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* ============================================
+   CODE BLOCKS
+   ============================================ */
+
+code {
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-left: 4px solid #0066cc;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* ============================================
+   BLOCKQUOTES
+   ============================================ */
+
+blockquote {
+  border-left: 4px solid #0066cc;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #666;
+  font-style: italic;
+}
+
+/* ============================================
+   FORMS & INPUTS
+   ============================================ */
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+nav {
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+}
+
+/* ============================================
+   RESPONSIVE GRID/FLEXBOX CONTAINERS
+   ============================================ */
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  main, .main-content {
+    padding: 2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+
+  body {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  main, .main-content {
+    padding: 2.5rem;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .flex-item {
+    min-width: 300px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  main, .main-content {
+    padding: 3rem;
+  }
+
+  .flex-item {
+    min-width: 350px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
+  main, .main-content {
+    padding: 3rem;
+  }
+}
+
+/* ============================================
+   SITE-SPECIFIC STYLES
+   ============================================ */
+
+/* Page layout */
+.page-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 1rem;
+}
+
+.page-content {
+  line-height: 1.8;
+}
+
+.page-article {
+  background-color: white;
+  border-radius: 4px;
+}
+
+/* Pages list grid */
+.pages-list {
+  margin-top: 2rem;
+}
+
+.pages-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-item {
+  margin-bottom: 0;
+}
+
+.page-link {
+  display: block;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.page-link:hover {
+  background-color: #e8f2ff;
+  border-left-color: #0066cc;
+  text-decoration: none;
+}
+
+/* Koor group and item */
+.koor-group {
+  margin-bottom: 0.5rem;
+}
+
+.koor-group details {
+  margin-bottom: 0;
+  background-color: #fafafa;
+}
+
+.koor-group summary:hover {
+  background-color: #e8f2ff;
+}
+
+.koor-group-content {
+  margin-top: 0.5rem;
+}
+
+.koor-item {
+  margin-bottom: 0.5rem;
+  border: 1px solid #e0e0e0;
+}
+
+.koor-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.koor-item-image {
+  margin: 0;
+}
+
+.koor-item-image img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.koor-item-external-link {
+  padding: 0.5rem;
+  background-color: #f0f7ff;
+  border-left: 4px solid #0066cc;
+  border-radius: 4px;
+}
+
+.koor-item-external-link a {
+  font-weight: 500;
+  display: inline-block;
+}
+
+.koor-item-pdf {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.koor-item-pdf iframe {
+  margin: 0;
+  border-radius: 0;
+}
+
+.koor-item-audio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.audio-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #f9f9f9;
+  padding: 0.2rem;
+  border-radius: 4px;
+  border-left: 3px solid #0066cc;
+}
+
+.audio-group p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  min-width: 15px;
+}
+
+.audio-group audio {
+  margin: 0;
+  flex: 1;
+}
+
+.audio-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.audio-controls button {
+  flex: 1;
+  min-width: 120px;
+}
+
+.pdf-viewer {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.pdf-viewer iframe {
+  border-radius: 0;
+}
+
+/* Shortcode specific styles */
+.shortcode-img {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.shortcode-img img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0;
+}
+
+.shortcode-img figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.included-markdown {
+  margin-bottom: 1rem;
+}
+
+.included-markdown p {
+  margin-bottom: 1rem;
+}
+
+/* ============================================
+   RESPONSIVE IMPROVEMENTS FOR SPECIFIC ELEMENTS
+   ============================================ */
+
+/* Mobile-first: smaller font and spacing */
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  main, .main-content {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .audio-controls button {
+    min-width: 100px;
+  }
+
+  details {
+    padding: 0.375rem;
+  }
+
+  .koor-item-pdf iframe {
+    min-height: 300px;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    min-width: 100%;
+  }
+
+  .page-link {
+    padding: 0.75rem;
+  }
+}
+
+/* Tablet improvements (576px - 991px) */
+@media (min-width: 576px) {
+  .koor-item-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .koor-item-image {
+    grid-column: 1;
+  }
+
+  .audio-controls button {
+    flex: 1;
+    min-width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Two column layout for larger screens */
+  .koor-item-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .koor-item-image {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .koor-item-pdf {
+    grid-column: 1 / -1;
+  }
+
+  .koor-item-audio {
+    grid-column: 1 / -1;
+  }
+
+  .audio-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .audio-group p {
+    margin: 0;
+    min-width: 80px;
+    font-weight: 500;
+  }
+
+  .audio-group audio {
+    flex: 1;
+  }
+
+  .audio-controls {
+    gap: 1rem;
+  }
+
+  .audio-controls button {
+    flex: 0 1 auto;
+    min-width: 140px;
+  }
+
+  .koor-item-pdf iframe {
+    min-height: 700px;
+  }
+
+  .page-link {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
+  main, .main-content {
+    padding: 3rem;
+  }
+
+  .koor-item-content {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2.5rem;
+  }
+
+  .koor-item-image {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .koor-item-external-link {
+    grid-column: 1;
+  }
+
+  .koor-item-pdf {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .koor-item-audio {
+    grid-column: 1 / -1;
+  }
+
+  .audio-group {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .audio-group p {
+    margin: 0;
+  }
+
+  .koor-item-pdf iframe {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main, .main-content {
+    padding: 3rem;
+  }
+
+  .koor-item-content {
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+  }
+
+  .audio-group {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .koor-item-pdf iframe {
+    min-height: 900px;
+  }
+}
+
+/* ============================================
+   TOUCH-FRIENDLY ADJUSTMENTS
+   ============================================ */
+
+/* Increase touch targets on mobile */
+@media (hover: none) and (pointer: coarse) {
+  button,
+  a,
+  summary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    padding: 0.75rem 1rem;
+  }
+
+  .page-link {
+    padding: 1rem;
+  }
+}
+
+/* Reduce animations on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  main, .main-content {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #f0f0f0;
+  }
+
+  details {
+    background-color: #333;
+    border-color: #444;
+  }
+
+  details[open] {
+    background-color: #2a2a2a;
+  }
+
+  summary:hover {
+    background-color: #3a3a3a;
+  }
+
+  input, textarea, select {
+    background-color: #333;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  code {
+    background-color: #333;
+    color: #e0e0e0;
+  }
+
+  pre {
+    background-color: #333;
+    border-left-color: #0099ff;
+  }
+
+  blockquote {
+    border-left-color: #0099ff;
+    color: #b0b0b0;
+  }
+
+  .koor-group details {
+    background-color: #333;
+  }
+
+  .koor-item {
+    border-color: #444;
+  }
+
+  .koor-item-external-link {
+    background-color: #2d3d4d;
+    border-left-color: #0099ff;
+  }
+
+  .audio-group {
+    background-color: #333;
+    border-left-color: #0099ff;
+  }
+
+  .page-link {
+    background-color: #333;
+  }
+
+  .page-link:hover {
+    background-color: #0052a3;
+  }
+
+  a {
+    color: #66b3ff;
+  }
+
+  a:hover {
+    color: #99ccff;
+  }
+
+  nav a {
+    background-color: #333;
+  }
+
+  nav a:hover {
+    background-color: #0099ff;
+  }
+
+  .page-header {
+    border-bottom-color: #0099ff;
+  }
+}
+
