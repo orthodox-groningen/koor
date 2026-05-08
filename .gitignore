@@ -5,3 +5,8 @@
 
 /materiaal-met-copyright/
 /node_modules/
+
+/audacity/
+*.aup3
+*.aup3-shm
+*.aup3-wal
