@@ -859,6 +859,7 @@ nav a:hover {
     padding: 0.5rem 0.625rem;
     font-size: 0.85rem;
     min-width: 50px;
+    text-align: center;
   }
 
 /* Tablet improvements (576px - 991px) */
@@ -907,6 +908,7 @@ nav a:hover {
   .audio-select-btn {
     padding: 0.6rem 1rem;
     font-size: 0.95rem;
+    text-align: center;
   }
 
   .koor-item-pdf iframe {
@@ -957,6 +959,7 @@ nav a:hover {
   .audio-select-btn {
     padding: 0.6rem 1rem;
     min-width: 65px;
+    text-align: center;
   }
 
   .koor-item-pdf iframe {
