@@ -45,47 +45,45 @@
 {{ end }}
 
 {{/* Audio: S, A, T, B en SATB */}}
-<div class="koor-item-audio">
-{{ $s := printf "static%s/%s.mp3" $dir $base }}
-{{ if fileExists $s }}
-    <div class="audio-group">
-      <p><strong>SATB</strong></p>
-      <audio controls src="{{ printf "%s/%s.mp3" $dir $base }}" title="SATB"></audio>
-    </div>
+{{ $audioOptions := dict }}
+{{ $satb := printf "static%s/%s.mp3" $dir $base }}
+{{ if fileExists $satb }}
+  {{ $audioOptions = merge $audioOptions (dict "SATB" (printf "%s/%s.mp3" $dir $base)) }}
 {{ end }}
-
 {{ $s := printf "static%s/%s-S.mp3" $dir $base }}
 {{ if fileExists $s }}
-    <div class="audio-group">
-      <p><strong>&nbsp&nbsp&nbspS</strong></p>
-      <audio controls src="{{ printf "%s/%s-S.mp3" $dir $base }}" title="Sopraan"></audio>
-    </div>
+  {{ $audioOptions = merge $audioOptions (dict "S" (printf "%s/%s-S.mp3" $dir $base)) }}
+{{ end }}
+{{ $a := printf "static%s/%s-A.mp3" $dir $base }}
+{{ if fileExists $a }}
+  {{ $audioOptions = merge $audioOptions (dict "A" (printf "%s/%s-A.mp3" $dir $base)) }}
+{{ end }}
+{{ $t := printf "static%s/%s-T.mp3" $dir $base }}
+{{ if fileExists $t }}
+  {{ $audioOptions = merge $audioOptions (dict "T" (printf "%s/%s-T.mp3" $dir $base)) }}
+{{ end }}
+{{ $b := printf "static%s/%s-B.mp3" $dir $base }}
+{{ if fileExists $b }}
+  {{ $audioOptions = merge $audioOptions (dict "B" (printf "%s/%s-B.mp3" $dir $base)) }}
 {{ end }}
 
-{{ $s := printf "static%s/%s-A.mp3" $dir $base }}
-{{ if fileExists $s }}
-    <div class="audio-group">
-      <p><strong>&nbsp&nbsp&nbspA</strong></p>
-      <audio controls src="{{ printf "%s/%s-A.mp3" $dir $base }}" title="Alt"></audio>
+{{ if $audioOptions }}
+<div class="koor-item-audio">
+  <div class="audio-selector">
+    <p><strong>Selecteer stem/partij:</strong></p>
+    <div class="audio-buttons" data-audio-options='{{ $audioOptions | jsonify }}'>
+      {{ range $key, $value := $audioOptions }}
+        <button type="button" class="audio-select-btn" data-audio-src="{{ $value }}" data-audio-type="{{ $key }}">
+          {{ if eq $key "SATB" }}{{ $key }}{{ else }}&nbsp;&nbsp;&nbsp;{{ $key }}{{ end }}
+        </button>
+      {{ end }}
     </div>
-{{ end }}
-
-{{ $s := printf "static%s/%s-T.mp3" $dir $base }}
-{{ if fileExists $s }}
-    <div class="audio-group">
-      <p><strong>&nbsp&nbsp&nbspT</strong></p>
-      <audio controls src="{{ printf "%s/%s-T.mp3" $dir $base }}" title="Tenor"></audio>
-    </div>
-{{ end }}
-
-{{ $s := printf "static%s/%s-B.mp3" $dir $base }}
-{{ if fileExists $s }}
-    <div class="audio-group">
-      <p><strong>&nbsp&nbsp&nbspB</strong></p>
-      <audio controls src="{{ printf "%s/%s-B.mp3" $dir $base }}" title="Bas"></audio>
-    </div>
-{{ end }}
+  </div>
+  <div class="audio-player">
+    <audio controls id="audio-player-{{ $base | urlize }}"></audio>
+  </div>
 </div>
+{{ end }}
 
 </div>
 

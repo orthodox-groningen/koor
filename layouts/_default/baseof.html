@@ -47,5 +47,44 @@
       {{ end }}
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Audio selector functionality
+      document.querySelectorAll('.audio-buttons').forEach(function(container) {
+        const buttons = container.querySelectorAll('.audio-select-btn');
+        const audioPlayer = container.closest('.koor-item-audio').querySelector('audio');
+        const audioOptions = JSON.parse(container.dataset.audioOptions);
+
+        // Function to update active button
+        function updateActiveButton(activeBtn) {
+          buttons.forEach(btn => btn.classList.remove('active'));
+          activeBtn.classList.add('active');
+        }
+
+        // Add click handlers to buttons
+        buttons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            const audioSrc = this.dataset.audioSrc;
+            const audioType = this.dataset.audioType;
+
+            // Update audio player source
+            audioPlayer.src = audioSrc;
+            audioPlayer.load();
+
+            // Update active button
+            updateActiveButton(this);
+
+            // Optional: Auto-play (commented out for user control)
+            // audioPlayer.play();
+          });
+        });
+
+        // Auto-select first available option
+        if (buttons.length > 0) {
+          buttons[0].click();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
