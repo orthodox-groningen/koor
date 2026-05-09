@@ -644,6 +644,38 @@ nav a:hover {
   gap: 0.1rem;
 }
 
+.site-footer {
+  margin-top: 2rem;
+  padding: 1.5rem 1.5rem 1rem;
+  background-color: #f4f6fb;
+  border-top: 1px solid #dde2ec;
+}
+
+.site-footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #5a6170;
+  font-size: 0.95rem;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.site-footer-updated {
+  color: #414b62;
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;
+}
+
+
 .audio-group {
   display: flex;
   align-items: center;
@@ -793,7 +825,16 @@ nav a:hover {
   .page-link {
     padding: 0.75rem;
   }
-}
+
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .site-footer-updated {
+    font-size: 0.9rem;
+  }
 
 /* Tablet improvements (576px - 991px) */
 @media (min-width: 576px) {

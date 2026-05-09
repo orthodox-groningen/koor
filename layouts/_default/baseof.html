@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden van de orthodoxe parochie in Groningen" }}">
+  <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden van (voornamelijk) de russisch-orthodoxe parochie in Groningen" }}">
   <title>{{ .Title }} | {{ .Site.Title }}</title>
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -11,5 +11,41 @@
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-content">
+      {{ $year := now.Format "2006" }}
+      {{ if and .GitInfo .GitInfo.AuthorDate }}
+        {{ $year = .GitInfo.AuthorDate.Format "2006" }}
+      {{ end }}
+      {{ with .Site.Params.footerText }}
+        <div class="footer-main">
+          <p>{{ . | replaceRE "YEAR" $year }}</p>
+          {{ if and $.GitInfo $.GitInfo.AuthorDate }}
+            <p class="site-footer-updated">
+              Laatst bijgewerkt: {{ $.GitInfo.AuthorDate.Format "02-01-2006" }}
+            </p>
+          {{ else if $.Lastmod }}
+            <p class="site-footer-updated">
+              Laatst bijgewerkt: {{ $.Lastmod.Format "02-01-2006" }}
+            </p>
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="footer-main">
+          <p>&copy; {{ $year }} {{ $.Site.Title }}</p>
+          {{ if and $.GitInfo $.GitInfo.AuthorDate }}
+            <p class="site-footer-updated">
+              Laatst bijgewerkt: {{ $.GitInfo.AuthorDate.Format "02-01-2006" }}
+            </p>
+          {{ else if $.Lastmod }}
+            <p class="site-footer-updated">
+              Laatst bijgewerkt: {{ $.Lastmod.Format "02-01-2006" }}
+            </p>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </footer>
 </body>
 </html>
