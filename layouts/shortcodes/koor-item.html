@@ -87,7 +87,6 @@
 {{ if $audioOptions }}
 <div class="koor-item-audio">
   <div class="audio-selector">
-    <p><strong>Selecteer stem/partij:</strong></p>
     <div class="audio-buttons" data-audio-options='{{ $audioOptions | jsonify }}'>
       {{/* Render buttons in specific order */}}
       {{ if isset $audioOptions "SATB" }}
@@ -97,42 +96,42 @@
       {{ end }}
       {{ if isset $audioOptions "S" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "S" }}" data-audio-type="S">
-          &nbsp;&nbsp;&nbsp;S
+          S
         </button>
       {{ end }}
       {{ if isset $audioOptions "S+" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "S+" }}" data-audio-type="S+">
-          &nbsp;&nbsp;S+
+          S+
         </button>
       {{ end }}
       {{ if isset $audioOptions "A" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "A" }}" data-audio-type="A">
-          &nbsp;&nbsp;&nbsp;A
+          A
         </button>
       {{ end }}
       {{ if isset $audioOptions "A+" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "A+" }}" data-audio-type="A+">
-          &nbsp;&nbsp;A+
+          A+
         </button>
       {{ end }}
       {{ if isset $audioOptions "T" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "T" }}" data-audio-type="T">
-          &nbsp;&nbsp;&nbsp;T
+          T
         </button>
       {{ end }}
       {{ if isset $audioOptions "T+" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "T+" }}" data-audio-type="T+">
-          &nbsp;&nbsp;T+
+          T+
         </button>
       {{ end }}
       {{ if isset $audioOptions "B" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "B" }}" data-audio-type="B">
-          &nbsp;&nbsp;&nbsp;B
+          B
         </button>
       {{ end }}
       {{ if isset $audioOptions "B+" }}
         <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioOptions "B+" }}" data-audio-type="B+">
-          &nbsp;&nbsp;B+
+          B+
         </button>
       {{ end }}
     </div>
