@@ -659,6 +659,7 @@ nav a:hover {
 
 .audio-select-btn {
   background-color: #f0f0f0;
+  color: #333;
   border: 2px solid #ddd;
   border-radius: 4px;
   padding: 0.5rem 0.75rem;
@@ -666,7 +667,7 @@ nav a:hover {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-width: 50px;
+  min-width: 55px;
   text-align: center;
 }
 
@@ -857,7 +858,7 @@ nav a:hover {
   .audio-select-btn {
     padding: 0.5rem 0.625rem;
     font-size: 0.85rem;
-    min-width: 45px;
+    min-width: 50px;
   }
 
 /* Tablet improvements (576px - 991px) */
@@ -955,7 +956,7 @@ nav a:hover {
 
   .audio-select-btn {
     padding: 0.6rem 1rem;
-    min-width: 60px;
+    min-width: 65px;
   }
 
   .koor-item-pdf iframe {
