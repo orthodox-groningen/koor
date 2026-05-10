@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header-content">
+      <img src="/orthodox-kruis-min.jpg" alt="Orthodox kruis" class="header-logo">
+      <p class="header-title">{{ .Site.Params.headerText | default "Koormappen Groningen" }}</p>
+    </div>
+  </header>
   <main>
     {{ block "main" . }}{{ end }}
   </main>
@@ -83,6 +89,18 @@
         if (buttons.length > 0) {
           buttons[0].click();
         }
+      });
+
+      // Lazy load PDF iframes when details are opened
+      document.querySelectorAll('details.koor-item').forEach(function(details) {
+        details.addEventListener('toggle', function() {
+          if (this.open) {
+            const iframe = this.querySelector('.koor-item-pdf iframe[data-src]');
+            if (iframe && !iframe.src) {
+              iframe.src = iframe.dataset.src;
+            }
+          }
+        });
       });
     });
   </script>

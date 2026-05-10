@@ -1,6 +1,7 @@
 ---
 title: "Concert map"
 ---
+
 {{< koor-group title="Georgisch" >}}
     {{< koor-item dir="/koormappen/concert" base="dideba senda (georgisch)"                         title="Dideba senda (georgisch)"   >}}
     {{< koor-item dir="/koormappen/concert" base="mamao chveno - gebed (georgisch)"                 title="Mamao chveno - gebed (georgisch)"   >}}
