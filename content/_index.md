@@ -5,7 +5,7 @@ draft: false
 
 ## Groningen
 
-- [Koormap voor de H. Liturgie](/koormap-heilige-liturgie)
+- [Goddelijke Liturgie](/koormap-goddelijke-liturgie)
 - [Map voor 'concert'](/concertmap) (tijdens priestercommunie)
 
 
