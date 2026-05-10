@@ -809,6 +809,7 @@ nav a:hover {
 
   .koor-item-pdf iframe {
     min-height: 300px;
+    width: 100%;
   }
 
   table {
@@ -920,6 +921,7 @@ nav a:hover {
 
   .koor-item-pdf iframe {
     min-height: 700px;
+    width: 100%;
   }
 
   .page-link {
@@ -972,6 +974,7 @@ nav a:hover {
 
   .koor-item-pdf iframe {
     min-height: 800px;
+    width: 100%;
   }
 }
 
@@ -992,6 +995,7 @@ nav a:hover {
 
   .koor-item-pdf iframe {
     min-height: 900px;
+    width: 100%;
   }
 }
 
