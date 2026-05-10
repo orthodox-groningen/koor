@@ -22,6 +22,41 @@ body {
 }
 
 /* ============================================
+   HEADER
+   ============================================ */
+
+.site-header {
+  background-color: white;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  height: 2.5rem;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.header-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ============================================
    TYPOGRAPHY
    ============================================ */
 
@@ -423,6 +458,19 @@ nav a:hover {
     padding: 1.5rem;
   }
 
+  .site-header {
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-logo {
+    height: 3rem;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -448,6 +496,19 @@ nav a:hover {
 
   body {
     padding: 2rem;
+  }
+
+  .site-header {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .header-logo {
+    height: 3.5rem;
+  }
+
+  .header-title {
+    font-size: 2.25rem;
   }
 
   h1 {
@@ -486,6 +547,19 @@ nav a:hover {
     padding: 2rem;
   }
 
+  .site-header {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .header-logo {
+    height: 4rem;
+  }
+
+  .header-title {
+    font-size: 2.5rem;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
@@ -511,6 +585,19 @@ nav a:hover {
 
   body {
     padding: 3rem;
+  }
+
+  .site-header {
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .header-logo {
+    height: 4.5rem;
+  }
+
+  .header-title {
+    font-size: 2.75rem;
   }
 
   h1 {
