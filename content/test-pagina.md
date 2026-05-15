@@ -8,7 +8,7 @@ Deze pagina documenteert alle beschikbare shortcodes en hun gebruik.
 
 ## Spacer
 
-De `spacer` shortcode voegt verticale ruimte toe. Gebruik `h` voor de hoogte (bijv. `1em`, `2rem`, `20px`).
+De `spacer` shortcode voegt verticale ruimte toe. Gebruik de optionele `h` voor de hoogte (bijv. `1em`, `2rem`, `20px`).
 
 {{< spacer h="1em" >}}
 
@@ -26,29 +26,31 @@ regel na de shortcode.
 
 ## Koor-item
 
-De `koor-item` shortcode toont een kooritem met afbeelding en beschrijving. Parameters:
-- `title` – Naam van het item
-- `dir` – Directory waar de bestanden staan
-- `base` – Bestandsnaam (zonder extensie)
+Een 'koor-item' is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF, en ook audio bestanden (voor individuele stemmen S, A, T, B en samen SATB)
+
+De `koor-item` shortcode rendert als een element uit een inhoudsopgave die je kunt uitklappen. Als je dat doet, worden de bestaande bestanden uit de verzameling getoond, of in geval van audio kunnen ze worden afgespeeld.
+
+| Parameter | Omschrijving | Voorbeeld |
+| :-------: | :----------- | :-------- |
+| `title`   | (verplicht) Naam van het item | `Prokimen en Alleluja (toon 1)` |
+| `dir`     | (verplicht) Directory waar de bestanden staan | `/koormappen/heilige-liturgie` |
+| `base`    | (verplicht) Bestandsnaam (zonder extensie) | `021-prokimen-alleluja-toon-1` |
+| `link`    | (optioneel) URL, die wijst naar een (externe) bron/website | `https://www.universaledition.com/en/Works/Cherubim/P0213837` |
 
 **Voorbeeld:**
 ```
 {​{< koor-item
-    title="21 - Prokimen en Alleluja - toon 1"
+    title="Prokimen en Alleluja (toon 1)"
     dir="/koormappen/heilige-liturgie"
     base="021-prokimen-alleluja-toon-1"
 >}}
 ```
 
-{{< spacer h="1em" >}}
-
-{{< koor-item
-    title="21 - Prokimen en Alleluja - toon 1"
+{​{< koor-item
+    title="Prokimen en Alleluja (toon 1)"
     dir="/koormappen/heilige-liturgie"
     base="021-prokimen-alleluja-toon-1"
 >}}
-
-{{< spacer h="2em" >}}
 
 ---
 
@@ -105,7 +107,6 @@ fmt.Println("Hello, World!")
   {{< /tab >}}
 {{< /tabs >}}
 
-{{< spacer h="1em" >}}
 
 ### Voorbeeld 2: Tabs met HTML-content
 
@@ -137,8 +138,6 @@ Alle markdown features werken:
 - `Code`
   {{< /tab >}}
 {{< /tabs >}}
-
-{{< spacer h="2em" >}}
 
 ---
 ### Voorbeeld 3: Tabs met echte Koor-shortcodes
@@ -184,8 +183,6 @@ Dit voorbeeld laat zien hoe je tabs combineert met koor-shortcodes:
 
 {{< /tabs >}}
 
-{{< spacer h="2em" >}}
-
 ---
 ## Tips & Tricks
 
@@ -193,7 +190,6 @@ Dit voorbeeld laat zien hoe je tabs combineert met koor-shortcodes:
 Je kunt shortcodes combineren voor meer complexe layouts:
 
 ```
-{​{< spacer h="1em" >}}
 
 {​{< tabs default="0" >}}
   {​{< tab label="Voorbeeld 1" >}}
