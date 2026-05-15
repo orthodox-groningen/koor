@@ -1,0 +1,68 @@
+{{ $default := .Get "default" | default "0" }}
+{{ $groupId := .Get "group" | default (printf "tabs-%d" (now.UnixNano)) }}
+
+{{ $inner := .Inner }}
+{{ $tabArray := slice }}
+
+{{ range $block := split $inner "<!-- TAB_SEPARATOR -->" }}
+  {{ if and (ne $block "") (contains $block "<!-- TAB_CONTENT_START -->") }}
+    {{ $parts := split $block "<!-- TAB_CONTENT_START -->" }}
+    {{ if ge (len $parts) 2 }}
+      {{ $label := index $parts 0 | strings.TrimSpace }}
+      {{ $contentRaw := index $parts 1 }}
+      {{ $contentParts := split $contentRaw "<!-- TAB_CONTENT_END -->" }}
+      {{ if ge (len $contentParts) 1 }}
+        {{ $content := index $contentParts 0 }}
+        {{ $tabArray = $tabArray | append (dict "label" $label "content" $content) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="tabs-container" data-group="{{ $groupId }}" data-default="{{ $default }}">
+  <div class="tabs-list">
+    {{ range $index, $tab := $tabArray }}
+      <button class="tab-trigger{{ if eq (string $index) $default }} active{{ end }}" data-tab="{{ $index }}">
+        {{ $tab.label }}
+      </button>
+    {{ end }}
+  </div>
+
+  <div class="tabs-content">
+    {{ range $index, $tab := $tabArray }}
+      <div class="tab-pane{{ if eq (string $index) $default }} active{{ end }}" data-tab="{{ $index }}">
+        {{ $tab.content | markdownify }}
+      </div>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+if (typeof initTabs === 'undefined') {
+  window.initTabs = function() {
+    document.querySelectorAll('.tabs-container').forEach(container => {
+      const triggers = container.querySelectorAll('.tab-trigger');
+      const panes = container.querySelectorAll('.tab-pane');
+      
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const tabIndex = trigger.getAttribute('data-tab');
+          
+          triggers.forEach(t => t.classList.remove('active'));
+          panes.forEach(p => p.classList.remove('active'));
+          
+          trigger.classList.add('active');
+          const pane = container.querySelector(`.tab-pane[data-tab="${tabIndex}"]`);
+          if (pane) pane.classList.add('active');
+        });
+      });
+    });
+  };
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', window.initTabs);
+  } else {
+    window.initTabs();
+  }
+}
+</script>

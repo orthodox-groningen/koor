@@ -986,6 +986,106 @@ nav a:hover {
     grid-column: 1 / -1;
     grid-row: 1;
   }
+}
+
+/* ============================================
+   TABS
+   ============================================ */
+
+.tabs-container {
+  margin: 1.5rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.tabs-list {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+}
+
+.tab-trigger {
+  padding: 0.875rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tab-trigger:hover {
+  background-color: #efefef;
+  color: #333;
+}
+
+.tab-trigger.active {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+  background-color: white;
+}
+
+.tabs-content {
+  position: relative;
+}
+
+.tab-pane {
+  display: none;
+  padding: 1.5rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane p {
+  margin-bottom: 1rem;
+}
+
+.tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+.tab-pane code {
+  background-color: #f0f0f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+.tab-pane pre {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .tab-trigger {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .tab-pane {
+    padding: 1rem;
+  }
 
   .koor-item-pdf {
     grid-column: 1 / -1;
