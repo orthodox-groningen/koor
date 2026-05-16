@@ -1,5 +1,5 @@
 ---
-title: "Koormap H. Liturgie"
+title: "Goddelijke Liturgie"
 ---
 
 {{< koor-item dir="/koormappen/heilige-liturgie" base="002-(1a) vredeslitanie"                       title="(1) Vredeslitanie" >}}

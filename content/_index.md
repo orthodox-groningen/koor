@@ -3,16 +3,20 @@ title: "Koor mappen"
 draft: false
 ---
 
-# Koor mappen
+## Groningen
 
-- [H. Liturgie](/koormap-heilige-liturgie)
-- [Concert map](/concertmap)
+- [Goddelijke Liturgie](/koormap-goddelijke-liturgie)
+- [Map voor 'concert'](/concertmap) (tijdens priestercommunie)
+
 
 ---
 
-# Test gedeelte (voor ontwikkelaars)
+## Hemelum
 
-Dit deel van de pagina is bedoeld voor test doeleinden.
+- [Koormap Hemelum](/hemelum) (onderdelen)
 
-- [Test pagina](/test-pagina)
+---
+
+## Voor Ontwikkelaars
+
 - [Lees README op GitHub](https://github.com/orthodox-groningen/koor/blob/main/README.md) (voor ontwikkeltips e.d.)

@@ -7,6 +7,10 @@ enableGitInfo = true
 relativeURLs = true
 canonifyURLs = true
 
+[params]
+footerText = "(C) YEAR RO Parochie Groningen. "
+headerText = "Koormappen Groningen"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
