@@ -26,14 +26,54 @@ title: "Goddelijke Liturgie"
 {{< /koor-group >}}
 {{< koor-item dir="/koormappen/heilige-liturgie" base="020-(8a) trisagion"                           title="(8) Trisagion" >}}
 {{< koor-group title="(9) Prokimens en Alleluja's" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="021-prokimen-alleluja-toon-1" title="Prokimen en Alleluja (toon-1)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="022-prokimen-alleluja-toon-2" title="Prokimen en Alleluja (toon-2)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="023-prokimen-alleluja-toon-3" title="Prokimen en Alleluja (toon-3)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="024-prokimen-alleluja-toon-4" title="Prokimen en Alleluja (toon-4)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="025-prokimen-alleluja-toon-5" title="Prokimen en Alleluja (toon-5)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="026-prokimen-alleluja-toon-6" title="Prokimen en Alleluja (toon-6)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="027-prokimen-alleluja-toon-7" title="Prokimen en Alleluja (toon-7)" >}}
-    {{< koor-item dir="/koormappen/heilige-liturgie" base="028-prokimen-alleluja-toon-8" title="Prokimen en Alleluja (toon-8)" >}}
+    {{< koor-group title="Toon 1" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="021-prokimen-alleluja-toon-1" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="021-prokimen-zondag-toon-1"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="021-alleluja-toon-1"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
+    {{< koor-group title="Toon 2" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="022-prokimen-alleluja-toon-2" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="022-prokimen-zondag-toon-2"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="022-alleluja-toon-2"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
+    {{< koor-group title="Toon 3" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="023-prokimen-alleluja-toon-3" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="023-prokimen-zondag-toon-3"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="023-alleluja-toon-3"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
+    {{< koor-group title="Toon 4" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="024-prokimen-alleluja-toon-4" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="024-prokimen-zondag-toon-4"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="024-alleluja-toon-4"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
+    {{< koor-group title="Toon 5" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="025-prokimen-alleluja-toon-5" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="025-prokimen-zondag-toon-5"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="025-alleluja-toon-5"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
+    {{< koor-group title="Toon 6" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="026-prokimen-alleluja-toon-6" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="026-prokimen-zondag-toon-6"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="026-alleluja-toon-6"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
+    {{< koor-group title="Toon 7" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="027-prokimen-alleluja-toon-7" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="027-prokimen-zondag-toon-7"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="027-alleluja-toon-7"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
+    {{< koor-group title="Toon 8" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="028-prokimen-alleluja-toon-8" title="Prokimen en Alleluja (bladmuziek)" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="028-prokimen-zondag-toon-8"   title="Prokimen van de zondag (audio))" >}}
+        {{< koor-item dir="/koormappen/heilige-liturgie" base="028-alleluja-toon-8"          title="Alleluja (audio)" >}}
+        {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< /koor-group >}}
 {{< /koor-group >}}
 {{< koor-item dir="/koormappen/heilige-liturgie" base="029-(10) evangelielezing"                     title="(10) Evangelielezing" >}}
 {{< koor-item dir="/koormappen/heilige-liturgie" base="030-(11) dringende litanie"                   title="(11) Dringende litanie" >}}
