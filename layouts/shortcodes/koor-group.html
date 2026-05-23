@@ -1,4 +1,11 @@
 {{ $title := .Get "title" }}
+{{ $groupDir := .Get "dir" | default "" }}
+{{ $scratchKey := "koorGroupDirs" }}
+{{ $stack := .Page.Scratch.Get $scratchKey | default (slice) }}
+{{ if ne $groupDir "" }}
+  {{ $stack = $stack | append $groupDir }}
+  {{ .Page.Scratch.Set $scratchKey $stack }}
+{{ end }}
 
 <section class="koor-group">
   <details>
@@ -8,3 +15,8 @@
     </div>
   </details>
 </section>
+
+{{ if ne $groupDir "" }}
+  {{ $stack = slice 0 (sub (len $stack) 1) }}
+  {{ .Page.Scratch.Set $scratchKey $stack }}
+{{ end }}

@@ -1,6 +1,12 @@
 {{ $title := .Get "title" }}
-{{ $dir := .Get "dir" }}
+{{ $dir := .Get "dir" | default "" }}
 {{ $base := .Get "base" }}
+{{ if eq $dir "" }}
+  {{ $groupDirs := .Page.Scratch.Get "koorGroupDirs" | default (slice) }}
+  {{ if gt (len $groupDirs) 0 }}
+    {{ $dir = index $groupDirs (sub (len $groupDirs) 1) }}
+  {{ end }}
+{{ end }}
 
 <details class="koor-item">
 <summary><strong>{{ $title }}</strong></summary>

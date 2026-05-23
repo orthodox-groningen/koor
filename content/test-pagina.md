@@ -41,7 +41,7 @@ De `koor-item` shortcode toont de beschikbare inhoud van het item en voegt het i
 | Param   |  V/O  | Omschrijving | Voorbeeld |
 | :-----: | :---: | :----------- | :-------- |
 | `title` |   V   | Naam van het item | `Prokimen en Alleluja (toon 1)` |
-| `dir`   |   V   | Directory waar de bestanden staan | `/koormappen/heilige-liturgie` |
+| `dir`   |   O   | Directory waar de bestanden staan. Optioneel als `koor-item` binnen een `koor-group` staat met `dir` ingesteld. | `/koormappen/heilige-liturgie` |
 | `base`  |   V   | Bestandsnaam (zonder extensie) | `021-prokimen-alleluja-toon-1` |
 | `link`  |   O   | URL naar een externe bron/website | `https://www.universaledition.com/en/Works/Cherubim/P0213837` |
 
@@ -68,6 +68,21 @@ De `koor-item` shortcode toont de beschikbare inhoud van het item en voegt het i
     dir="/koormappen/heilige-liturgie"
     base="021-prokimen-alleluja-toon-1"
 >}}
+
+---
+
+## Koor-group
+
+Een `koor-group` groepeert meerdere `koor-item`-shortcodes onder één titel. Als je een gemeenschappelijke `dir` opgeeft in de groep, mogen de kinderen dat pad overslaan.
+
+### Voorbeeld
+
+{{< koor-group title="Heilige Liturgie Tonen" dir="/koormappen/heilige-liturgie" >}}
+  {{< koor-item title="Toon 1 - Prokimen" base="021-prokimen-alleluja-toon-1" >}}
+  {{< koor-item title="Toon 2 - Prokimen" base="022-prokimen-alleluja-toon-2" >}}
+{{< /koor-group >}}
+
+In dit voorbeeld gebruiken de `koor-item`-shortcodes dezelfde directory als de groep, zonder dat die per item herhaald hoeft te worden.
 
 ---
 
