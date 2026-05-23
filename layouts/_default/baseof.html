@@ -54,7 +54,28 @@
     </div>
   </footer>
   <script>
+    function initTabs() {
+      document.querySelectorAll('.tabs-container').forEach(container => {
+        const triggers = container.querySelectorAll('.tab-trigger');
+        const panes = container.querySelectorAll('.tab-pane');
+
+        triggers.forEach(trigger => {
+          trigger.addEventListener('click', () => {
+            const tabIndex = trigger.getAttribute('data-tab');
+
+            triggers.forEach(t => t.classList.remove('active'));
+            panes.forEach(p => p.classList.remove('active'));
+
+            trigger.classList.add('active');
+            const pane = container.querySelector(`.tab-pane[data-tab="${tabIndex}"]`);
+            if (pane) pane.classList.add('active');
+          });
+        });
+      });
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
+      initTabs();
       // Audio selector functionality
       document.querySelectorAll('.audio-buttons').forEach(function(container) {
         const buttons = container.querySelectorAll('.audio-select-btn');

@@ -4,18 +4,22 @@
 {{ $inner := .Inner }}
 {{ $tabArray := slice }}
 
-{{ range $block := split $inner "<!-- TAB_SEPARATOR -->" }}
-  {{ if and (ne $block "") (contains $block "<!-- TAB_CONTENT_START -->") }}
-    {{ $parts := split $block "<!-- TAB_CONTENT_START -->" }}
-    {{ if ge (len $parts) 2 }}
-      {{ $label := index $parts 0 | strings.TrimSpace }}
-      {{ $contentRaw := index $parts 1 }}
-      {{ $contentParts := split $contentRaw "<!-- TAB_CONTENT_END -->" }}
-      {{ if ge (len $contentParts) 1 }}
-        {{ $content := index $contentParts 0 }}
-        {{ $tabArray = $tabArray | append (dict "label" $label "content" $content) }}
-      {{ end }}
+{{ range $idx, $blk := split $inner "{{< tab" }}
+  {{ if gt $idx 0 }}
+    {{ $parts := split $blk "{{< /tab >}}" }}
+    {{ $block := index $parts 0 }}
+    {{ $afterTag := split $block "}}" }}
+    {{ $tag := index $afterTag 0 }}
+    {{ $content := "" }}
+    {{ if ge (len $afterTag) 2 }}
+      {{ $content = index $afterTag 1 | strings.TrimSpace }}
     {{ end }}
+    {{ $labelMatch := findRESubmatch `label=\"([^\"]+)\"` $tag }}
+    {{ $label := "Tab" }}
+    {{ if $labelMatch }}
+      {{ $label = index $labelMatch 0 1 }}
+    {{ end }}
+    {{ $tabArray = $tabArray | append (dict "label" $label "content" $content) }}
   {{ end }}
 {{ end }}
 
@@ -23,7 +27,7 @@
   <div class="tabs-list">
     {{ range $index, $tab := $tabArray }}
       <button class="tab-trigger{{ if eq (string $index) $default }} active{{ end }}" data-tab="{{ $index }}">
-        {{ $tab.label }}
+        {{ index $tab "label" }}
       </button>
     {{ end }}
   </div>
@@ -31,7 +35,7 @@
   <div class="tabs-content">
     {{ range $index, $tab := $tabArray }}
       <div class="tab-pane{{ if eq (string $index) $default }} active{{ end }}" data-tab="{{ $index }}">
-        {{ $tab.content | markdownify }}
+        {{ index $tab "content" | safeHTML }}
       </div>
     {{ end }}
   </div>

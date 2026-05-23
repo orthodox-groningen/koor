@@ -2,51 +2,68 @@
 title: "Voorbeelden van shortcodes"
 ---
 
-Deze pagina documenteert alle beschikbare shortcodes en hun gebruik.
+Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.
 
 ---
 
 ## Spacer
 
-De `spacer` shortcode voegt verticale ruimte toe. Gebruik de optionele `h` voor de hoogte (bijv. `1em`, `2rem`, `20px`).
+De `spacer` shortcode voegt verticale ruimte toe. Gebruik `h` voor de hoogte (bijv. `1em`, `2rem`, `20px`).
 
-{{< spacer h="1em" >}}
+**Live voorbeeld:**
 
-**Voorbeeld:**
-```
-eerste regel voor de shortcode.  
-tweede regel voor de shortcode.
-{​{< spacer h="2em" >}}
-regel na de shortcode.
-```
+Deze tekst staat voor de short-code die een lege ruimte toevoegt van `3em`.
+{{< spacer h="3em" >}}
+Deze tekst staat erachter.
 
-{{< spacer h="2em" >}}
+**Voorbeeld (hoe te schrijven):**
+
+<!--
+  Waarschuwing: dit codeblok bevat onzichtbare escape-tekens om te voorkomen
+  dat Hugo de shortcode-syntax uitvoert. Laat deze regels ongemoeid als je het
+  voorbeeld aanpast.
+-->
+
+````
+{{​< spacer h="2em" >​}}
+````
 
 ---
 
 ## Koor-item
 
-Een 'koor-item' is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF, en ook audio bestanden (voor individuele stemmen S, A, T, B en samen SATB)
+Een `koor-item` is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF en ook audio bestanden voor individuele stemmen (S, A, T, B) en samen (SATB).
 
-De `koor-item` shortcode rendert als een element uit een inhoudsopgave die je kunt uitklappen. Als je dat doet, worden de bestaande bestanden uit de verzameling getoond, of in geval van audio kunnen ze worden afgespeeld.
+De `koor-item` shortcode toont de beschikbare inhoud van het item en voegt het in als een uitklapbare widget met PDF, audio en eventueel andere bestanden.
 
-| Parameter | Omschrijving | Voorbeeld |
-| :-------: | :----------- | :-------- |
-| `title`   | (verplicht) Naam van het item | `Prokimen en Alleluja (toon 1)` |
-| `dir`     | (verplicht) Directory waar de bestanden staan | `/koormappen/heilige-liturgie` |
-| `base`    | (verplicht) Bestandsnaam (zonder extensie) | `021-prokimen-alleluja-toon-1` |
-| `link`    | (optioneel) URL, die wijst naar een (externe) bron/website | `https://www.universaledition.com/en/Works/Cherubim/P0213837` |
+### Parameters (V/O = Verplicht/Optioneel)
 
-**Voorbeeld:**
-```
-{​{< koor-item
+| Param   |  V/O  | Omschrijving | Voorbeeld |
+| :-----: | :---: | :----------- | :-------- |
+| `title` |   V   | Naam van het item | `Prokimen en Alleluja (toon 1)` |
+| `dir`   |   V   | Directory waar de bestanden staan | `/koormappen/heilige-liturgie` |
+| `base`  |   V   | Bestandsnaam (zonder extensie) | `021-prokimen-alleluja-toon-1` |
+| `link`  |   O   | URL naar een externe bron/website | `https://www.universaledition.com/en/Works/Cherubim/P0213837` |
+
+**Voorbeeld (hoe te schrijven):**
+
+<!--
+  Waarschuwing: dit codeblok gebruikt onzichtbare escape-tekens zodat Hugo
+  de shortcode niet uitvoert in de bronweergave. Bewerk de regels alleen als
+  je deze escapes behoudt of op dezelfde manier vervangt.
+-->
+
+````
+{{​< koor-item
     title="Prokimen en Alleluja (toon 1)"
     dir="/koormappen/heilige-liturgie"
     base="021-prokimen-alleluja-toon-1"
->}}
-```
+>​}}
+````
 
-{​{< koor-item
+**Live voorbeeld:**
+
+{{< koor-item
     title="Prokimen en Alleluja (toon 1)"
     dir="/koormappen/heilige-liturgie"
     base="021-prokimen-alleluja-toon-1"
@@ -56,107 +73,80 @@ De `koor-item` shortcode rendert als een element uit een inhoudsopgave die je ku
 
 ## Tabs
 
-De `tabs` shortcode maakt een tabinterface voor het weergeven van verschillende content. Parameters:
-- `default` – Welke tab standaard geopend is (0 = eerste, 1 = tweede, etc.)
-- `group` – Optioneel: tabs met dezelfde groepnaam schakelen synchroon
+De `tabs` shortcode creëert een tab-interface. Omdat geneste shortcodes soms lastig te parsen zijn in Hugo, geef ik hieronder een eenvoudige en betrouwbare werkwijze: schrijf de tab-UI als plain HTML en zet de shortcodes binnen de tab-content. Shortcodes worden binnen HTML gewoon gerenderd.
 
-### Voorbeeld 1: Basis tabs
+> Let op: zorg dat de HTML-tagregels niet met 4 of meer spaties beginnen, want dan behandelt Markdown ze als een codeblok.
 
-**Markdown:**
-```
-{​{< tabs default="0" >}}
-  {​{< tab label="Python" >}}
-```python
-print("Hello, World!")
-```
-  {​{< /tab >}}
+### Voorbeeld: Simpele HTML-tabs (werkt betrouwbaar)
 
-  {​{< tab label="JavaScript" >}}
-```javascript
-console.log("Hello, World!");
-```
-  {​{< /tab >}}
+**Voorbeeld (hoe te schrijven):**
 
-  {​{< tab label="Go" >}}
-```go
-fmt.Println("Hello, World!")
-```
-  {​{< /tab >}}
-{​{< /tabs >}}
-```
+<!--
+  Waarschuwing: het codevoorbeeld hieronder bevat onzichtbare escape-tekens
+  voor Hugo-shortcodes. Bewerk deze regels alleen als je deze escapes behoudt.
+-->
+
+````html
+<div class="tabs-container" data-group="manual-1" data-default="0">
+<div class="tabs-list">
+<button class="tab-trigger active" data-tab="0">Enkel Item</button>
+<button class="tab-trigger" data-tab="1">Groep met Items</button>
+<button class="tab-trigger" data-tab="2">Included Snippet</button>
+</div>
+
+<div class="tabs-content">
+<div class="tab-pane active" data-tab="0">
+{{​< koor-item
+    title="21 - Prokimen en Alleluja - toon 1"
+    dir="/koormappen/heilige-liturgie"
+    base="021-prokimen-alleluja-toon-1"
+>​}}
+</div>
+
+<div class="tab-pane" data-tab="1">
+{{​< koor-group title="Heilige Liturgie Tonen" >​}}
+
+{{​< koor-item
+    title="Toon 1 - Prokimen"
+    dir="/koormappen/heilige-liturgie"
+    base="021-prokimen-alleluja-toon-1"
+>​}}
+
+{{​< koor-item
+    title="Toon 2 - Prokimen"
+    dir="/koormappen/heilige-liturgie"
+    base="022-prokimen-alleluja-toon-2"
+>​}}
+
+{{​< /koor-group >​}}
+</div>
+
+<div class="tab-pane" data-tab="2">
+{{​< include-md file="content/snippets/test-snippet.md" >​}}
+</div>
+</div>
+</div>
+````
 
 **Live voorbeeld:**
 
-{{< tabs default="0" >}}
-  {{< tab label="Python" >}}
-```python
-print("Hello, World!")
-```
-  {{< /tab >}}
+<div class="tabs-container" data-group="manual-1" data-default="0">
+<div class="tabs-list">
+<button class="tab-trigger active" data-tab="0">Enkel Item</button>
+<button class="tab-trigger" data-tab="1">Groep met Items</button>
+<button class="tab-trigger" data-tab="2">Included Snippet</button>
+</div>
 
-  {{< tab label="JavaScript" >}}
-```javascript
-console.log("Hello, World!");
-```
-  {{< /tab >}}
-
-  {{< tab label="Go" >}}
-```go
-fmt.Println("Hello, World!")
-```
-  {{< /tab >}}
-{{< /tabs >}}
-
-
-### Voorbeeld 2: Tabs met HTML-content
-
-Je kunt ook normale markdown/HTML in tabs zetten:
-
-{{< tabs default="1" >}}
-  {{< tab label="Toon 1" >}}
-Dit is een beschrijving van **toon 1**. Je kunt markdown gebruiken!
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-  {{< /tab >}}
-
-  {{< tab label="Toon 2" >}}
-Dit is een beschrijving van **toon 2**. 
-
-> Dit is een quote in een tab
-
-Merk op dat `default="1"` deze tab standaard opent.
-  {{< /tab >}}
-
-  {{< tab label="Toon 3" >}}
-Dit is een beschrijving van **toon 3**.
-
-Alle markdown features werken:
-- **Vet**
-- *Cursief*
-- `Code`
-  {{< /tab >}}
-{{< /tabs >}}
-
----
-### Voorbeeld 3: Tabs met echte Koor-shortcodes
-
-Dit voorbeeld laat zien hoe je tabs combineert met koor-shortcodes:
-
-{{< tabs default="0" >}}
-  {{< tab label="Enkel Item" >}}
-
+<div class="tabs-content">
+<div class="tab-pane active" data-tab="0">
 {{< koor-item
     title="21 - Prokimen en Alleluja - toon 1"
     dir="/koormappen/heilige-liturgie"
     base="021-prokimen-alleluja-toon-1"
 >}}
+</div>
 
-  {{< /tab >}}
-
-  {{< tab label="Groep met Items" >}}
-
+<div class="tab-pane" data-tab="1">
 {{< koor-group title="Heilige Liturgie Tonen" >}}
 
 {{< koor-item
@@ -172,67 +162,115 @@ Dit voorbeeld laat zien hoe je tabs combineert met koor-shortcodes:
 >}}
 
 {{< /koor-group >}}
+</div>
 
-  {{< /tab >}}
-
-  {{< tab label="Included Snippet" >}}
-
+<div class="tab-pane" data-tab="2">
 {{< include-md file="content/snippets/test-snippet.md" >}}
-
-  {{< /tab >}}
-
-{{< /tabs >}}
+</div>
+</div>
+</div>
 
 ---
+
 ## Tips & Tricks
 
 ### Geneste Shortcodes
-Je kunt shortcodes combineren voor meer complexe layouts:
+Je kunt shortcodes combineren; als je voorbeeldcode wilt laten zien gebruik dan een hogere fence (vier backticks) om conflicten met interne fenced codeblocks te voorkomen.
 
-```
+<!--
+  Waarschuwing: het voorbeeld hieronder gebruikt onzichtbare tekens om te voorkomen
+  dat Hugo de shortcode-syntax uitvoert. Bewerk deze regels alleen als je begrijpt
+  dat je de extra onzichtbare spaties (zero-width spaces) moet behouden of op
+  dezelfde manier moet vervangen.
+-->
 
-{​{< tabs default="0" >}}
-  {​{< tab label="Voorbeeld 1" >}}
-{​{< koor-item
+````
+{{​< tabs default="0" >​}}
+  {{​< tab label="Voorbeeld 1" >​}}
+    {{​< koor-item
+        title="Item 1"
+        dir="/koormappen/heilige-liturgie"
+        base="021-prokimen-alleluja-toon-1"
+    >​}}
+  {{​< /tab >​}}
+  {{​< tab label="Voorbeeld 2" >​}}
+    {{​< koor-item
+        title="Item 2"
+        dir="/koormappen/concert"
+        base="some-other-file"
+    >​}}
+  {{​< /tab >​}}
+{{​< /tabs >​}}
+
+{{​< spacer h="1em" >​}}
+````
+
+> Let op: het bovenstaande codeblok bevat onzichtbare escape-tekens in de regels hierboven. Bewerk de shortcode-syntax alleen als je de zero-width spaces behoudt.
+
+**Live voorbeeld:**
+
+<div class="tabs-container" data-group="manual-demo-1" data-default="0">
+<div class="tabs-list">
+<button class="tab-trigger active" data-tab="0">Voorbeeld 1</button>
+<button class="tab-trigger" data-tab="1">Voorbeeld 2</button>
+</div>
+
+<div class="tabs-content">
+<div class="tab-pane active" data-tab="0">
+{{< koor-item
     title="Item 1"
     dir="/koormappen/heilige-liturgie"
     base="021-prokimen-alleluja-toon-1"
 >}}
-  {​{< /tab >}}
-
-  {​{< tab label="Voorbeeld 2" >}}
-{​{< koor-item
+</div>
+<div class="tab-pane" data-tab="1">
+{{< koor-item
     title="Item 2"
     dir="/koormappen/concert"
     base="some-other-file"
 >}}
-  {​{< /tab >}}
-{​{< /tabs >}}
-
-{​{< spacer h="1em" >}}
-```
+</div>
+</div>
+</div>
 
 ### Synchronized Tabs (Group)
 Wanneer je dezelfde `group` naam gebruikt, schakelen alle tabs met die groep tegelijk:
 
+<!--
+  Waarschuwing: ook hier gebruiken we onzichtbare tekens in de codeblokregels
+  om Hugo niet te laten parsen. Laat deze regels ongemoeid tenzij je de
+  escapes consistent behoudt.
+-->
+
 ```
-{​{< tabs default="0" group="language" >}}
-  {​{< tab label="Nederlands" >}}
+{{​< tabs default="0" group="language" >​}}
+  {{​< tab label="Nederlands" >​}}
+    Hallo, Wereld!
+  {{​< /tab >​}}
+  {{​< tab label="Engels" >​}}
+    Hello, World!
+  {{​< /tab >​}}
+{{​< /tabs >​}}
+
+{{​< spacer h="2em" >​}}
+```
+
+> Let op: dit codeblok bevat onzichtbare escape-tekens in de regels hierboven. Bewerk de shortcode-syntax alleen als je de zero-width spaces behoudt.
+
+**Live voorbeeld:**
+
+<div class="tabs-container" data-group="manual-demo-2" data-default="0">
+<div class="tabs-list">
+<button class="tab-trigger active" data-tab="0">Nederlands</button>
+<button class="tab-trigger" data-tab="1">Engels</button>
+</div>
+
+<div class="tabs-content">
+<div class="tab-pane active" data-tab="0">
 Hallo, Wereld!
-  {​{< /tab >}}
-  {​{< tab label="Engels" >}}
+</div>
+<div class="tab-pane" data-tab="1">
 Hello, World!
-  {​{< /tab >}}
-{​{< /tabs >}}
-
-{​{< spacer h="2em" >}}
-
-{​{< tabs default="0" group="language" >}}
-  {​{< tab label="Nederlands" >}}
-Goedemorgen
-  {​{< /tab >}}
-  {​{< tab label="Engels" >}}
-Good morning
-  {​{< /tab >}}
-{​{< /tabs >}}
-```
+</div>
+</div>
+</div>
