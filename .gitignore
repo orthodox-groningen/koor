@@ -1,4 +1,5 @@
 /public/
+/public_local/
 /resources/_gen/
 /.vscode/
 /.hugo_build.lock
