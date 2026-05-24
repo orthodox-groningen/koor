@@ -1,0 +1,47 @@
+{{- $base := .base | default "" -}}
+
+{{- range .items -}}
+
+  {{- if eq .type "group" -}}
+
+    <li>
+      <strong>{{ .title }}</strong>
+
+      {{- $nextBase := $base -}}
+      {{- if .base -}}
+        {{- $nextBase = printf "%s/%s" $base .base -}}
+      {{- end -}}
+
+      <ul>
+        {{ partial "render-node.html" (dict
+          "base" $nextBase
+          "items" .items
+        ) }}
+      </ul>
+    </li>
+
+  {{- else if eq .type "item" -}}
+
+    {{- $path := $base -}}
+    {{- if .dir -}}
+      {{- $path = printf "%s/%s" $path .dir -}}
+    {{- end -}}
+    {{- if .file -}}
+      {{- $path = printf "%s/%s" $path .file -}}
+    {{- end -}}
+
+    <li>
+      {{ .title }} — {{ $path }}
+    </li>
+
+  {{- else if eq .type "link" -}}
+
+    <li><a href="{{ .url }}">{{ .title }}</a></li>
+
+  {{- else if eq .type "include" -}}
+
+    <li>{{ .title }} (include: {{ .file }})</li>
+
+  {{- end -}}
+
+{{- end -}}

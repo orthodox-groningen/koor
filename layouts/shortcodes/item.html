@@ -1,0 +1,20 @@
+{{- $file := .Get "file" -}}
+{{- $dir := .Get "dir" | default "" -}}
+
+{{- $stack := .Page.Scratch.Get "base_stack" | default slice -}}
+
+{{- $parts := slice -}}
+
+{{- range $stack -}}
+  {{- if . -}}
+    {{- $parts = $parts | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $dir -}}
+  {{- $parts = $parts | append $dir -}}
+{{- end -}}
+
+{{- $parts = $parts | append $file -}}
+
+{{- delimit $parts "/" -}}

@@ -1,0 +1,51 @@
+{{- $base := .base | default "" -}}
+{{- $dir := .dir | default "" -}}
+{{- $file := .file -}}
+
+{{- /* NORMALIZE BASE */ -}}
+{{- $root := $base | replaceRE "/$" "" -}}
+
+{{- /* ONLY APPEND DIR IF IT EXISTS AND NOT ALREADY IN BASE */ -}}
+{{- if $dir -}}
+  {{- $dirClean := $dir | replaceRE "^/" "" | replaceRE "/$" "" -}}
+
+  {{- if and $dirClean (not (strings.HasSuffix $root $dirClean)) -}}
+    {{- $root = printf "%s/%s" $root $dirClean -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* FINAL CLEAN */ -}}
+{{- $root = $root | replaceRE "//+" "/" -}}
+
+{{- $folder := printf "static/%s" $root -}}
+
+{{- if not (fileExists $folder) -}}
+  {{- printf "debug|no_folder|%s\n" $folder -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $files := readDir $folder -}}
+
+{{- range $files -}}
+
+  {{- $name := .Name -}}
+
+  {{- if strings.HasPrefix $name $file -}}
+
+    {{- $ext := path.Ext $name -}}
+    {{- $full := printf "%s/%s" $root $name -}}
+
+    {{- if or (eq $ext ".jpg") (eq $ext ".png") -}}
+      {{ printf "image|%s\n" $full }}
+
+    {{- else if eq $ext ".pdf" -}}
+      {{ printf "pdf|%s\n" $full }}
+
+    {{- else if eq $ext ".mp3" -}}
+      {{ printf "audio|%s\n" $full }}
+
+    {{- end -}}
+
+  {{- end -}}
+
+{{- end -}}

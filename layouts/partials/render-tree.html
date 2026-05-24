@@ -1,0 +1,95 @@
+{{- $base := .base | default "" -}}
+{{- $items := .items -}}
+
+{{- if not $items -}}
+  <li style="color:red">ERROR: missing items</li>
+  {{- return -}}
+{{- end -}}
+
+<ul>
+
+{{- range $items -}}
+
+  {{- if not .type -}}
+    <li style="color:red">
+      ERROR: missing type → {{ printf "%#v" . }}
+    </li>
+    {{- continue -}}
+  {{- end -}}
+
+  {{- if eq .type "group" -}}
+
+    <li>
+      <strong>GROUP: {{ .title }}</strong>
+
+      <div style="font-size:12px;color:gray">
+        base: <code>{{ .base }}</code><br>
+        computed base: <code>{{ $base }}</code>
+      </div>
+
+      {{- $nextBase := $base -}}
+      {{- if .base -}}
+        {{- $nextBase = printf "%s/%s" $base .base -}}
+      {{- end -}}
+
+      {{ partial "render-tree.html" (dict
+        "base" $nextBase
+        "items" .items
+      ) }}
+
+    </li>
+
+  {{- else if eq .type "item" -}}
+
+    <li>
+      <strong>{{ .title }}</strong>
+
+      <div style="font-size:12px;color:gray">
+        base: <code>{{ $base }}</code><br>
+        dir: <code>{{ .dir }}</code><br>
+        file: <code>{{ .file }}</code>
+      </div>
+
+      {{- $raw := partial "resolve-item.html" (dict
+        "base" $base
+        "dir" .dir
+        "file" .file
+        "title" .title
+      ) -}}
+
+      <ul>
+        {{- if not $raw -}}
+          <li style="color:red">NO OUTPUT FROM RESOLVER</li>
+        {{- else -}}
+          {{- range (split $raw "\n") -}}
+            {{- if . -}}
+              {{- $parts := split . "|" -}}
+              <li>
+                {{ index $parts 0 }} → <code>{{ index $parts 1 }}</code>
+              </li>
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      </ul>
+
+    </li>
+
+  {{- else if eq .type "include" -}}
+
+    <li>INCLUDE: {{ .file }}</li>
+
+  {{- else if eq .type "link" -}}
+
+    <li><a href="{{ .url }}">{{ .title }}</a></li>
+
+  {{- else -}}
+
+    <li style="color:red">
+      ERROR: unknown type {{ .type }}
+    </li>
+
+  {{- end -}}
+
+{{- end -}}
+
+</ul>

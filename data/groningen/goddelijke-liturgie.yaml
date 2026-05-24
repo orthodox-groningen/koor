@@ -1,0 +1,198 @@
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+# 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
+#    - item   → bestand of media
+#    - group  → geneste structuur
+#    - include → herbruikbare tekst/snippet
+#    - link   → externe URL
+#
+# 3. group mag alleen bevatten:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item mag alleen bevatten:
+#    - title (verplicht)
+#    - file  (verplicht OF in combinatie met dir)
+#    - dir   (optioneel)
+#
+# 5. GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN
+#    (dus nooit meer: - title: direct op root level)
+# =========================================================
+
+items:
+
+  - type: group
+    title: "Groningse Koormap Goddelijke Liturgie"
+    base: "koormappen/goddelijke-liturgie"
+    items:
+
+      - type: item
+        file: "002-(1a) vredeslitanie"
+        title: "(1) Vredeslitanie"
+
+      - type: item
+        file: "003-(2) 1e antifoon"
+        title: "(2) 1e Antifoon"
+
+      - type: item
+        file: "004-(3) 1e kleine litanie"
+        title: "(3) 1e Kleine Litanie"
+
+      - type: item
+        file: "005-(4) 2e antifoon"
+        title: "(4) 2e Antifoon"
+
+      - type: group
+        title: "(5) Eniggeboren Zoon en 2e Kleine Litanie"
+        items:
+
+          - type: item
+            file: "006-(5a) eniggeboren zoon"
+            title: "(5) Eniggeboren Zoon"
+
+          - type: item
+            file: "007-2e kleine litanie"
+            title: "2e Kleine Litanie"
+
+      - type: item
+        file: "008-(6b) zaligsprekingen"
+        title: "(6) Zaligsprekingen"
+
+      - type: group
+        title: "(7) Kleine intocht met Troparen en Kondaken (zondagen)"
+        items:
+
+          - type: item
+            file: "009-(7) kleine intocht"
+            title: "Kleine intocht"
+
+          - type: item
+            file: "010-troparion-kondakion-toon-1"
+            title: "Troparion en Kondakion (toon-1)"
+
+          - type: item
+            file: "011-troparion-kondakion-toon-2"
+            title: "Troparion en Kondakion (toon-2)"
+
+          - type: item
+            file: "012-troparion-kondakion-toon-3"
+            title: "Troparion en Kondakion (toon-3)"
+
+          - type: item
+            file: "013-troparion-kondakion-toon-4"
+            title: "Troparion en Kondakion (toon-4)"
+
+          - type: item
+            file: "014-troparion-kondakion-toon-5"
+            title: "Troparion en Kondakion (toon-5)"
+
+          - type: item
+            file: "015-troparion-kondakion-toon-6"
+            title: "Troparion en Kondakion (toon-6)"
+
+          - type: item
+            file: "016-troparion-kondakion-toon-7"
+            title: "Troparion en Kondakion (toon-7)"
+
+          - type: item
+            file: "017-troparion-kondakion-toon-8"
+            title: "Troparion en Kondakion (toon-8)"
+
+          - type: item
+            file: "018-Toon 6 (stichier melodie)"
+            title: "Bescherming der Christenen (toon 6, stichier melodie)"
+
+          - type: item
+            file: "019-ustav-liturgie met diakon"
+            title: "Ustav-liturgie met diaken"
+
+      - type: item
+        file: "020-(8a) trisagion"
+        title: "(8) Trisagion"
+
+      - type: group
+        title: "(9) Prokimens en Alleluja's"
+        items:
+
+          - type: group
+            title: "Toon 1"
+            items:
+
+              - type: item
+                file: "021-prokimen-alleluja-toon-1"
+                title: "Prokimen en Alleluja (bladmuziek)"
+
+              - type: item
+                file: "021-prokimen-zondag-toon-1"
+                title: "Prokimen van de zondag (audio)"
+
+              - type: item
+                file: "021-alleluja-toon-1"
+                title: "Alleluja (audio)"
+
+              - type: include
+                file: "voetnoot-bij-prokimen-melodien"
+                title: "Voetnoot"
+
+          - type: group
+            title: "Toon 2"
+            items:
+
+              - type: item
+                file: "022-prokimen-alleluja-toon-2"
+                title: "Prokimen en Alleluja (bladmuziek)"
+
+              - type: item
+                file: "022-prokimen-zondag-toon-2"
+                title: "Prokimen van de zondag (audio)"
+
+              - type: item
+                file: "022-alleluja-toon-2"
+                title: "Alleluja (audio)"
+
+              - type: include
+                file: "voetnoot-bij-prokimen-melodien"
+                title: "Voetnoot"
+
+      - type: item
+        file: "029-(10) evangelielezing"
+        title: "(10) Evangelielezing"
+
+      - type: item
+        file: "030-(11) dringende litanie"
+        title: "(11) Dringende litanie"
+
+      - type: item
+        file: "031-(12a) ontslapenenlitanie"
+        title: "(12) Ontslapenenlitanie"
+
+      - type: item
+        file: "032-(13) katechumenenlitanie"
+        title: "(13) Katechumenenlitanie"
+
+      - type: item
+        file: "033-(14) gelovigenlitanie"
+        title: "(14) Gelovigenlitanie"
+
+      - type: group
+        title: "(15) Cherubijnen hymnes"
+        items:
+
+          - type: item
+            file: "034-(15c) cherubijnen hymne (kastorski - nl)"
+            title: "(15c) Cherubijnen hymne (NL)"
+
+          - type: item
+            file: "034-(15c) cherubijnen hymne (kastorski - ru)"
+            title: "(15c) Cherubijnen hymne (RU)"
+
+          - type: link
+            url: "https://www.universaledition.com/en/Works/Cherubim/P0213837"
+            title: "Cherubijnen hymne (copyright)"
+
+      - type: item
+        file: "035-(16) vragende litanie"
+        title: "(16) Vragende Litanie"
