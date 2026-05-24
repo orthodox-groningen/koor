@@ -1,22 +1,23 @@
 {{ $title := .Get "title" }}
 {{ $groupDir := .Get "dir" | default "" }}
-{{ $scratchKey := "koorGroupDirs" }}
-{{ $stack := .Page.Scratch.Get $scratchKey | default (slice) }}
+{{ $inner := .Inner }}
 {{ if ne $groupDir "" }}
-  {{ $stack = $stack | append $groupDir }}
-  {{ .Page.Scratch.Set $scratchKey $stack }}
+  {{ $pattern := `\{\{<\s*koor-item\b[\s\S]*?>\}\}` }}
+  {{ $matches := findRE $pattern $inner }}
+  {{ range $matches }}
+    {{ $m := . }}
+    {{ if not (in $m "dir=") }}
+      {{ $withdir := replace $m "{{< koor-item" (printf "{{< koor-item dir=\"%s\"" $groupDir) }}
+      {{ $inner = replace $inner $m $withdir }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 <section class="koor-group">
   <details class="koor-group">
     <summary><strong>{{ $title }}</strong></summary>
     <div class="koor-group-content">
-      {{ .Inner }}
+      {{ $inner | safeHTML }}
     </div>
   </details>
 </section>
-
-{{ if ne $groupDir "" }}
-  {{ $stack = slice 0 (sub (len $stack) 1) }}
-  {{ .Page.Scratch.Set $scratchKey $stack }}
-{{ end }}

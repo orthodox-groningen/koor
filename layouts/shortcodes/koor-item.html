@@ -1,8 +1,10 @@
 {{ $title := .Get "title" }}
+{{ $page := .Page }}
 {{ $dir := .Get "dir" | default "" }}
 {{ $base := .Get "base" }}
 {{ if eq $dir "" }}
-  {{ $groupDirs := .Page.Scratch.Get "koorGroupDirs" | default (slice) }}
+  {{ $groupDirs := $page.Scratch.Get "koorGroupDirs" | default (slice) }}
+  {{ printf "<!-- groupDirs=%q dir=%q -->" (delimit $groupDirs ",") $dir | safeHTML }}
   {{ if gt (len $groupDirs) 0 }}
     {{ $dir = index $groupDirs (sub (len $groupDirs) 1) }}
   {{ end }}

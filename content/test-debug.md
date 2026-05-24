@@ -11,24 +11,29 @@ Deze pagina bestaat voor ontwikkelaars om shortcodes mee te debuggen.
 ---
 
 {{< koor-item
-    title="Prokimen en Alleluja (toon 1)"
-    dir="/koormappen/test"
+    title="test met pdf en audio bestanden"
+    dir="/koormappen/testmap"
     base="test-2"
+>}}
+
+{{< koor-item  
+    title="Voetnoot"
+    dir="/koormappen/heilige-liturgie" 
+    file="voetnoot-bij-prokimen-melodien"
 >}}
 
 ---
 
-<!--
 ## Koor-group
 
 ---
 
 {{< koor-group title="Toon 1" dir="/koormappen/heilige-liturgie" >}}
-    {{< koor-item  base="021-prokimen-alleluja-toon-1" title="Prokimen en Alleluja (bladmuziek)" >}}
-    {{< koor-item  base="021-prokimen-zondag-toon-1"   title="Prokimen van de zondag (audio))" >}}
-    {{< koor-item  base="021-alleluja-toon-1"          title="Alleluja (audio)" >}}
-    {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+    {{< koor-item  base="021-prokimen-alleluja-toon-1" title="PDF (bladmuziek)" >}}
+    {{< koor-item  base="test-2"                       title="Spul uit de testmap"   dir="/koormappen/testmap" >}}
+    {{< koor-item  base="021-prokimen-zondag-toon-1"   title="Audio zonder dir-param" >}}
+    {{< koor-item  base="021-alleluja-toon-1"          title="Audio met dir-param"  dir="/koormappen/heilige-liturgie" >}}
+    <!-- {{< koor-item  file="voetnoot-bij-prokimen-melodien" title="Voetnoot" dir="/koormappen/heilige-liturgie" >}} -->
 {{< /koor-group >}}
 
 ---
--->

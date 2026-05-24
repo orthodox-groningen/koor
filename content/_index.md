@@ -21,3 +21,6 @@ draft: false
 
 - [Lees README op GitHub](https://github.com/orthodox-groningen/koor/blob/main/README.md) (voor ontwikkeltips e.d.)
 - [Test pagina](test-pagina) geeft voorbeelden (van het gebruik) van een aantal shortcodes.
+
+- [test.md](test)
+- [test-debug.md](test-debug)
