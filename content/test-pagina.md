@@ -77,9 +77,26 @@ Een `koor-group` groepeert meerdere `koor-item`-shortcodes onder één titel. Al
 
 ### Voorbeeld
 
-{{< koor-group title="Heilige Liturgie Tonen" dir="/koormappen/heilige-liturgie" >}}
-  {{< koor-item title="Toon 1 - Prokimen" base="021-prokimen-alleluja-toon-1" >}}
-  {{< koor-item title="Toon 2 - Prokimen" base="022-prokimen-alleluja-toon-2" >}}
+<!--
+  Waarschuwing: dit codeblok gebruikt onzichtbare escape-tekens zodat Hugo
+  de shortcode niet uitvoert in de bronweergave. Bewerk de regels alleen als
+  je deze escapes behoudt of op dezelfde manier vervangt.
+-->
+
+````
+{{< koor-group title="Toon 1" dir="/koormappen/heilige-liturgie" >}}
+    {{< koor-item  base="021-prokimen-alleluja-toon-1" title="Prokimen en Alleluja (bladmuziek)" >}}
+    {{< koor-item  base="021-prokimen-zondag-toon-1"   title="Prokimen van de zondag (audio))" >}}
+    {{< koor-item  base="021-alleluja-toon-1"          title="Alleluja (audio)" >}}
+    {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
+{{< /koor-group >}}
+````
+
+{{< koor-group title="Toon 1" dir="/koormappen/heilige-liturgie" >}}
+    {{< koor-item  base="021-prokimen-alleluja-toon-1" title="Prokimen en Alleluja (bladmuziek)" >}}
+    {{< koor-item  base="021-prokimen-zondag-toon-1"   title="Prokimen van de zondag (audio))" >}}
+    {{< koor-item  base="021-alleluja-toon-1"          title="Alleluja (audio)" >}}
+    {{< include-md file="voetnoot-bij-prokimen-melodien" title="Voetnoot" >}}
 {{< /koor-group >}}
 
 In dit voorbeeld gebruiken de `koor-item`-shortcodes dezelfde directory als de groep, zonder dat die per item herhaald hoeft te worden.
