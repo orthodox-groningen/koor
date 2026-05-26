@@ -2,6 +2,7 @@
 # BEHEERCONSTRAINTS (VERPLICHT)
 #
 # 1. ALTIJD EXACT 1 ROOT KEY: items
+#
 # 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
 #    - item   → bestand of media
 #    - group  → geneste structuur

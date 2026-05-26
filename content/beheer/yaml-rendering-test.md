@@ -1,5 +1,5 @@
 ---
-title: "YAML-based rendering test"
+title: "Test voor YAML-gebaseerde rendering"
 ---
 
 ## Kleine test
