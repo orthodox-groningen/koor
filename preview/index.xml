@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Koor mappen on Koormappen</title><link>https://orthodox-groningen.github.io/koor/preview/</link><description>Recent content in Koor mappen on Koormappen</description><generator>Hugo</generator><language>nl-NL</language><atom:link href="https://orthodox-groningen.github.io/koor/preview/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</guid><description>&lt;p&gt;dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.&lt;/p&gt;</description></item><item><title/><link>https://orthodox-groningen.github.io/koor/preview/snippets/voetnoot-bij-prokimen-melodien/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/snippets/voetnoot-bij-prokimen-melodien/</guid><description>&lt;p&gt;Deze prokimen-melodieën komen precies overeen met de oorspronkelijke melodieën
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Koor mappen on Koormappen</title><link>https://orthodox-groningen.github.io/koor/preview/</link><description>Recent content in Koor mappen on Koormappen</description><generator>Hugo</generator><language>nl-NL</language><atom:link href="https://orthodox-groningen.github.io/koor/preview/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://orthodox-groningen.github.io/koor/preview/beheer/beheer-handleiding-render-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/beheer-handleiding-render-data/</guid><description>&lt;h1 id="beheerhandleiding"&gt;Beheerhandleiding&lt;/h1&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Dit document is ooit gegenereerd en moet nog op 
+bruikbaarheid en consistentie worden gecontroleerd.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Deze handleiding is bedoeld voor degenen die het dagelijkse beheer uitvoeren van koormappen en hun inhoud.
+De handleiding beschrijft eerst de ruwe opzet van het beheer, en gaat vervolgens in op de details.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-beheersstructuur"&gt;1. Beheersstructuur&lt;/h2&gt;
+&lt;p&gt;Om koormappen en hun inhoud te beheren moet duidelijk zijn wat we daaronder verstaan,
+uit welke bestanden dat allemaal bestaat en waar die te vinden zijn.&lt;/p&gt;</description></item><item><title/><link>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-render-architectuur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-render-architectuur/</guid><description>&lt;h1 id="yaml-render-architectuur-technische-referentie"&gt;YAML Render Architectuur (Technische Referentie)&lt;/h1&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Dit document is ooit gegenereerd en moet nog op 
+bruikbaarheid en consistentie worden gecontroleerd.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Deze site gebruikt een YAML-gebaseerde render-architectuur voor het beheren en renderen van koormappen, media-assets en geneste groepen.&lt;/p&gt;
+&lt;p&gt;De architectuur is ontworpen om:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;robuust te zijn binnen Hugo&lt;/li&gt;
+&lt;li&gt;diepe nesting te ondersteunen&lt;/li&gt;
+&lt;li&gt;onderhoudbare YAML mogelijk te maken&lt;/li&gt;
+&lt;li&gt;herhaling van paden te vermijden&lt;/li&gt;
+&lt;li&gt;shortcode-complexiteit te vermijden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="1-architectuuroverzicht"&gt;1. Architectuuroverzicht&lt;/h2&gt;
+&lt;p&gt;De architectuur bestaat uit:&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Onderdeel&lt;/th&gt;
+					&lt;th&gt;Locatie&lt;/th&gt;
+					&lt;th&gt;Opmerkingen&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Markdown pagina&amp;rsquo;s&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;/content/&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Hierbinnen kunnen zo nodig subdirectories worden gebruikt.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;YAML datasets&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;/data/&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Hierbinnen kunnen subdirectories worden gebruikt die als &lt;code&gt;group&lt;/code&gt; moeten worden opgegeven in de `render-data shortcode.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Shortcode&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;/layouts/shortcodes/render-data.html&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Syntax: &lt;code&gt;{{&amp;lt; render-data group=&amp;quot;{{subdir}}&amp;quot; source=&amp;quot;{{filenaam}}&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Tree renderer&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;/layouts/partials/render-tree.html&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Asset resolver&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;/layouts/partials/resolve-item.html&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Inhoudelijke bestanden&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;/static/&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Hierbinnen kunnen zo nodig subdirectories worden gebruikt.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="2-werking-in-grote-lijnen"&gt;2. Werking in grote lijnen&lt;/h2&gt;
+&lt;p&gt;Een markdown-bestand bevat:&lt;/p&gt;</description></item><item><title/><link>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/snippets/test-snippet/</guid><description>&lt;p&gt;dit is een test snippet. De bedoeling is dat deze tekst wordt ge-include in een &amp;rsquo;echt&amp;rsquo; content .md bestand.&lt;/p&gt;</description></item><item><title/><link>https://orthodox-groningen.github.io/koor/preview/snippets/voetnoot-bij-prokimen-melodien/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/snippets/voetnoot-bij-prokimen-melodien/</guid><description>&lt;p&gt;Deze prokimen-melodieën komen precies overeen met de oorspronkelijke melodieën
 die al eeuwen lang in de Russish-orthodoxe kerk gebruikt worden.&lt;/p&gt;
 &lt;p&gt;Zij die gewend zijn aan de eerdere prokimen-melodieën, moeten bedenken dat deze
 weliswaar teruggingen op dezelfde melodieën uit het vaste Russisch-orthodoxe corpus,
@@ -35,7 +101,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fdideba%20senda%20%28georgisch%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fdideba%20senda%20%28georgisch%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Dideba senda (georgisch)"&gt;
@@ -95,7 +161,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmamao%20chveno%20-%20gebed%20%28georgisch%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmamao%20chveno%20-%20gebed%20%28georgisch%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Mamao chveno - gebed (georgisch)"&gt;
@@ -216,7 +282,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmamao%20chveno%20%28nana%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmamao%20chveno%20%28nana%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Mamao chveno (nana)"&gt;
@@ -276,7 +342,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmamao%20tsjveno%20%28giwi%20alaznispirely%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmamao%20tsjveno%20%28giwi%20alaznispirely%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Mamao tsjveno (giwi alaznispirely)"&gt;
@@ -336,7 +402,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmijn%20smeking%20%28georgisch%2c%20nana%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmijn%20smeking%20%28georgisch%2c%20nana%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Mijn smeking (georgisch, nana)"&gt;
@@ -396,7 +462,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmy%20soul%2c%20my%20soul%2c%20get%20up%2c%20why%20are%20you%20sleeping%20%28nana%20-%20georgisch%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmy%20soul%2c%20my%20soul%2c%20get%20up%2c%20why%20are%20you%20sleeping%20%28nana%20-%20georgisch%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor My soul, my soul, get up, why are you sleeping"&gt;
@@ -456,7 +522,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fvai%20ra%20kargi%20sachio%20-%20happy%20easter%20%28georgisch%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fvai%20ra%20kargi%20sachio%20-%20happy%20easter%20%28georgisch%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Vai ra kargi sachio - happy easter (georgisch)"&gt;
@@ -532,7 +598,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2faan%20de%20stromen%20van%20babylon.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2faan%20de%20stromen%20van%20babylon.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Aan de stromen van babylon"&gt;
@@ -592,7 +658,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fcherubijnenhymne%20%28kastorsky%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fcherubijnenhymne%20%28kastorsky%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Cherubijnenhymne (kastorsky)"&gt;
@@ -652,7 +718,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fgij%20allen%20die%20in%20christus%20zijt%20gedoopt%20%28lirin%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fgij%20allen%20die%20in%20christus%20zijt%20gedoopt%20%28lirin%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Gij allen die in Christus zijt gedoopt (lirin)"&gt;
@@ -728,7 +794,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fagni%20parthene.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fagni%20parthene.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Agni Parthene"&gt;
@@ -788,7 +854,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fbcex%20ckopsya...%20%28russisch%20met%20uitspraak%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fbcex%20ckopsya...%20%28russisch%20met%20uitspraak%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor bcex ckopsya... (russisch met uitspraak)"&gt;
@@ -848,7 +914,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fbcex%20ckopsya...%20%28russisch%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fbcex%20ckopsya...%20%28russisch%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor bcex ckopsya... (russisch)"&gt;
@@ -908,7 +974,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fbogoroditse%20devo%20-%20verheug%20u%20maagd.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fbogoroditse%20devo%20-%20verheug%20u%20maagd.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Bogoroditse Devo - verheug u maagd"&gt;
@@ -968,7 +1034,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmnogaja%20ljeta%20-%20drievoudig%20feestelijk.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmnogaja%20ljeta%20-%20drievoudig%20feestelijk.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Mnogaja ljeta - drievoudig feestelijk"&gt;
@@ -1028,7 +1094,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmolitwa%20iisusowa.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmolitwa%20iisusowa.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Molitwa Iisusowa"&gt;
@@ -1088,7 +1154,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fo%20pure%20virgin%20%28russisch%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fo%20pure%20virgin%20%28russisch%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor O pure virgin"&gt;
@@ -1164,7 +1230,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmiluieste%20ma%20%28roemeens%20-%20in%20C%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmiluieste%20ma%20%28roemeens%20-%20in%20C%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Miluieste ma (roemeens)"&gt;
@@ -1224,7 +1290,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmiluieste%20ma%20%28roemeens%20-%202%20mollen%29.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2fconcert%2fmiluieste%20ma%20%28roemeens%20-%202%20mollen%29.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Miluieste ma (roemeens - 2 mollen)"&gt;
@@ -6270,7 +6336,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
 
  &lt;/div&gt;
  &lt;/details&gt;
-&lt;/section&gt;</description></item><item><title>Shortcodes debug pagina</title><link>https://orthodox-groningen.github.io/koor/preview/test-debug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/test-debug/</guid><description>&lt;p&gt;Deze pagina bestaat voor ontwikkelaars om shortcodes mee te debuggen.&lt;/p&gt;
+&lt;/section&gt;</description></item><item><title>Shortcodes debug pagina</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-debug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-debug/</guid><description>&lt;p&gt;Deze pagina bestaat voor ontwikkelaars om shortcodes mee te debuggen.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="koor-item"&gt;Koor-item&lt;/h2&gt;
 &lt;hr&gt;
@@ -6299,7 +6365,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
 
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2ftestmap%2ftest-2.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2ftestmap%2ftest-2.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor test met pdf en audio bestanden"&gt;
@@ -6532,7 +6598,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  
  &lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2ftestmap%2ftest-2.pdf&amp;v=1779662195"
+ data-src="./pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2ftestmap%2ftest-2.pdf&amp;v=1779829559"
  width="100%"
  height="800"
  title="Bladmuziek voor Spul uit de testmap"&gt;
@@ -6779,24 +6845,7 @@ prokimen-melodieën lange tijd verkeerd in een behoeftige staat.&lt;/p&gt;</desc
  &lt;/details&gt;
 &lt;/section&gt;
 
-&lt;hr&gt;</description></item><item><title>Voorbeelden van shortcodes</title><link>https://orthodox-groningen.github.io/koor/preview/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/test-pagina/</guid><description>&lt;p&gt;Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="spacer"&gt;Spacer&lt;/h2&gt;
-&lt;p&gt;De &lt;code&gt;spacer&lt;/code&gt; shortcode voegt verticale ruimte toe. Gebruik &lt;code&gt;h&lt;/code&gt; voor de hoogte (bijv. &lt;code&gt;1em&lt;/code&gt;, &lt;code&gt;2rem&lt;/code&gt;, &lt;code&gt;20px&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Live voorbeeld:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Deze tekst staat voor de short-code die een lege ruimte toevoegt van &lt;code&gt;3em&lt;/code&gt;.
-&lt;div style="height: 3em;"&gt;&lt;/div&gt;
-Deze tekst staat erachter.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Voorbeeld (hoe te schrijven):&lt;/strong&gt;&lt;/p&gt;
-&lt;!--
- Waarschuwing: dit codeblok bevat onzichtbare escape-tekens om te voorkomen
- dat Hugo de shortcode-syntax uitvoert. Laat deze regels ongemoeid als je het
- voorbeeld aanpast.
---&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;{{​&amp;lt; spacer h=&amp;#34;2em&amp;#34; &amp;gt;​}}
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id="koor-item"&gt;Koor-item&lt;/h2&gt;
-&lt;p&gt;Een &lt;code&gt;koor-item&lt;/code&gt; is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF en ook audio bestanden voor individuele stemmen (S, A, T, B) en samen (SATB).&lt;/p&gt;</description></item><item><title>YAML-based rendering test</title><link>https://orthodox-groningen.github.io/koor/preview/test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/test/</guid><description>&lt;h2 id="kleine-test"&gt;Kleine test&lt;/h2&gt;
+&lt;hr&gt;</description></item><item><title>Test voor YAML-gebaseerde rendering</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-rendering-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-rendering-test/</guid><description>&lt;h2 id="kleine-test"&gt;Kleine test&lt;/h2&gt;
 &lt;ul&gt;&lt;li&gt;
  &lt;strong&gt;GROUP: Test 1 - eenvoudige item-list&lt;/strong&gt;&lt;br&gt;
  &lt;span style="font-size:12px;color:gray"&gt;
@@ -7460,4 +7509,38 @@ Deze tekst staat erachter.&lt;/p&gt;
  &lt;/li&gt;&lt;/ul&gt;
 
  &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;/ul&gt;</description></item></channel></rss>
+ &lt;/li&gt;&lt;/ul&gt;</description></item><item><title>Voorbeelden van shortcodes</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</guid><description>&lt;p&gt;Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="spacer"&gt;Spacer&lt;/h2&gt;
+&lt;p&gt;De &lt;code&gt;spacer&lt;/code&gt; shortcode voegt verticale ruimte toe. Gebruik &lt;code&gt;h&lt;/code&gt; voor de hoogte (bijv. &lt;code&gt;1em&lt;/code&gt;, &lt;code&gt;2rem&lt;/code&gt;, &lt;code&gt;20px&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Live voorbeeld:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Deze tekst staat voor de short-code die een lege ruimte toevoegt van &lt;code&gt;3em&lt;/code&gt;.
+&lt;div style="height: 3em;"&gt;&lt;/div&gt;
+Deze tekst staat erachter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Voorbeeld (hoe te schrijven):&lt;/strong&gt;&lt;/p&gt;
+&lt;!--
+ Waarschuwing: dit codeblok bevat onzichtbare escape-tekens om te voorkomen
+ dat Hugo de shortcode-syntax uitvoert. Laat deze regels ongemoeid als je het
+ voorbeeld aanpast.
+--&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;{{​&amp;lt; spacer h=&amp;#34;2em&amp;#34; &amp;gt;​}}
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id="koor-item"&gt;Koor-item&lt;/h2&gt;
+&lt;p&gt;Een &lt;code&gt;koor-item&lt;/code&gt; is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF en ook audio bestanden voor individuele stemmen (S, A, T, B) en samen (SATB).&lt;/p&gt;</description></item><item><title>Voorbeelden van shortcodes</title><link>https://orthodox-groningen.github.io/koor/preview/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/test-pagina/</guid><description>&lt;p&gt;Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="spacer"&gt;Spacer&lt;/h2&gt;
+&lt;p&gt;De &lt;code&gt;spacer&lt;/code&gt; shortcode voegt verticale ruimte toe. Gebruik &lt;code&gt;h&lt;/code&gt; voor de hoogte (bijv. &lt;code&gt;1em&lt;/code&gt;, &lt;code&gt;2rem&lt;/code&gt;, &lt;code&gt;20px&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Live voorbeeld:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Deze tekst staat voor de short-code die een lege ruimte toevoegt van &lt;code&gt;3em&lt;/code&gt;.
+&lt;div style="height: 3em;"&gt;&lt;/div&gt;
+Deze tekst staat erachter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Voorbeeld (hoe te schrijven):&lt;/strong&gt;&lt;/p&gt;
+&lt;!--
+ Waarschuwing: dit codeblok bevat onzichtbare escape-tekens om te voorkomen
+ dat Hugo de shortcode-syntax uitvoert. Laat deze regels ongemoeid als je het
+ voorbeeld aanpast.
+--&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;{{​&amp;lt; spacer h=&amp;#34;2em&amp;#34; &amp;gt;​}}
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id="koor-item"&gt;Koor-item&lt;/h2&gt;
+&lt;p&gt;Een &lt;code&gt;koor-item&lt;/code&gt; is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF en ook audio bestanden voor individuele stemmen (S, A, T, B) en samen (SATB).&lt;/p&gt;</description></item></channel></rss>

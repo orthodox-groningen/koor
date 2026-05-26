@@ -1,0 +1,81 @@
+<!doctype html><html lang=nl><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Koormappen en audio bestanden van (voornamelijk) de russisch-orthodoxe parochie in Groningen"><title>| Koormappen</title><link rel=stylesheet href=../../style.css></head><body><header class=site-header><div class=site-header-content><img src=../../orthodox-kruis-min.jpg alt="Orthodox kruis" class=header-logo><p class=header-title>Koormappen Groningen</p></div></header><main><article class=page-article><header class=page-header><h1></h1></header><div class=page-content><h1 id=beheerhandleiding>Beheerhandleiding</h1><pre tabindex=0><code>Dit document is ooit gegenereerd en moet nog op 
+bruikbaarheid en consistentie worden gecontroleerd.
+</code></pre><p>Deze handleiding is bedoeld voor degenen die het dagelijkse beheer uitvoeren van koormappen en hun inhoud.
+De handleiding beschrijft eerst de ruwe opzet van het beheer, en gaat vervolgens in op de details.</p><hr><h2 id=1-beheersstructuur>1. Beheersstructuur</h2><p>Om koormappen en hun inhoud te beheren moet duidelijk zijn wat we daaronder verstaan,
+uit welke bestanden dat allemaal bestaat en waar die te vinden zijn.</p><ol><li><p>De <strong>inhoud van koormappen</strong> bestaat uit &rsquo;liederen&rsquo;, waarbij elk &rsquo;lied&rsquo; op verschillende
+manieren kan worden gerepresenteerd, bijvoorbeeld als audio, als muziek-tekst, enz.
+Daarom is aan elk lied een verzameling bestanden (audio, pdf&rsquo;s, afbeeldingen enz.)
+gerelateerd die elk op hun eigen wijze een lied representeren.</p></li><li><p>Een <strong>liednaam</strong> is een tekst die gebruikt wordt om naar een lied te verwijzen.
+Op dit moment zijn er nog geen conventies voor het kiezen van liednamen,
+maar het is goed denkbaar dat die er op enig moment zullen komen.</p></li><li><p>Een <strong>representatie label</strong> is een tekst die, wanneer hij achter een liednaam wordt geplakt,
+de filenaam is van het bestand dat de betreffende representatie van het lied is dat door
+de liednaam wordt geidentificeerd. Voorbeelden van representatie-labels zijn:</p></li></ol><ul><li><code>.pdf</code>, <code>.jpg</code>, <code>.png</code> voor visuele representaties, bijvoorbeeld van teksten en/of muziek;</li><li><code>.mp3</code> voor audio bestanden die het lied laten horen;</li><li><code>-s.mp3</code>, <code>-a.mp3</code>, <code>-t.mp3</code>, <code>-b.mp3</code> voor audiobestanden die de individuele zangstemmen
+van het lied laten horen</li></ul><ol start=4><li>Alle bestanden die hetzelfde lied (op verschillende manieren) representeren staan in dezelfde directory.
+Op dit moment staan al dit soort bestanden in <code>/static/koormappen/</code>, maar dat kan veranderen.
+Het lied met liednaam <code>002-(1a) vredeslitanie</code> kan door verschillende bestanden worden gerepresenteerd,</li></ol><ul><li><code>002-(1a) vredeslitanie.pdf</code> voor de muziek met tekst van het lied die kan worden afgedrukt,</li><li><code>002-(1a) vredeslitanie.mp3</code> voor een gezongen versie van het lied die kan worden afgespeeld,</li><li><code>002-(1a) vredeslitanie-s.mp3</code> voor een afspeelbare versie van de sopraan-partij van het lied,</li><li>enzovoorts.</li></ul><ol start=5><li>Een <strong>koormap</strong> bestaat uit een lijst (van lijsten) van liederen, die wordt gespecificeerd
+als een <a href=https://yaml.com/resources/>YAML</a> bestand. Deze yaml-bestanden staan in (een subdirectory)
+van de directory <code>/data/</code>.
+De structuur van deze yaml bestanden is beschreven in het hoofdstuk <a href=#yaml-bestand>YAML bestanden</a>.</li></ol><hr><h2 id=koormap-bestand>2. Koormap pagina&rsquo;s</h2><p>Elke koormap heeft een eigen <code>.md</code> bestand (in directory <code>/content/</code>). Je mag zelf de bestandsnaam kiezen
+en zorg er ook voor dat de home pagina <code>/content/_index.md</code> een link naar dit bestand bevat.</p><p>De pagina zelf kun je opmaken zoals je wilt. Ergens op die pagina wil je de inhoud van de koormap laten zien.
+Op die plaats zet je de volgende shortcode neer:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span>{{&lt; render-data group=&#34;{{group}}&#34; source=&#34;{{source}}&#34; &gt;}}
+</span></span></code></pre></div><p>waarbij:</p><table><thead><tr><th>Parameter</th><th>Betekenis</th></tr></thead><tbody><tr><td>group</td><td>de map onder <code>/data/</code> waar het yaml bestand staat dat de inhoud van de koormap specificeert</td></tr><tr><td>source</td><td>naam van het YAML bestand (zonder de extensie <code>.yaml</code>)</td></tr></tbody></table><p>Het yaml bestand <code>/data/{{group}}/{{source}}.yaml</code> beschrijft dan de inhoud van de betreffende koormap.
+<a href=#yaml-bestand>Verderop</a> staat hoe zo&rsquo;n .yaml-bestand er uit moet zien.</p><p><strong>Voorbeeld</strong>: de koormap die in Groningen wordt gebruikt voor de Goddelijke Liturgie kun je
+dus renderen via de volgende shortcode:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span>{{&lt; render-data group=&#34;groningen&#34; source=&#34;goddelijke-liturgie&#34; &gt;}}
+</span></span></code></pre></div><p>en de inhoud van deze koormap wordt dan dus beschreven in het bestand <code>/data/groningen/goddelijke-liturgie.yaml</code>.</p><hr><h2 id=yaml-bestand>4. YAML bestanden</h2><p>De inhoud van elke koormap wordt gespecificeerd door een .yaml bestand.
+De .yaml bestanden zitten in mappen <code>/data/{{group}}/</code>,
+waarbij <code>{{group}}</code> de naam is van de locatie waar de map wordt gebruikt,</p><p>Voorbeeld:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>/data/groningen/goddelijke-liturgie.yaml
+</span></span></code></pre></div><p>De .yaml bestanden zijn gestructureerde tekst-bestanden waarin de inhoud
+is opgeschreven in <a href=https://yaml.com/resources/>YAML</a>.</p><p>Wij gebruiken de volgende yaml structuur:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#75715e># 1. ELK YAML BESTAND BEGINT ALTIJD MET EXACT 1 ROOT KEY: items.</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    ER ZIJN GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#    (dus `- title:` direct op root level mag niet)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>items</span>: 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># ALLE ENTITIES ONDER DE ROOT KEY MOETEN EEN `type` HEBBEN:</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - item   → bestand of media</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - group  → geneste structuur</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - include → herbruikbare tekst/snippet</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - link   → externe URL</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># HIERONDER VOLGEN VOORBEELDEN HIERVAN</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># een entiteit van het type &#39;group&#39; mag of moet alleen de volgende elementen bevatten:</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - title (verplicht) → tekst die in de inhoudsopgave wordt getoond</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - base  (optioneel) → pad, relatief tov de omliggende structuur, </span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                       dat het base-pad voor de group-items specificeert</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - items (verplicht) → een lijst van de items in de group structuur.</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;(15) Cherubijnen hymnes&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Een entiteit van het type `item` mag of moet de volgende elementen bevatten:</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - title (verplicht) → tekst die in de inhoudsopgave wordt getoond</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - file  (verplicht) → tekst die gebruikt wordt als eerste deel van inhouds-bestanden</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - dir   (optioneel) → pad, relatief tov `/static/`, waar de inhouds-bestanden staan</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                       (default is het pad, relatief tov `/static/`, dat is geconstrueerd uit</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                        de `base` parameters van omliggende entiteiten van het type `group`)</span>
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;(15c) Cherubijnen hymne (NL, Kastorski)&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;034-(15c) cherubijnen hymne (kastorski - nl)&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;(15c) Cherubijnen hymne (KS, Kastorski)&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;034-(15c) cherubijnen hymne (kastorski - ru)&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>dir</span>: <span style=color:#e6db74>&#34;/koormappen/goddelijke-liturgie&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Een entiteit van het type `link` mag of moet de volgende elementen bevatten:</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - title (verplicht) → tekst die in de inhoudsopgave wordt getoond</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - url   (verplicht) → URL waar de inhoud van de entiteit wordt getoond.</span>
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>link</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Cherubijnen hymne (copyright)&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>url</span>: <span style=color:#e6db74>&#34;https://www.universaledition.com/en/Works/Cherubim/P0213837&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Een entiteit van het type `include` mag of moet de volgende elementen bevatten:</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - title (verplicht) → tekst die in de inhoudsopgave wordt getoond</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># - file  (verplicht) → pad+bestandsnaam (zonder extensie), relatief tov `/content/`, </span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#                       van het markdown file dat wordt ge-include</span>
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>include</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Voetnoot&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;includes/voetnoot-bij-prokimen-melodien&#34;</span>
+</span></span></code></pre></div></div></article></main><footer class=site-footer><div class=site-footer-content><div class=footer-main><p>(C) 2026 RO Parochie Groningen.</p><p class=site-footer-updated>Laatst bijgewerkt: 26-05-2026</p></div></div></footer><script>function initTabs(){document.querySelectorAll(".tabs-container").forEach(e=>{const t=e.querySelectorAll(".tab-trigger"),n=e.querySelectorAll(".tab-pane");t.forEach(s=>{s.addEventListener("click",()=>{const i=s.getAttribute("data-tab");t.forEach(e=>e.classList.remove("active")),n.forEach(e=>e.classList.remove("active")),s.classList.add("active");const o=e.querySelector(`.tab-pane[data-tab="${i}"]`);o&&o.classList.add("active")})})})}document.addEventListener("DOMContentLoaded",function(){initTabs(),document.querySelectorAll(".audio-buttons").forEach(function(e){const t=e.querySelectorAll(".audio-select-btn"),n=e.closest(".koor-item-audio").querySelector("audio"),o=JSON.parse(e.dataset.audioOptions);function s(e){t.forEach(e=>e.classList.remove("active")),e.classList.add("active")}t.forEach(function(e){e.addEventListener("click",function(){const e=this.dataset.audioSrc,t=this.dataset.audioType;n.src=e,n.load(),s(this)})}),t.length>0&&t[0].click()}),document.querySelectorAll("details.koor-item").forEach(function(e){e.addEventListener("toggle",function(){if(this.open){const e=this.querySelector(".koor-item-pdf iframe[data-src]");e&&!e.src&&(e.src=e.dataset.src)}})})})</script></body></html>
