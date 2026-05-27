@@ -25,18 +25,16 @@
 items:
 
   - type: group
-    title: "Test 1 - eenvoudige item-list"
+    title: "Eenvoudige item-list"
     base: "koormappen/testmap"
     items:
-
       - type: item
-        file: "test-2-A.mp3"
-        title: "test-2-A.mp3"
-
+        title: "Testlied"
+        file: "test"
       - type: item
+        title: "Kruisje"
         dir: "images"
-        file: "kruisje.jpg"
-        title: "kruisje.jpg"
+        file: "kruisje"
 
   - type: group
     title: "Test 2 - nesting 2 diep"
@@ -45,38 +43,32 @@ items:
 
       - type: group
         base: "testmap"
-        title: "testmap"
+        title: "Testmap"
         items:
-
           - type: item
-            file: "test-2-A.mp3"
-            title: "test-2-A.mp3"
-
+            title: "Test-A"
+            file: "test-A"
           - type: item
+            title: "Kruisje"
             dir: "images"
-            file: "kruisje.jpg"
-            title: "kruisje.jpg"
+            file: "kruisje"
 
   - type: group
     title: "Test 3 - nesting 3 diep"
     base: "koormappen"
     items:
-
       - type: group
         base: "testmap"
         title: "testmap"
         items:
-
           - type: group
             base: "images"
             title: "images"
             items:
-
               - type: item
-                file: "kruisje.jpg"
-                title: "kruisje.jpg"
-
+                title: "Kruisje"
+                file: "kruisje"
               - type: item
+                title: "Nestest"
                 dir: "api"
-                file: "nestest.md"
-                title: "nestest.md"
+                file: "nestest"
