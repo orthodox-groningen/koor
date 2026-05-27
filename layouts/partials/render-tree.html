@@ -1,66 +1,81 @@
-{{- $base := .base | default "" -}}
+﻿{{- $base := .base | default "" -}}
 {{- $items := .items -}}
 
-<ul>
-
+<ul class="koor-list">
 {{- range $items -}}
+  {{- $type := .type | default "item" -}}
 
-  {{- if eq .type "group" -}}
-
+  {{- if eq $type "group" -}}
     {{- $nextBase := $base -}}
-
     {{- if .base -}}
       {{- $nextBase = printf "%s/%s" $base .base -}}
       {{- $nextBase = $nextBase | replaceRE "//+" "/" -}}
     {{- end -}}
 
     <li>
-
-      <strong>{{ .title }}</strong>
-
-      {{ partial "render-tree.html" (dict
-        "base" $nextBase
-        "items" .items
-      ) }}
-
+      <section class="koor-group">
+        <details class="koor-group">
+          <summary><strong>{{ .title }}</strong></summary>
+          <div class="koor-group-content">
+            {{ partial "render-tree.html" (dict "base" $nextBase "items" .items) }}
+          </div>
+        </details>
+      </section>
     </li>
 
-  {{- else if eq .type "item" -}}
-
+  {{- else if eq $type "item" -}}
     {{- $finalBase := $base -}}
-
     {{- if .dir -}}
       {{- $finalBase = printf "%s/%s" $finalBase .dir -}}
       {{- $finalBase = $finalBase | replaceRE "//+" "/" -}}
     {{- end -}}
 
-    {{ partial "render-item.html" (dict
-      "title" .title
-      "base" $finalBase
-      "file" .file
-      "link" .link
-    ) }}
-
-  {{- else if eq .type "link" -}}
-
     <li>
-      <a href="{{ .url }}">{{ .title }}</a>
+      {{ partial "render-item.html" (dict
+        "title" .title
+        "base" $finalBase
+        "file" .file
+      ) }}
     </li>
 
-  {{- else if eq .type "include" -}}
-
+  {{- else if eq $type "link" -}}
     <li>
-      INCLUDE → {{ .file }}
+      <details class="koor-item">
+        <summary><strong>{{ .title }}</strong></summary>
+        <div class="koor-item-content">
+          <div class="koor-item-external-link">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+              Open externe bron
+            </a>
+          </div>
+        </div>
+      </details>
+    </li>
+
+  {{- else if eq $type "include" -}}
+    <li>
+      <details class="koor-item">
+        <summary><strong>{{ .title }}</strong></summary>
+        <div class="koor-item-content">
+          {{- $includePath := printf "content/%s.md" (replaceRE "^/+" "" .file) -}}
+          {{- if fileExists $includePath -}}
+            {{- readFile $includePath | markdownify -}}
+          {{- else -}}
+            <pre style="color:red">ERROR: include file not found: {{ $includePath }}</pre>
+          {{- end -}}
+        </div>
+      </details>
     </li>
 
   {{- else -}}
-
-    <li style="color:red">
-      UNKNOWN TYPE → {{ .type }}
+    <li>
+      <details class="koor-item">
+        <summary><strong>{{ .title }}</strong></summary>
+        <div class="koor-item-content">
+          <pre style="color:red">ERROR: onbekend type '{{ .type }}'</pre>
+        </div>
+      </details>
     </li>
-
   {{- end -}}
-
 {{- end -}}
-
 </ul>

@@ -242,6 +242,21 @@ ul, ol {
   margin: 1rem 0 1rem 1.5rem;
 }
 
+.koor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.koor-list > li {
+  margin-bottom: 0.5rem;
+}
+
+.koor-list .koor-group,
+.koor-list .koor-item {
+  margin-bottom: 0.5rem;
+}
+
 li {
   margin-bottom: 0.5rem;
 }
@@ -975,10 +990,9 @@ nav a:hover {
 }
 
 @media (min-width: 768px) {
-  /* Two column layout for larger screens */
   .koor-item-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
