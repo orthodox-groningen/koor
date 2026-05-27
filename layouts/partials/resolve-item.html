@@ -4,39 +4,48 @@
 {{- $root := $base | replaceRE "//+" "/" -}}
 {{- $folder := printf "static/%s" $root -}}
 
-{{- if not (fileExists $folder) -}}
-  {{- printf "debug|missing_folder|%s\n" $folder -}}
-  {{- return -}}
-{{- end -}}
+{{- $out := slice -}}
 
-{{- $files := readDir $folder -}}
+{{- if fileExists $folder -}}
 
-{{- range $files -}}
+  {{- $files := readDir $folder -}}
 
-  {{- $name := .Name -}}
+  {{- range $files -}}
 
-  {{- if strings.HasPrefix $name $file -}}
+    {{- $name := .Name -}}
 
-    {{- $ext := lower (path.Ext $name) -}}
-    {{- $full := printf "%s/%s" $root $name -}}
+    {{- if and $file (strings.HasPrefix $name $file) -}}
 
-    {{- if or (eq $ext ".jpg") (eq $ext ".png") -}}
-      {{ printf "image|%s\n" $full }}
+      {{- $ext := lower (path.Ext $name) -}}
+      {{- $full := printf "%s/%s" $root $name -}}
 
-    {{- else if eq $ext ".pdf" -}}
-      {{ printf "pdf|%s\n" $full }}
+      {{- if or (eq $ext ".jpg") (eq $ext ".png") -}}
+        {{- $out = $out | append (printf "image|%s" $full) -}}
 
-    {{- else if eq $ext ".mp3" -}}
-      {{ printf "audio|%s\n" $full }}
+      {{- else if eq $ext ".pdf" -}}
+        {{- $out = $out | append (printf "pdf|%s" $full) -}}
 
-    {{- else if eq $ext ".md" -}}
-      {{ printf "text|%s\n" $full }}
+      {{- else if eq $ext ".mp3" -}}
 
-    {{- else -}}
-      {{ printf "file|%s\n" $full }}
+        {{- $label := "SATB" -}}
+
+        {{- if strings.HasSuffix $name "-S.mp3" -}} {{- $label = "S" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-S2.mp3" -}} {{- $label = "S+" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-A.mp3" -}} {{- $label = "A" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-A2.mp3" -}} {{- $label = "A+" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-T.mp3" -}} {{- $label = "T" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-T2.mp3" -}} {{- $label = "T+" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-B.mp3" -}} {{- $label = "B" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-B2.mp3" -}} {{- $label = "B+" -}} {{- end -}}
+
+        {{- $out = $out | append (printf "audio|%s|%s" $label $full) -}}
+
+      {{- end -}}
 
     {{- end -}}
 
   {{- end -}}
 
 {{- end -}}
+
+{{- return $out -}}

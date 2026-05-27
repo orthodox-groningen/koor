@@ -15,15 +15,14 @@
     {{- end -}}
 
     <li>
-      <strong>GROUP: {{ .title }}</strong><br>
-      <span style="font-size:12px;color:gray">
-        base: {{ $nextBase }}
-      </span>
+
+      <strong>{{ .title }}</strong>
 
       {{ partial "render-tree.html" (dict
         "base" $nextBase
         "items" .items
       ) }}
+
     </li>
 
   {{- else if eq .type "item" -}}
@@ -35,46 +34,12 @@
       {{- $finalBase = $finalBase | replaceRE "//+" "/" -}}
     {{- end -}}
 
-    <li>
-
-      <strong>{{ .title }}</strong><br>
-
-      <span style="font-size:12px;color:gray">
-        base: {{ $finalBase }}<br>
-        file: {{ .file }}
-      </span>
-
-      {{- $raw := partial "resolve-item.html" (dict
-        "base" $finalBase
-        "file" .file
-      ) -}}
-
-      <ul>
-
-      {{- $lines := split $raw "\n" -}}
-
-      {{- range $lines -}}
-
-        {{- if . -}}
-
-          {{- $parts := split . "|" -}}
-
-          {{- if ge (len $parts) 2 -}}
-
-            <li>
-              {{ index $parts 0 }} →
-              <code>{{ index $parts 1 }}</code>
-            </li>
-
-          {{- end -}}
-
-        {{- end -}}
-
-      {{- end -}}
-
-      </ul>
-
-    </li>
+    {{ partial "render-item.html" (dict
+      "title" .title
+      "base" $finalBase
+      "file" .file
+      "link" .link
+    ) }}
 
   {{- else if eq .type "link" -}}
 
