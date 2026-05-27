@@ -91,14 +91,6 @@ bruikbaarheid en consistentie worden gecontroleerd.
 
 
 
- &lt;div class="koor-item-pdf"&gt;
- &lt;iframe
- data-src="../pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2ftestmap%2ftest-2.pdf&amp;v=1779904510"
- width="100%"
- height="800"
- title="Bladmuziek voor test met pdf en audio bestanden"&gt;
- &lt;/iframe&gt;
- &lt;/div&gt;
 
 
 
@@ -106,19 +98,6 @@ bruikbaarheid en consistentie worden gecontroleerd.
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -126,7 +105,6 @@ bruikbaarheid en consistentie worden gecontroleerd.
 
 
 
- 
 
 
 
@@ -134,45 +112,8 @@ bruikbaarheid en consistentie worden gecontroleerd.
 
 
 
-&lt;div class="koor-item-audio"&gt;
- &lt;div class="audio-selector"&gt;
- &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;/koormappen/testmap/test-2-A.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;/koormappen/testmap/test-2-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;/koormappen/testmap/test-2-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;/koormappen/testmap/test-2.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;/koormappen/testmap/test-2-T2.mp3&amp;#34;}'&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2.mp3" data-audio-type="SATB"&gt;
- SATB
- &lt;/button&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-S.mp3" data-audio-type="S"&gt;
- S
- &lt;/button&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-S2.mp3" data-audio-type="S+"&gt;
- S+
- &lt;/button&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-A.mp3" data-audio-type="A"&gt;
- A
- &lt;/button&gt;
- 
- 
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-T2.mp3" data-audio-type="T+"&gt;
- T+
- &lt;/button&gt;
- 
- 
- 
- &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="audio-player"&gt;
- &lt;audio controls id="audio-player-test-2"&gt;&lt;/audio&gt;
- &lt;/div&gt;
-&lt;/div&gt;
+
+
 
 
 &lt;/div&gt;
@@ -324,14 +265,6 @@ bruikbaarheid en consistentie worden gecontroleerd.
  
  
  
- &lt;div class="koor-item-pdf"&gt;
- &lt;iframe
- data-src="../pdfjs/viewer.html?file=%2fkoor%2fkoormappen%2ftestmap%2ftest-2.pdf&amp;v=1779904510"
- width="100%"
- height="800"
- title="Bladmuziek voor Spul uit de testmap"&gt;
- &lt;/iframe&gt;
- &lt;/div&gt;
  
  
  
@@ -355,57 +288,6 @@ bruikbaarheid en consistentie worden gecontroleerd.
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;div class="koor-item-audio"&gt;
- &lt;div class="audio-selector"&gt;
- &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;/koormappen/testmap/test-2-A.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;/koormappen/testmap/test-2-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;/koormappen/testmap/test-2-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;/koormappen/testmap/test-2.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;/koormappen/testmap/test-2-T2.mp3&amp;#34;}'&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2.mp3" data-audio-type="SATB"&gt;
- SATB
- &lt;/button&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-S.mp3" data-audio-type="S"&gt;
- S
- &lt;/button&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-S2.mp3" data-audio-type="S+"&gt;
- S+
- &lt;/button&gt;
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-A.mp3" data-audio-type="A"&gt;
- A
- &lt;/button&gt;
- 
- 
- 
- 
- &lt;button type="button" class="audio-select-btn" data-audio-src="../koormappen/testmap/test-2-T2.mp3" data-audio-type="T+"&gt;
- T+
- &lt;/button&gt;
- 
- 
- 
- &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="audio-player"&gt;
- &lt;audio controls id="audio-player-test-2"&gt;&lt;/audio&gt;
- &lt;/div&gt;
- &lt;/div&gt;
  
  
  &lt;/div&gt;
@@ -573,671 +455,7 @@ bruikbaarheid en consistentie worden gecontroleerd.
  &lt;/details&gt;
 &lt;/section&gt;
 
-&lt;hr&gt;</description></item><item><title>Test voor YAML-gebaseerde rendering</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-rendering-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-rendering-test/</guid><description>&lt;h2 id="kleine-test"&gt;Kleine test&lt;/h2&gt;
-&lt;ul&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: Test 1 - eenvoudige item-list&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;test-2-A.mp3&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap&lt;br&gt;
- file: test-2-A.mp3
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/testmap/test-2-A.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;kruisje.jpg&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap/images&lt;br&gt;
- file: kruisje.jpg
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- image →
- &lt;code&gt;/koormappen/testmap/images/kruisje.jpg&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: Test 2 - nesting 2 diep&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: testmap&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;test-2-A.mp3&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap&lt;br&gt;
- file: test-2-A.mp3
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/testmap/test-2-A.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;kruisje.jpg&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap/images&lt;br&gt;
- file: kruisje.jpg
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- image →
- &lt;code&gt;/koormappen/testmap/images/kruisje.jpg&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: Test 3 - nesting 3 diep&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: testmap&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: images&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap/images
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;kruisje.jpg&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap/images&lt;br&gt;
- file: kruisje.jpg
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- image →
- &lt;code&gt;/koormappen/testmap/images/kruisje.jpg&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;nestest.md&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/testmap/images/api&lt;br&gt;
- file: nestest.md
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- text →
- &lt;code&gt;/koormappen/testmap/images/api/nestest.md&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;/ul&gt;
-&lt;h2 id="groningse-koormap-goddelijke-liturgie"&gt;Groningse Koormap Goddelijke Liturgie&lt;/h2&gt;
-&lt;ul&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: Groningse Koormap Goddelijke Liturgie&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;(1) Vredeslitanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 002-(1a) vredeslitanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/002-(1a) vredeslitanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(2) 1e Antifoon&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 003-(2) 1e antifoon
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/003-(2) 1e antifoon.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(3) 1e Kleine Litanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 004-(3) 1e kleine litanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/004-(3) 1e kleine litanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(4) 2e Antifoon&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 005-(4) 2e antifoon
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/005-(4) 2e antifoon.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: (5) Eniggeboren Zoon en 2e Kleine Litanie&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;(5) Eniggeboren Zoon&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 006-(5a) eniggeboren zoon
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/006-(5a) eniggeboren zoon.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;2e Kleine Litanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 007-2e kleine litanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/007-2e kleine litanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(6) Zaligsprekingen&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 008-(6b) zaligsprekingen
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/008-(6b) zaligsprekingen.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: (7) Kleine intocht met Troparen en Kondaken (zondagen)&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;Kleine intocht&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 009-(7) kleine intocht
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/009-(7) kleine intocht.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-1)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 010-troparion-kondakion-toon-1
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/010-troparion-kondakion-toon-1.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-2)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 011-troparion-kondakion-toon-2
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/011-troparion-kondakion-toon-2.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-3)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 012-troparion-kondakion-toon-3
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/012-troparion-kondakion-toon-3.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-4)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 013-troparion-kondakion-toon-4
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/013-troparion-kondakion-toon-4.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-5)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 014-troparion-kondakion-toon-5
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/014-troparion-kondakion-toon-5.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-6)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 015-troparion-kondakion-toon-6
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/015-troparion-kondakion-toon-6.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-7)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 016-troparion-kondakion-toon-7
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/016-troparion-kondakion-toon-7.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Troparion en Kondakion (toon-8)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 017-troparion-kondakion-toon-8
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/017-troparion-kondakion-toon-8.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Bescherming der Christenen (toon 6, stichier melodie)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 018-Toon 6 (stichier melodie)
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/018-Toon 6 (stichier melodie).pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Ustav-liturgie met diaken&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 019-ustav-liturgie met diakon
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/019-ustav-liturgie met diakon.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(8) Trisagion&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 020-(8a) trisagion
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/020-(8a) trisagion.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: (9) Prokimens en Alleluja&amp;#39;s&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: Toon 1&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 021-prokimen-alleluja-toon-1
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-alleluja-toon-1.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 021-prokimen-zondag-toon-1
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 021-alleluja-toon-1
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-A.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-A2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-B.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-B2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-S.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-S2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-T.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1-T2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/021-alleluja-toon-1.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
- INCLUDE → voetnoot-bij-prokimen-melodien
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: Toon 2&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 022-prokimen-alleluja-toon-2
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-alleluja-toon-2.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 022-prokimen-zondag-toon-2
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 022-alleluja-toon-2
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-A.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-A2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-B.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-B2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-S.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-S2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-T.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2-T2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;li&gt;
- audio →
- &lt;code&gt;/koormappen/goddelijke-liturgie/022-alleluja-toon-2.mp3&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
- INCLUDE → voetnoot-bij-prokimen-melodien
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(10) Evangelielezing&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 029-(10) evangelielezing
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/029-(10) evangelielezing.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(11) Dringende litanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 030-(11) dringende litanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/030-(11) dringende litanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(12) Ontslapenenlitanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 031-(12a) ontslapenenlitanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/031-(12a) ontslapenenlitanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(13) Katechumenenlitanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 032-(13) katechumenenlitanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/032-(13) katechumenenlitanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(14) Gelovigenlitanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 033-(14) gelovigenlitanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/033-(14) gelovigenlitanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
- &lt;strong&gt;GROUP: (15) Cherubijnen hymnes&lt;/strong&gt;&lt;br&gt;
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie
- &lt;/span&gt;
-
- &lt;ul&gt;&lt;li&gt;
-
- &lt;strong&gt;(15c) Cherubijnen hymne (NL)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 034-(15c) cherubijnen hymne (kastorski - nl)
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/034-(15c) cherubijnen hymne (kastorski - nl).pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(15c) Cherubijnen hymne (RU)&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 034-(15c) cherubijnen hymne (kastorski - ru)
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/034-(15c) cherubijnen hymne (kastorski - ru).pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;li&gt;
- &lt;a href="https://www.universaledition.com/en/Works/Cherubim/P0213837"&gt;Cherubijnen hymne (copyright)&lt;/a&gt;
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;li&gt;
-
- &lt;strong&gt;(16) Vragende Litanie&lt;/strong&gt;&lt;br&gt;
-
- &lt;span style="font-size:12px;color:gray"&gt;
- base: /koormappen/goddelijke-liturgie&lt;br&gt;
- file: 035-(16) vragende litanie
- &lt;/span&gt;&lt;ul&gt;&lt;li&gt;
- pdf →
- &lt;code&gt;/koormappen/goddelijke-liturgie/035-(16) vragende litanie.pdf&lt;/code&gt;
- &lt;/li&gt;&lt;/ul&gt;
-
- &lt;/li&gt;&lt;/ul&gt;
- &lt;/li&gt;&lt;/ul&gt;</description></item><item><title>Voorbeelden van shortcodes</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</guid><description>&lt;p&gt;Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.&lt;/p&gt;
+&lt;hr&gt;</description></item><item><title>Voorbeelden van shortcodes</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</guid><description>&lt;p&gt;Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="spacer"&gt;Spacer&lt;/h2&gt;
 &lt;p&gt;De &lt;code&gt;spacer&lt;/code&gt; shortcode voegt verticale ruimte toe. Gebruik &lt;code&gt;h&lt;/code&gt; voor de hoogte (bijv. &lt;code&gt;1em&lt;/code&gt;, &lt;code&gt;2rem&lt;/code&gt;, &lt;code&gt;20px&lt;/code&gt;).&lt;/p&gt;
@@ -1254,4 +472,1201 @@ Deze tekst staat erachter.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;{{​&amp;lt; spacer h=&amp;#34;2em&amp;#34; &amp;gt;​}}
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id="koor-item"&gt;Koor-item&lt;/h2&gt;
-&lt;p&gt;Een &lt;code&gt;koor-item&lt;/code&gt; is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF en ook audio bestanden voor individuele stemmen (S, A, T, B) en samen (SATB).&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Een &lt;code&gt;koor-item&lt;/code&gt; is een verzameling bestanden die gaan over een een lied. In die verzameling kan een plaatje zitten (JPG of PNG), een PDF en ook audio bestanden voor individuele stemmen (S, A, T, B) en samen (SATB).&lt;/p&gt;</description></item><item><title>YAML-gebaseerde rendering test</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-rendering-test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/yaml-rendering-test/</guid><description>&lt;h2 id="kleine-test"&gt;Kleine test&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;
+
+ &lt;strong&gt;Eenvoudige item-list&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Testlied&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/testmap/test.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+ &lt;div class="koor-block koor-audio"&gt;
+
+ &lt;div class="audio-buttons"&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/testmap/test-A.mp3"&gt;
+ A
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/testmap/test-S.mp3"&gt;
+ S
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/testmap/test-S2.mp3"&gt;
+ S&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/testmap/test.mp3"&gt;
+ SATB
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/testmap/test-T2.mp3"&gt;
+ T&amp;#43;
+ &lt;/button&gt;
+
+ &lt;/div&gt;
+
+ &lt;audio controls class="koor-audio-player"&gt;&lt;/audio&gt;
+
+ &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Kruisje&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+ &lt;div class="koor-block koor-image"&gt;
+ &lt;img src="../koormappen/testmap/images/kruisje.jpg" style="max-width:100%; height:auto;"&gt;
+ &lt;/div&gt;
+
+ 
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+
+ &lt;strong&gt;Test 2 - nesting 2 diep&lt;/strong&gt;
+
+ &lt;ul&gt;&lt;li&gt;
+
+ &lt;strong&gt;Testmap&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Test-A&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+
+ 
+ &lt;div class="koor-block koor-audio"&gt;
+
+ &lt;div class="audio-buttons"&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/testmap/test-A.mp3"&gt;
+ A
+ &lt;/button&gt;
+
+ &lt;/div&gt;
+
+ &lt;audio controls class="koor-audio-player"&gt;&lt;/audio&gt;
+
+ &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Kruisje&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+ &lt;div class="koor-block koor-image"&gt;
+ &lt;img src="../koormappen/testmap/images/kruisje.jpg" style="max-width:100%; height:auto;"&gt;
+ &lt;/div&gt;
+
+ 
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+
+ &lt;strong&gt;Test 3 - nesting 3 diep&lt;/strong&gt;
+
+ &lt;ul&gt;&lt;li&gt;
+
+ &lt;strong&gt;testmap&lt;/strong&gt;
+
+ &lt;ul&gt;&lt;li&gt;
+
+ &lt;strong&gt;images&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Kruisje&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+ &lt;div class="koor-block koor-image"&gt;
+ &lt;img src="../koormappen/testmap/images/kruisje.jpg" style="max-width:100%; height:auto;"&gt;
+ &lt;/div&gt;
+
+ 
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Nestest&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+&lt;!-- 
+## Groningse Koormap Goddelijke Liturgie
+
+&lt;ul&gt;&lt;li&gt;
+
+ &lt;strong&gt;Groningse Koormap Goddelijke Liturgie&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(1) Vredeslitanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/002-%281a%29%20vredeslitanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(2) 1e Antifoon&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/003-%282%29%201e%20antifoon.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(3) 1e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/004-%283%29%201e%20kleine%20litanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(4) 2e Antifoon&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/005-%284%29%202e%20antifoon.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;li&gt;
+
+ &lt;strong&gt;(5) Eniggeboren Zoon en 2e Kleine Litanie&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(5) Eniggeboren Zoon&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/006-%285a%29%20eniggeboren%20zoon.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;2e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/007-2e%20kleine%20litanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(6) Zaligsprekingen&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/008-%286b%29%20zaligsprekingen.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;li&gt;
+
+ &lt;strong&gt;(7) Kleine intocht met Troparen en Kondaken (zondagen)&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Kleine intocht&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/009-%287%29%20kleine%20intocht.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-1)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/010-troparion-kondakion-toon-1.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-2)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/011-troparion-kondakion-toon-2.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-3)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/012-troparion-kondakion-toon-3.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-4)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/013-troparion-kondakion-toon-4.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-5)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/014-troparion-kondakion-toon-5.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-6)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/015-troparion-kondakion-toon-6.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-7)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/016-troparion-kondakion-toon-7.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-8)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/017-troparion-kondakion-toon-8.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Bescherming der Christenen (toon 6, stichier melodie)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/018-Toon%206%20%28stichier%20melodie%29.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Ustav-liturgie met diaken&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/019-ustav-liturgie%20met%20diakon.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(8) Trisagion&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/020-%288a%29%20trisagion.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;li&gt;
+
+ &lt;strong&gt;(9) Prokimens en Alleluja&amp;#39;s&lt;/strong&gt;
+
+ &lt;ul&gt;&lt;li&gt;
+
+ &lt;strong&gt;Toon 1&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/021-prokimen-alleluja-toon-1.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+
+ 
+ &lt;div class="koor-block koor-audio"&gt;
+
+ &lt;div class="audio-buttons"&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A.mp3"&gt;
+ A
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A2.mp3"&gt;
+ A&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B.mp3"&gt;
+ B
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B2.mp3"&gt;
+ B&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S.mp3"&gt;
+ S
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S2.mp3"&gt;
+ S&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1.mp3"&gt;
+ SATB
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T.mp3"&gt;
+ T
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T2.mp3"&gt;
+ T&amp;#43;
+ &lt;/button&gt;
+
+ &lt;/div&gt;
+
+ &lt;audio controls class="koor-audio-player"&gt;&lt;/audio&gt;
+
+ &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+
+ 
+ &lt;div class="koor-block koor-audio"&gt;
+
+ &lt;div class="audio-buttons"&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-A.mp3"&gt;
+ A
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-A2.mp3"&gt;
+ A&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-B.mp3"&gt;
+ B
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-B2.mp3"&gt;
+ B&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-S.mp3"&gt;
+ S
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-S2.mp3"&gt;
+ S&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1.mp3"&gt;
+ SATB
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-T.mp3"&gt;
+ T
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/021-alleluja-toon-1-T2.mp3"&gt;
+ T&amp;#43;
+ &lt;/button&gt;
+
+ &lt;/div&gt;
+
+ &lt;audio controls class="koor-audio-player"&gt;&lt;/audio&gt;
+
+ &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;li&gt;
+ INCLUDE → voetnoot-bij-prokimen-melodien
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+
+ &lt;strong&gt;Toon 2&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/022-prokimen-alleluja-toon-2.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+
+ 
+ &lt;div class="koor-block koor-audio"&gt;
+
+ &lt;div class="audio-buttons"&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A.mp3"&gt;
+ A
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A2.mp3"&gt;
+ A&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B.mp3"&gt;
+ B
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B2.mp3"&gt;
+ B&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S.mp3"&gt;
+ S
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S2.mp3"&gt;
+ S&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2.mp3"&gt;
+ SATB
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T.mp3"&gt;
+ T
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T2.mp3"&gt;
+ T&amp;#43;
+ &lt;/button&gt;
+
+ &lt;/div&gt;
+
+ &lt;audio controls class="koor-audio-player"&gt;&lt;/audio&gt;
+
+ &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+
+ 
+ &lt;div class="koor-block koor-audio"&gt;
+
+ &lt;div class="audio-buttons"&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-A.mp3"&gt;
+ A
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-A2.mp3"&gt;
+ A&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-B.mp3"&gt;
+ B
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-B2.mp3"&gt;
+ B&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-S.mp3"&gt;
+ S
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-S2.mp3"&gt;
+ S&amp;#43;
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2.mp3"&gt;
+ SATB
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-T.mp3"&gt;
+ T
+ &lt;/button&gt;
+ &lt;button
+ class="audio-select-btn"
+ data-audio-src="../koormappen/goddelijke-liturgie/022-alleluja-toon-2-T2.mp3"&gt;
+ T&amp;#43;
+ &lt;/button&gt;
+
+ &lt;/div&gt;
+
+ &lt;audio controls class="koor-audio-player"&gt;&lt;/audio&gt;
+
+ &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;li&gt;
+ INCLUDE → voetnoot-bij-prokimen-melodien
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(10) Evangelielezing&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/029-%2810%29%20evangelielezing.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(11) Dringende litanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/030-%2811%29%20dringende%20litanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(12) Ontslapenenlitanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/031-%2812a%29%20ontslapenenlitanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(13) Katechumenenlitanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/032-%2813%29%20katechumenenlitanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(14) Gelovigenlitanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/033-%2814%29%20gelovigenlitanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;li&gt;
+
+ &lt;strong&gt;(15) Cherubijnen hymnes&lt;/strong&gt;
+
+ &lt;ul&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(15c) Cherubijnen hymne (NL)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/034-%2815c%29%20cherubijnen%20hymne%20%28kastorski%20-%20nl%29.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(15c) Cherubijnen hymne (RU)&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/034-%2815c%29%20cherubijnen%20hymne%20%28kastorski%20-%20ru%29.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;li&gt;
+ &lt;a href="https://www.universaledition.com/en/Works/Cherubim/P0213837"&gt;Cherubijnen hymne (copyright)&lt;/a&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;
+
+&lt;details class="koor-item"&gt;
+
+&lt;summary&gt;&lt;strong&gt;(16) Vragende Litanie&lt;/strong&gt;&lt;/summary&gt;
+
+&lt;div class="koor-item-content"&gt;
+
+ 
+
+ 
+ &lt;div class="koor-block koor-pdf"&gt;
+ &lt;iframe
+ src="../koormappen/goddelijke-liturgie/035-%2816%29%20vragende%20litanie.pdf"
+ width="100%"
+ height="800"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;
+
+ 
+
+&lt;/div&gt;
+
+&lt;/details&gt;&lt;/ul&gt;
+
+ &lt;/li&gt;&lt;/ul&gt; 
+--&gt;</description></item></channel></rss>
