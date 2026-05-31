@@ -1,8 +1,0 @@
-{{ $label := .Get "label" | default "Tab" }}
-{{ $tabs := .Page.Scratch.Get "shortcodeTabs" }}
-{{ if not $tabs }}
-	{{ .Page.Scratch.Set "shortcodeTabs" (slice) }}
-	{{ $tabs = .Page.Scratch.Get "shortcodeTabs" }}
-{{ end }}
-{{ $tabs = $tabs | append (dict "label" $label "content" (.Inner)) }}
-{{ .Page.Scratch.Set "shortcodeTabs" $tabs }}
