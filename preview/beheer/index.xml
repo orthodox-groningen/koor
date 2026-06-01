@@ -7,11 +7,21 @@ De handleiding beschrijft eerst de ruwe opzet van het beheer, en gaat vervolgens
 &lt;h2 id="1-beheersstructuur"&gt;1. Beheersstructuur&lt;/h2&gt;
 &lt;p&gt;Om koormappen en hun inhoud te beheren moet duidelijk zijn wat we daaronder verstaan,
 uit welke bestanden dat allemaal bestaat en waar die te vinden zijn.&lt;/p&gt;</description></item><item><title/><link>https://orthodox-groningen.github.io/koor/preview/beheer/render-data-beheer-handleiding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/render-data-beheer-handleiding/</guid><description>&lt;h1 id="render-data-beheer-handleiding"&gt;&lt;code&gt;render-data&lt;/code&gt; Beheer Handleiding&lt;/h1&gt;
+&lt;div class="included-markdown"&gt;
+ 
+ 
+ 
+&lt;/div&gt;
 &lt;p&gt;Dit document beschrijft hoe je als beheerder koormappen aanmaakt en beheert met het &lt;code&gt;render-data&lt;/code&gt; systeem. Je vindt hier praktische stappen voor dagelijks werk: hoe voeg je liederen toe, wijzig je inhoud en voeg je audio- of pdf-bestanden in.&lt;/p&gt;
 &lt;p&gt;Dit document is geschreven voor beheerders die bekend zijn met GitHub en git-workflows. Zie de &lt;a href="render-data-referentie-doc.md"&gt;Referentie Documentatie&lt;/a&gt; voor technische details en alle mogelijkheden.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="hoe-werkt-het-systeem"&gt;Hoe werkt het systeem?&lt;/h2&gt;
 &lt;p&gt;Het &lt;code&gt;render-data&lt;/code&gt; systeem geeft je twee dingen:&lt;/p&gt;</description></item><item><title/><link>https://orthodox-groningen.github.io/koor/preview/beheer/render-data-referentie-doc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/render-data-referentie-doc/</guid><description>&lt;h1 id="render-data-referentie-documentatie"&gt;&lt;code&gt;render-data&lt;/code&gt; Referentie Documentatie&lt;/h1&gt;
+&lt;div class="included-markdown"&gt;
+ 
+ 
+ 
+&lt;/div&gt;
 &lt;p&gt;Dit is het naslagwerk voor het &lt;code&gt;render-data&lt;/code&gt; systeem. Dit document beschrijft alle technische details, syntax-regels en mogelijkheden.&lt;/p&gt;
 &lt;p&gt;Voor een praktische handleiding met stap-voor-stap instructies, zie de &lt;a href="render-data-beheer-handleiding.md"&gt;Beheer Handleiding&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
@@ -77,7 +87,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;(1) Vredeslitanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F002-%25281a%2529%2520vredeslitanie.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F002-%25281a%2529%2520vredeslitanie.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor (1) Vredeslitanie"&gt;
@@ -90,7 +100,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;(2) 1e Antifoon&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F003-%25282%2529%25201e%2520antifoon.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F003-%25282%2529%25201e%2520antifoon.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor (2) 1e Antifoon"&gt;
@@ -103,7 +113,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;(3) 1e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F004-%25283%2529%25201e%2520kleine%2520litanie.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F004-%25283%2529%25201e%2520kleine%2520litanie.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor (3) 1e Kleine Litanie"&gt;
@@ -116,7 +126,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;(4) 2e Antifoon&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F005-%25284%2529%25202e%2520antifoon.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F005-%25284%2529%25202e%2520antifoon.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor (4) 2e Antifoon"&gt;
@@ -134,7 +144,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;(5) Eniggeboren Zoon&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F006-%25285a%2529%2520eniggeboren%2520zoon.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F006-%25285a%2529%2520eniggeboren%2520zoon.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor (5) Eniggeboren Zoon"&gt;
@@ -147,7 +157,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;2e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F007-2e%2520kleine%2520litanie.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F007-2e%2520kleine%2520litanie.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor 2e Kleine Litanie"&gt;
@@ -165,7 +175,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;(6) Zaligsprekingen&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F008-%25286b%2529%2520zaligsprekingen.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F008-%25286b%2529%2520zaligsprekingen.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor (6) Zaligsprekingen"&gt;
@@ -183,7 +193,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Kleine intocht&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F009-%25287%2529%2520kleine%2520intocht.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F009-%25287%2529%2520kleine%2520intocht.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Kleine intocht"&gt;
@@ -196,7 +206,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-1)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F010-troparion-kondakion-toon-1.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F010-troparion-kondakion-toon-1.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-1)"&gt;
@@ -209,7 +219,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-2)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F011-troparion-kondakion-toon-2.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F011-troparion-kondakion-toon-2.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-2)"&gt;
@@ -222,7 +232,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-3)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F012-troparion-kondakion-toon-3.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F012-troparion-kondakion-toon-3.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-3)"&gt;
@@ -235,7 +245,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-4)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F013-troparion-kondakion-toon-4.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F013-troparion-kondakion-toon-4.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-4)"&gt;
@@ -248,7 +258,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-5)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F014-troparion-kondakion-toon-5.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F014-troparion-kondakion-toon-5.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-5)"&gt;
@@ -261,7 +271,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-6)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F015-troparion-kondakion-toon-6.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F015-troparion-kondakion-toon-6.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-6)"&gt;
@@ -274,7 +284,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-7)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F016-troparion-kondakion-toon-7.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F016-troparion-kondakion-toon-7.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-7)"&gt;
@@ -287,7 +297,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-8)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F017-troparion-kondakion-toon-8.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F017-troparion-kondakion-toon-8.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-8)"&gt;
@@ -300,7 +310,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Bescherming der Christenen (toon 6, stichier melodie)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F018-Toon%25206%2520%2528stichier%2520melodie%2529.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F018-Toon%25206%2520%2528stichier%2520melodie%2529.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Bescherming der Christenen (toon 6, stichier melodie)"&gt;
@@ -313,7 +323,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Ustav-liturgie met diaken&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F019-ustav-liturgie%2520met%2520diakon.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F019-ustav-liturgie%2520met%2520diakon.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Ustav-liturgie met diaken"&gt;
@@ -331,7 +341,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;(8) Trisagion&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F020-%25288a%2529%2520trisagion.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F020-%25288a%2529%2520trisagion.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor (8) Trisagion"&gt;
@@ -354,7 +364,7 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F021-prokimen-alleluja-toon-1.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F021-prokimen-alleluja-toon-1.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -402,7 +412,7 @@ die al eeuwen lang in de Russish-orthodoxe kerk gebruikt worden.&lt;/p&gt;</desc
  &lt;summary&gt;&lt;strong&gt;Testlied&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Ftestmap%2Ftest.pdf&amp;v=1780345028"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Ftestmap%2Ftest.pdf&amp;v=1780345647"
  width="100%"
  height="800"
  title="Bladmuziek voor Testlied"&gt;
