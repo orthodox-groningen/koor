@@ -64,398 +64,1564 @@ bruikbaarheid en consistentie worden gecontroleerd.
 &lt;/table&gt;
 &lt;hr&gt;
 &lt;h2 id="2-werking-in-grote-lijnen"&gt;2. Werking in grote lijnen&lt;/h2&gt;
-&lt;p&gt;Een markdown-bestand bevat:&lt;/p&gt;</description></item><item><title>Shortcodes debug pagina</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-debug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-debug/</guid><description>&lt;p&gt;Deze pagina bestaat voor ontwikkelaars om shortcodes mee te debuggen.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="koor-item"&gt;Koor-item&lt;/h2&gt;
-&lt;hr&gt;
-
-
-
-
-
-&lt;details class="koor-item"&gt;
-&lt;summary&gt;&lt;strong&gt;test met pdf en audio bestanden&lt;/strong&gt;&lt;/summary&gt;
-
-&lt;div class="koor-item-content"&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/div&gt;
-
+&lt;p&gt;Een markdown-bestand bevat:&lt;/p&gt;</description></item><item><title>Test koormappen (YAML)</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-koormappen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-koormappen/</guid><description>&lt;h2 id="groningen---goddelijke-liturgie"&gt;Groningen - Goddelijke Liturgie&lt;/h2&gt;
+&lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Goddelijke Liturgie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(1) Vredeslitanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F002-%25281a%2529%2520vredeslitanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (1) Vredeslitanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
 &lt;/details&gt;
 
-
-
-
-
-&lt;details class="koor-item"&gt;
-&lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
-
-&lt;div class="koor-item-content"&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/div&gt;
-
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(2) 1e Antifoon&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F003-%25282%2529%25201e%2520antifoon.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (2) 1e Antifoon"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
 &lt;/details&gt;
-&lt;hr&gt;
-&lt;h2 id="koor-group"&gt;Koor-group&lt;/h2&gt;
-&lt;hr&gt;
 
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(3) 1e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F004-%25283%2529%25201e%2520kleine%2520litanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (3) 1e Kleine Litanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
 
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(4) 2e Antifoon&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F005-%25284%2529%25202e%2520antifoon.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (4) 2e Antifoon"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
 
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;(5) Eniggeboren Zoon en 2e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(5) Eniggeboren Zoon&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F006-%25285a%2529%2520eniggeboren%2520zoon.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (5) Eniggeboren Zoon"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
 
- 
- 
- 
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;2e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F007-2e%2520kleine%2520litanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor 2e Kleine Litanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
 
+ &lt;/li&gt;&lt;/ul&gt;
 
-&lt;section class="koor-group"&gt;
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(6) Zaligsprekingen&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F008-%25286b%2529%2520zaligsprekingen.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (6) Zaligsprekingen"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;(7) Kleine intocht met Troparen en Kondaken (zondagen)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Kleine intocht&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F009-%25287%2529%2520kleine%2520intocht.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Kleine intocht"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-1)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F010-troparion-kondakion-toon-1.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-1)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-2)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F011-troparion-kondakion-toon-2.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-2)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-3)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F012-troparion-kondakion-toon-3.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-3)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-4)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F013-troparion-kondakion-toon-4.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-4)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-5)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F014-troparion-kondakion-toon-5.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-5)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-6)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F015-troparion-kondakion-toon-6.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-6)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-7)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F016-troparion-kondakion-toon-7.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-7)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-8)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F017-troparion-kondakion-toon-8.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Troparion en Kondakion (toon-8)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Bescherming der Christenen (toon 6, stichier melodie)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F018-Toon%25206%2520%2528stichier%2520melodie%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Bescherming der Christenen (toon 6, stichier melodie)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Ustav-liturgie met diaken&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F019-ustav-liturgie%2520met%2520diakon.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Ustav-liturgie met diaken"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(8) Trisagion&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F020-%25288a%2529%2520trisagion.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (8) Trisagion"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;(9) Prokimens en Alleluja&amp;#39;s&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
  &lt;details class="koor-group"&gt;
  &lt;summary&gt;&lt;strong&gt;Toon 1&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-group-content"&gt;
- 
- 
- 
- 
- 
- 
- 
- &lt;!-- groupDirs="" dir="" --&gt;
- 
- 
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
  &lt;details class="koor-item"&gt;
- &lt;summary&gt;&lt;strong&gt;PDF (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
- 
- &lt;div class="koor-item-content"&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;/div&gt;
- 
- &lt;/details&gt;
- 
- 
- 
- 
- 
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F021-prokimen-alleluja-toon-1.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
  &lt;details class="koor-item"&gt;
- &lt;summary&gt;&lt;strong&gt;Spul uit de testmap&lt;/strong&gt;&lt;/summary&gt;
- 
- &lt;div class="koor-item-content"&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
  &lt;/div&gt;
- 
- &lt;/details&gt;
- 
- 
- 
- 
- 
- 
- &lt;!-- groupDirs="" dir="" --&gt;
- 
- 
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
  &lt;details class="koor-item"&gt;
- &lt;summary&gt;&lt;strong&gt;Audio zonder dir-param&lt;/strong&gt;&lt;/summary&gt;
- 
- &lt;div class="koor-item-content"&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-alleluja-toon-1-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
  &lt;/div&gt;
- 
- &lt;/details&gt;
- 
- 
- 
- 
- 
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
  &lt;details class="koor-item"&gt;
- &lt;summary&gt;&lt;strong&gt;Audio met dir-param&lt;/strong&gt;&lt;/summary&gt;
- 
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 2&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F022-prokimen-alleluja-toon-2.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-alleluja-toon-2-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 3&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F023-prokimen-alleluja-toon-3.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-alleluja-toon-3-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 4&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F024-prokimen-alleluja-toon-4.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-T.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-alleluja-toon-4-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 5&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F025-prokimen-alleluja-toon-5.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-alleluja-toon-5-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 6&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F026-prokimen-alleluja-toon-6.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-alleluja-toon-6-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 7&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F027-prokimen-alleluja-toon-7.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-alleluja-toon-7-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 8&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F028-prokimen-alleluja-toon-8.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimen van de zondag (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (audio)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-alleluja-toon-8-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;pre style="color:red"&gt;ERROR: include file not found: content/voetnoot-bij-prokimen-melodien.md&lt;/pre&gt;&lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(10) Evangelielezing&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F029-%252810%2529%2520evangelielezing.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (10) Evangelielezing"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(11) Dringende litanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F030-%252811%2529%2520dringende%2520litanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (11) Dringende litanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(12) Ontslapenenlitanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F031-%252812a%2529%2520ontslapenenlitanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (12) Ontslapenenlitanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(13) Katechumenenlitanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F032-%252813%2529%2520katechumenenlitanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (13) Katechumenenlitanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(14) Gelovigenlitanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F033-%252814%2529%2520gelovigenlitanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (14) Gelovigenlitanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;(15) Cherubijnen hymnes&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(15c) Cherubijnen hymne (NL)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F034-%252815c%2529%2520cherubijnen%2520hymne%2520%2528kastorski%2520-%2520nl%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (15c) Cherubijnen hymne (NL)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(15c) Cherubijnen hymne (RU)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F034-%252815c%2529%2520cherubijnen%2520hymne%2520%2528kastorski%2520-%2520ru%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (15c) Cherubijnen hymne (RU)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Cherubijnen hymne (copyright)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ &lt;div class="koor-item-external-link"&gt;
+ &lt;a href="https://www.universaledition.com/en/Works/Cherubim/P0213837" target="_blank" rel="noopener noreferrer"&gt;
+ Open externe bron
+ &lt;/a&gt;
  &lt;/div&gt;
- 
+ &lt;/div&gt;
  &lt;/details&gt;
- &lt;!-- 
-
-
-
-
-&lt;details class="koor-item"&gt;
-&lt;summary&gt;&lt;strong&gt;Voetnoot&lt;/strong&gt;&lt;/summary&gt;
-
-&lt;div class="koor-item-content"&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/div&gt;
-
-&lt;/details&gt; --&gt;
+ &lt;/li&gt;&lt;/ul&gt;
 
  &lt;/div&gt;
  &lt;/details&gt;
-&lt;/section&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(16) Vragende Litanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F035-%252816%2529%2520vragende%2520litanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (16) Vragende Litanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
 
-&lt;hr&gt;</description></item><item><title>Voorbeelden van shortcodes</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</guid><description>&lt;p&gt;Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.&lt;/p&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(17) Vredeswens/Vredeskus&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F036-%252817%2529%2520vredeswens-vredeskus.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (17) Vredeswens/Vredeskus"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(18) Geloofsbelijdenis&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F037-%252818%2529%2520geloofsbelijdenis.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (18) Geloofsbelijdenis"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;(19) Eucharistische Kanon&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(19) Eucharistische Kanon&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038-%252819%2529%2520eucharistische%2520kanon.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (19) Eucharistische Kanon"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;a- de engel heeft geroepen (balakirev)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038.a-de%2520engel%2520heeft%2520geroepen%2520%2528balakirev%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor a- de engel heeft geroepen (balakirev)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;b- over u verheugt zich - toon 8 (griekse melodie)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038.b-over%2520u%2520verheugt%2520zich%2520-%2520toon%25208%2520%2528griekse%2520melodie%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor b- over u verheugt zich - toon 8 (griekse melodie)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(20) Waarlijk het is waardig/In waarheid&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F039-%252820%2520waarlijk%2520het%2520is%2520waardig%2529%2520in%2520waarheid.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (20) Waarlijk het is waardig/In waarheid"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(21) En allen&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F040-%252821%2529%2520en%2520allen.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (21) En allen"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(22) Vragende Litanie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F041-%252822%2529%2520vragende%2520litanie.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (22) Vragende Litanie"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;(23) Onze Vader (incl. &amp;#39;en met Uw Geest&amp;#39;)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Onze Vader (rimski-korsakov)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F042-%252823%2529%2520onze%2520vader%2520%2528rimski-korsakov%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Onze Vader (rimski-korsakov)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Onze Vader (copyright)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;
+ &lt;div class="koor-item-external-link"&gt;
+ &lt;a href="https://www.universaledition.com/en/Works/Our-Father/P0213839" target="_blank" rel="noopener noreferrer"&gt;
+ Open externe bron
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Vredeswens&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F043-vredeswens.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Vredeswens"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(24) Eén is heilig en (25) Communievers (zondag)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F044-%252824-25%2529%2520een%2520is%2520heilig%2520-%2520communievers.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (24) Eén is heilig en (25) Communievers (zondag)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(26) Gezegend Hij die komt&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F045-%252826%2529%2520gezegend%2520hij%2520die%2520komt.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (26) Gezegend Hij die komt"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(27) Ontvangt het Lichaam van Christus (NL-RU-GE)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F046-%252827%2529%2520ontvangt%2520het%2520lichaam%2520van%2520christus.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (27) Ontvangt het Lichaam van Christus (NL-RU-GE)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(28) Wij hebben het ware licht aanschouwd&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F047-%252828%2529%2520wij%2520hebben%2520het%2520ware%2520licht%2520aanschouwd.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (28) Wij hebben het ware licht aanschouwd"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;(29) De Naam des Heren&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F048-%252829%2529%2520de%2520naam%2520des%2520heren.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor (29) De Naam des Heren"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+&lt;h2 id="groningen---concertmap"&gt;Groningen - Concertmap&lt;/h2&gt;
+&lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Concertmap&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Georgisch&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Dideba senda (georgisch)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fdideba%2520senda%2520%2528georgisch%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Dideba senda (georgisch)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Mamao chveno - gebed (georgisch)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmamao%2520chveno%2520-%2520gebed%2520%2528georgisch%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Mamao chveno - gebed (georgisch)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Pater Noster (Nana Tchikhinashvili - 2015 - copyright)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;
+ &lt;div class="koor-item-external-link"&gt;
+ &lt;a href="https://www.universaledition.com/en/Works/Pater-Noster/P0213816" target="_blank" rel="noopener noreferrer"&gt;
+ Open externe bron
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Mamao chveno (nana)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmamao%2520chveno%2520%2528nana%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Mamao chveno (nana)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Mamao tsjveno (giwi alaznispirely)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmamao%2520tsjveno%2520%2528giwi%2520alaznispirely%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Mamao tsjveno (giwi alaznispirely)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Mijn smeking (georgisch, nana)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmijn%2520smeking%2520%2528georgisch%2C%2520nana%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Mijn smeking (georgisch, nana)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;My soul, my soul, get up, why are you sleeping&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmy%2520soul%2C%2520my%2520soul%2C%2520get%2520up%2C%2520why%2520are%2520you%2520sleeping%2520%2528nana%2520-%2520georgisch%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor My soul, my soul, get up, why are you sleeping"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Vai ra kargi sachio - happy easter (georgisch)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fvai%2520ra%2520kargi%2520sachio%2520-%2520happy%2520easter%2520%2528georgisch%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Vai ra kargi sachio - happy easter (georgisch)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Nederlands&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Aan de stromen van babylon&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Faan%2520de%2520stromen%2520van%2520babylon.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Aan de stromen van babylon"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Cherubijnenhymne (kastorsky)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fcherubijnenhymne%2520%2528kastorsky%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Cherubijnenhymne (kastorsky)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Gij allen die in Christus zijt gedoopt (lirin)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fgij%2520allen%2520die%2520in%2520christus%2520zijt%2520gedoopt%2520%2528lirin%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Gij allen die in Christus zijt gedoopt (lirin)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Kerkslavisch&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Agni Parthene&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fagni%2520parthene.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Agni Parthene"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;bcex ckopsya... (russisch met uitspraak)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fbcex%2520ckopsya...%2520%2528russisch%2520met%2520uitspraak%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor bcex ckopsya... (russisch met uitspraak)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;bcex ckopsya... (russisch)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fbcex%2520ckopsya...%2520%2528russisch%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor bcex ckopsya... (russisch)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Bogoroditse Devo - verheug u maagd&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fbogoroditse%2520devo%2520-%2520verheug%2520u%2520maagd.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Bogoroditse Devo - verheug u maagd"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Mnogaja ljeta - drievoudig feestelijk&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmnogaja%2520ljeta%2520-%2520drievoudig%2520feestelijk.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Mnogaja ljeta - drievoudig feestelijk"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Molitwa Iisusowa&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmolitwa%2520iisusowa.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Molitwa Iisusowa"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;O pure virgin&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fo%2520pure%2520virgin%2520%2528russisch%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor O pure virgin"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Roemeens&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Miluieste ma (roemeens)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmiluieste%2520ma%2520%2528roemeens%2520-%2520in%2520C%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Miluieste ma (roemeens)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Miluieste ma (roemeens - 2 mollen)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
+ &lt;iframe
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fconcert%2Fmiluieste%2520ma%2520%2528roemeens%2520-%25202%2520mollen%2529.pdf&amp;v=1780328484"
+ width="100%"
+ height="800"
+ title="Bladmuziek voor Miluieste ma (roemeens - 2 mollen)"&gt;
+ &lt;/iframe&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+
+&lt;h2 id="hemelum"&gt;Hemelum&lt;/h2&gt;
+&lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja&amp;#39;s&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-1)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-2)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-3)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-4)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-5)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-6)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-7)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Alleluja (toon-8)&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;li&gt;
+ &lt;section class="koor-group"&gt;
+ &lt;details class="koor-group"&gt;
+ &lt;summary&gt;&lt;strong&gt;Prokimens van de zondagen&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-group-content"&gt;
+ &lt;ul class="koor-list"&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 1 - Heer, Uw barmhartigheid kome over ons&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/021-prokimen-zondag-toon-1-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 2 - Mijn kracht en lofzang is de Heer&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/022-prokimen-zondag-toon-2-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 3 - Zingt een psalm voor onze God, zingt Hem&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/023-prokimen-zondag-toon-3-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 4 - Hoe groot zijn Uw werken, o Heer&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-T.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/024-prokimen-zondag-toon-4-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 5 - Gij, Heer, bewaar en behoed ons tegen dit geslacht&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/025-prokimen-zondag-toon-5-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 6 - Red Uw volk, o Heer, en zegen&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/026-prokimen-zondag-toon-6-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 7 - De Heer schenkt Zijn volk kracht&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/027-prokimen-zondag-toon-7-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;li&gt;
+ &lt;details class="koor-item"&gt;
+ &lt;summary&gt;&lt;strong&gt;Toon 8 - Doet geloften aan de Heer Uw God&lt;/strong&gt;&lt;/summary&gt;
+ &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-audio"&gt;
+ &lt;div class="audio-selector"&gt;
+ &lt;div class="audio-buttons" data-audio-options='{&amp;#34;A&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A.mp3&amp;#34;,&amp;#34;A&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A2.mp3&amp;#34;,&amp;#34;B&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B.mp3&amp;#34;,&amp;#34;B&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B2.mp3&amp;#34;,&amp;#34;S&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S.mp3&amp;#34;,&amp;#34;S&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S2.mp3&amp;#34;,&amp;#34;SATB&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8.mp3&amp;#34;,&amp;#34;T&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T.mp3&amp;#34;,&amp;#34;T&amp;#43;&amp;#34;:&amp;#34;https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T2.mp3&amp;#34;}'&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8.mp3" data-audio-type="SATB"&gt;SATB&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S.mp3" data-audio-type="S"&gt;S&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-S2.mp3" data-audio-type="S+"&gt;S+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A.mp3" data-audio-type="A"&gt;A&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-A2.mp3" data-audio-type="A+"&gt;A+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T.mp3" data-audio-type="T"&gt;T&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-T2.mp3" data-audio-type="T+"&gt;T+&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B.mp3" data-audio-type="B"&gt;B&lt;/button&gt;&lt;button type="button" class="audio-select-btn" data-audio-src="https://orthodox-groningen.github.io/koor/preview/koormappen/goddelijke-liturgie/028-prokimen-zondag-toon-8-B2.mp3" data-audio-type="B+"&gt;B+&lt;/button&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="audio-player"&gt;
+ &lt;audio controls id="audio-player-/koormappen/goddelijke-liturgie"&gt;&lt;/audio&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+ &lt;/li&gt;&lt;/ul&gt;
+
+ &lt;/div&gt;
+ &lt;/details&gt;
+ &lt;/section&gt;
+ &lt;/li&gt;&lt;/ul&gt;</description></item><item><title>Voorbeelden van shortcodes</title><link>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://orthodox-groningen.github.io/koor/preview/beheer/test-pagina/</guid><description>&lt;p&gt;Deze pagina documenteert de belangrijkste shortcodes en bevat korte voorbeelden.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="spacer"&gt;Spacer&lt;/h2&gt;
 &lt;p&gt;De &lt;code&gt;spacer&lt;/code&gt; shortcode voegt verticale ruimte toe. Gebruik &lt;code&gt;h&lt;/code&gt; voor de hoogte (bijv. &lt;code&gt;1em&lt;/code&gt;, &lt;code&gt;2rem&lt;/code&gt;, &lt;code&gt;20px&lt;/code&gt;).&lt;/p&gt;
@@ -489,7 +1655,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Testlied&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Ftestmap%2Ftest.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Ftestmap%2Ftest.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Testlied"&gt;
@@ -608,14 +1774,14 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
 &lt;ul class="koor-list"&gt;&lt;li&gt;
  &lt;section class="koor-group"&gt;
  &lt;details class="koor-group"&gt;
- &lt;summary&gt;&lt;strong&gt;Groningse Koormap Goddelijke Liturgie&lt;/strong&gt;&lt;/summary&gt;
+ &lt;summary&gt;&lt;strong&gt;Goddelijke Liturgie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-group-content"&gt;
  &lt;ul class="koor-list"&gt;&lt;li&gt;
  &lt;details class="koor-item"&gt;
  &lt;summary&gt;&lt;strong&gt;(1) Vredeslitanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F002-%25281a%2529%2520vredeslitanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F002-%25281a%2529%2520vredeslitanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (1) Vredeslitanie"&gt;
@@ -628,7 +1794,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(2) 1e Antifoon&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F003-%25282%2529%25201e%2520antifoon.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F003-%25282%2529%25201e%2520antifoon.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (2) 1e Antifoon"&gt;
@@ -641,7 +1807,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(3) 1e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F004-%25283%2529%25201e%2520kleine%2520litanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F004-%25283%2529%25201e%2520kleine%2520litanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (3) 1e Kleine Litanie"&gt;
@@ -654,7 +1820,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(4) 2e Antifoon&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F005-%25284%2529%25202e%2520antifoon.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F005-%25284%2529%25202e%2520antifoon.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (4) 2e Antifoon"&gt;
@@ -672,7 +1838,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(5) Eniggeboren Zoon&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F006-%25285a%2529%2520eniggeboren%2520zoon.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F006-%25285a%2529%2520eniggeboren%2520zoon.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (5) Eniggeboren Zoon"&gt;
@@ -685,7 +1851,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;2e Kleine Litanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F007-2e%2520kleine%2520litanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F007-2e%2520kleine%2520litanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor 2e Kleine Litanie"&gt;
@@ -703,7 +1869,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(6) Zaligsprekingen&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F008-%25286b%2529%2520zaligsprekingen.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F008-%25286b%2529%2520zaligsprekingen.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (6) Zaligsprekingen"&gt;
@@ -721,7 +1887,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Kleine intocht&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F009-%25287%2529%2520kleine%2520intocht.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F009-%25287%2529%2520kleine%2520intocht.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Kleine intocht"&gt;
@@ -734,7 +1900,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-1)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F010-troparion-kondakion-toon-1.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F010-troparion-kondakion-toon-1.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-1)"&gt;
@@ -747,7 +1913,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-2)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F011-troparion-kondakion-toon-2.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F011-troparion-kondakion-toon-2.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-2)"&gt;
@@ -760,7 +1926,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-3)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F012-troparion-kondakion-toon-3.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F012-troparion-kondakion-toon-3.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-3)"&gt;
@@ -773,7 +1939,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-4)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F013-troparion-kondakion-toon-4.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F013-troparion-kondakion-toon-4.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-4)"&gt;
@@ -786,7 +1952,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-5)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F014-troparion-kondakion-toon-5.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F014-troparion-kondakion-toon-5.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-5)"&gt;
@@ -799,7 +1965,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-6)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F015-troparion-kondakion-toon-6.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F015-troparion-kondakion-toon-6.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-6)"&gt;
@@ -812,7 +1978,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-7)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F016-troparion-kondakion-toon-7.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F016-troparion-kondakion-toon-7.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-7)"&gt;
@@ -825,7 +1991,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Troparion en Kondakion (toon-8)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F017-troparion-kondakion-toon-8.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F017-troparion-kondakion-toon-8.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Troparion en Kondakion (toon-8)"&gt;
@@ -838,7 +2004,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Bescherming der Christenen (toon 6, stichier melodie)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F018-Toon%25206%2520%2528stichier%2520melodie%2529.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F018-Toon%25206%2520%2528stichier%2520melodie%2529.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Bescherming der Christenen (toon 6, stichier melodie)"&gt;
@@ -851,7 +2017,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Ustav-liturgie met diaken&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F019-ustav-liturgie%2520met%2520diakon.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F019-ustav-liturgie%2520met%2520diakon.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Ustav-liturgie met diaken"&gt;
@@ -869,7 +2035,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(8) Trisagion&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F020-%25288a%2529%2520trisagion.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F020-%25288a%2529%2520trisagion.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (8) Trisagion"&gt;
@@ -892,7 +2058,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F021-prokimen-alleluja-toon-1.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F021-prokimen-alleluja-toon-1.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -946,7 +2112,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F022-prokimen-alleluja-toon-2.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F022-prokimen-alleluja-toon-2.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -1000,7 +2166,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F023-prokimen-alleluja-toon-3.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F023-prokimen-alleluja-toon-3.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -1054,7 +2220,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F024-prokimen-alleluja-toon-4.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F024-prokimen-alleluja-toon-4.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -1108,7 +2274,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F025-prokimen-alleluja-toon-5.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F025-prokimen-alleluja-toon-5.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -1162,7 +2328,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F026-prokimen-alleluja-toon-6.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F026-prokimen-alleluja-toon-6.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -1216,7 +2382,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F027-prokimen-alleluja-toon-7.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F027-prokimen-alleluja-toon-7.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -1270,7 +2436,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Prokimen en Alleluja (bladmuziek)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F028-prokimen-alleluja-toon-8.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F028-prokimen-alleluja-toon-8.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Prokimen en Alleluja (bladmuziek)"&gt;
@@ -1324,7 +2490,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(10) Evangelielezing&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F029-%252810%2529%2520evangelielezing.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F029-%252810%2529%2520evangelielezing.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (10) Evangelielezing"&gt;
@@ -1337,7 +2503,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(11) Dringende litanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F030-%252811%2529%2520dringende%2520litanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F030-%252811%2529%2520dringende%2520litanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (11) Dringende litanie"&gt;
@@ -1350,7 +2516,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(12) Ontslapenenlitanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F031-%252812a%2529%2520ontslapenenlitanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F031-%252812a%2529%2520ontslapenenlitanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (12) Ontslapenenlitanie"&gt;
@@ -1363,7 +2529,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(13) Katechumenenlitanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F032-%252813%2529%2520katechumenenlitanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F032-%252813%2529%2520katechumenenlitanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (13) Katechumenenlitanie"&gt;
@@ -1376,7 +2542,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(14) Gelovigenlitanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F033-%252814%2529%2520gelovigenlitanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F033-%252814%2529%2520gelovigenlitanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (14) Gelovigenlitanie"&gt;
@@ -1394,7 +2560,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(15c) Cherubijnen hymne (NL)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F034-%252815c%2529%2520cherubijnen%2520hymne%2520%2528kastorski%2520-%2520nl%2529.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F034-%252815c%2529%2520cherubijnen%2520hymne%2520%2528kastorski%2520-%2520nl%2529.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (15c) Cherubijnen hymne (NL)"&gt;
@@ -1407,7 +2573,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(15c) Cherubijnen hymne (RU)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F034-%252815c%2529%2520cherubijnen%2520hymne%2520%2528kastorski%2520-%2520ru%2529.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F034-%252815c%2529%2520cherubijnen%2520hymne%2520%2528kastorski%2520-%2520ru%2529.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (15c) Cherubijnen hymne (RU)"&gt;
@@ -1436,7 +2602,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(16) Vragende Litanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F035-%252816%2529%2520vragende%2520litanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F035-%252816%2529%2520vragende%2520litanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (16) Vragende Litanie"&gt;
@@ -1449,7 +2615,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(17) Vredeswens/Vredeskus&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F036-%252817%2529%2520vredeswens-vredeskus.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F036-%252817%2529%2520vredeswens-vredeskus.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (17) Vredeswens/Vredeskus"&gt;
@@ -1462,7 +2628,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(18) Geloofsbelijdenis&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F037-%252818%2529%2520geloofsbelijdenis.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F037-%252818%2529%2520geloofsbelijdenis.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (18) Geloofsbelijdenis"&gt;
@@ -1480,7 +2646,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(19) Eucharistische Kanon&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038-%252819%2529%2520eucharistische%2520kanon.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038-%252819%2529%2520eucharistische%2520kanon.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (19) Eucharistische Kanon"&gt;
@@ -1493,7 +2659,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;a- de engel heeft geroepen (balakirev)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038.a-de%2520engel%2520heeft%2520geroepen%2520%2528balakirev%2529.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038.a-de%2520engel%2520heeft%2520geroepen%2520%2528balakirev%2529.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor a- de engel heeft geroepen (balakirev)"&gt;
@@ -1506,7 +2672,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;b- over u verheugt zich - toon 8 (griekse melodie)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038.b-over%2520u%2520verheugt%2520zich%2520-%2520toon%25208%2520%2528griekse%2520melodie%2529.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F038.b-over%2520u%2520verheugt%2520zich%2520-%2520toon%25208%2520%2528griekse%2520melodie%2529.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor b- over u verheugt zich - toon 8 (griekse melodie)"&gt;
@@ -1524,7 +2690,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(20) Waarlijk het is waardig/In waarheid&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F039-%252820%2520waarlijk%2520het%2520is%2520waardig%2529%2520in%2520waarheid.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F039-%252820%2520waarlijk%2520het%2520is%2520waardig%2529%2520in%2520waarheid.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (20) Waarlijk het is waardig/In waarheid"&gt;
@@ -1537,7 +2703,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(21) En allen&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F040-%252821%2529%2520en%2520allen.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F040-%252821%2529%2520en%2520allen.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (21) En allen"&gt;
@@ -1550,7 +2716,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(22) Vragende Litanie&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F041-%252822%2529%2520vragende%2520litanie.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F041-%252822%2529%2520vragende%2520litanie.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (22) Vragende Litanie"&gt;
@@ -1568,7 +2734,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Onze Vader (rimski-korsakov)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F042-%252823%2529%2520onze%2520vader%2520%2528rimski-korsakov%2529.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F042-%252823%2529%2520onze%2520vader%2520%2528rimski-korsakov%2529.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Onze Vader (rimski-korsakov)"&gt;
@@ -1592,7 +2758,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;Vredeswens&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F043-vredeswens.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F043-vredeswens.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor Vredeswens"&gt;
@@ -1610,7 +2776,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(24) Eén is heilig en (25) Communievers (zondag)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F044-%252824-25%2529%2520een%2520is%2520heilig%2520-%2520communievers.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F044-%252824-25%2529%2520een%2520is%2520heilig%2520-%2520communievers.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (24) Eén is heilig en (25) Communievers (zondag)"&gt;
@@ -1623,7 +2789,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(26) Gezegend Hij die komt&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F045-%252826%2529%2520gezegend%2520hij%2520die%2520komt.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F045-%252826%2529%2520gezegend%2520hij%2520die%2520komt.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (26) Gezegend Hij die komt"&gt;
@@ -1636,7 +2802,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(27) Ontvangt het Lichaam van Christus (NL-RU-GE)&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F046-%252827%2529%2520ontvangt%2520het%2520lichaam%2520van%2520christus.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F046-%252827%2529%2520ontvangt%2520het%2520lichaam%2520van%2520christus.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (27) Ontvangt het Lichaam van Christus (NL-RU-GE)"&gt;
@@ -1649,7 +2815,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(28) Wij hebben het ware licht aanschouwd&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F047-%252828%2529%2520wij%2520hebben%2520het%2520ware%2520licht%2520aanschouwd.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F047-%252828%2529%2520wij%2520hebben%2520het%2520ware%2520licht%2520aanschouwd.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (28) Wij hebben het ware licht aanschouwd"&gt;
@@ -1662,7 +2828,7 @@ Code die (direct of indirect) wordt gebruikt door de shortcodes
  &lt;summary&gt;&lt;strong&gt;(29) De Naam des Heren&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F048-%252829%2529%2520de%2520naam%2520des%2520heren.pdf&amp;v=1780326701"
+ data-src="https://orthodox-groningen.github.io/koor/preview/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fpreview%2Fkoormappen%2Fgoddelijke-liturgie%2F048-%252829%2529%2520de%2520naam%2520des%2520heren.pdf&amp;v=1780328484"
  width="100%"
  height="800"
  title="Bladmuziek voor (29) De Naam des Heren"&gt;
