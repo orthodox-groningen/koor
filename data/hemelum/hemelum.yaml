@@ -1,0 +1,100 @@
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+#
+# 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
+#    - item   → bestand of media
+#    - group  → geneste structuur
+#    - include → herbruikbare tekst/snippet
+#    - link   → externe URL
+#
+# 3. group mag alleen bevatten:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item mag alleen bevatten:
+#    - title (verplicht)
+#    - file  (verplicht OF in combinatie met dir)
+#    - dir   (optioneel)
+#
+# 5. GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN
+#    (dus nooit meer: - title: direct op root level)
+# =========================================================
+
+items:
+
+- type: group
+  title: "Alleluja's"
+  base: "koormappen/goddelijke-liturgie"
+  items:
+
+    - type: item
+      title: "Alleluja (toon-1)"
+      file: "alleluja-toon-1"
+
+    - type: item
+      title: "Alleluja (toon-2)"
+      file: "alleluja-toon-2"
+
+    - type: item
+      title: "Alleluja (toon-3)"
+      file: "alleluja-toon-3"
+
+    - type: item
+      title: "Alleluja (toon-4)"
+      file: "alleluja-toon-4"
+
+    - type: item
+      title: "Alleluja (toon-5)"
+      file: "alleluja-toon-5"
+
+    - type: item
+      title: "Alleluja (toon-6)"
+      file: "alleluja-toon-6"
+
+    - type: item
+      title: "Alleluja (toon-7)"
+      file: "alleluja-toon-7"
+
+    - type: item
+      title: "Alleluja (toon-8)"
+      file: "alleluja-toon-8"
+
+- type: group
+  title: "Prokimens van de zondagen"
+  base: "koormappen/goddelijke-liturgie"
+  items:
+
+    - type: item
+      title: "Toon 1 - Heer, Uw barmhartigheid kome over ons"
+      file: "021-prokimen-zondag-toon-1"
+
+    - type: item
+      title: "Toon 2 - Mijn kracht en lofzang is de Heer"
+      file: "022-prokimen-zondag-toon-2"
+
+    - type: item
+      title: "Toon 3 - Zingt een psalm voor onze God, zingt Hem"
+      file: "023-prokimen-zondag-toon-3"
+
+    - type: item
+      title: "Toon 4 - Hoe groot zijn Uw werken, o Heer"
+      file: "024-prokimen-zondag-toon-4"
+
+    - type: item
+      title: "Toon 5 - Gij, Heer, bewaar en behoed ons tegen dit geslacht"
+      file: "025-prokimen-zondag-toon-5"
+
+    - type: item
+      title: "Toon 6 - Red Uw volk, o Heer, en zegen"
+      file: "026-prokimen-zondag-toon-6"
+
+    - type: item
+      title: "Toon 7 - De Heer schenkt Zijn volk kracht"
+      file: "027-prokimen-zondag-toon-7"
+
+    - type: item
+      title: "Toon 8 - Doet geloften aan de Heer Uw God"
+      file: "028-prokimen-zondag-toon-8"
