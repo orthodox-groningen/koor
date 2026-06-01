@@ -1,0 +1,74 @@
+
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+# 2. ALLE NODES MOETEN EEN type HEBBEN:
+#    - group
+#    - item
+#    - include
+#    - link
+#
+# 3. group:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item:
+#    - title (optioneel)
+#    - file (verplicht of in combinatie met dir)
+#    - dir (optioneel)
+#
+# 5. GEEN EXTRA ROOT STRUCTUREN (dus nooit "tests:" gebruiken)
+# =========================================================
+
+items:
+
+  - type: group
+    title: "Eenvoudige item-list"
+    base: "koormappen/testmap"
+    items:
+      - type: item
+        title: "Testlied"
+        file: "test"
+      - type: item
+        title: "Kruisje"
+        dir: "images"
+        file: "kruisje"
+
+  - type: group
+    title: "Test 2 - nesting 2 diep"
+    base: "koormappen"
+    items:
+
+      - type: group
+        base: "testmap"
+        title: "Testmap"
+        items:
+          - type: item
+            title: "Test-A"
+            file: "test-A"
+          - type: item
+            title: "Kruisje"
+            dir: "images"
+            file: "kruisje"
+
+  - type: group
+    title: "Test 3 - nesting 3 diep"
+    base: "koormappen"
+    items:
+      - type: group
+        base: "testmap"
+        title: "testmap"
+        items:
+          - type: group
+            base: "images"
+            title: "images"
+            items:
+              - type: item
+                title: "Kruisje"
+                file: "kruisje"
+              - type: item
+                title: "Nestest"
+                dir: "api"
+                file: "nestest"

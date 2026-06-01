@@ -1,0 +1,31 @@
+{{- $base := .base -}}
+{{- $items := .items -}}
+
+<ul>
+{{- range $items -}}
+
+  {{- if .items -}}
+    <li>
+      <strong>{{ .base }}</strong>
+      {{ partial "render-items.html" (dict
+          "base" (printf "%s/%s" $base .base)
+          "items" .items
+      ) }}
+    </li>
+
+  {{- else -}}
+
+    {{- $path := $base -}}
+
+    {{- if .dir -}}
+      {{- $path = printf "%s/%s" $path .dir -}}
+    {{- end -}}
+
+    {{- $path = printf "%s/%s" $path .file -}}
+
+    <li>{{ $path }}</li>
+
+  {{- end -}}
+
+{{- end -}}
+</ul>

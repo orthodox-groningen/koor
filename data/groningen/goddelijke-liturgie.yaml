@@ -1,0 +1,391 @@
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+#
+# 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
+#    - item   → bestand of media
+#    - group  → geneste structuur
+#    - include → herbruikbare tekst/snippet
+#    - link   → externe URL
+#
+# 3. group mag alleen bevatten:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item mag alleen bevatten:
+#    - title (verplicht)
+#    - file  (verplicht OF in combinatie met dir)
+#    - dir   (optioneel)
+#
+# 5. GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN
+#    (dus nooit meer: - title: direct op root level)
+# =========================================================
+
+items:
+
+  - type: group
+    title: "Goddelijke Liturgie"
+    base: "koormappen/goddelijke-liturgie"
+    items:
+
+      - type: item
+        title: "(1) Vredeslitanie"
+        file: "002-(1a) vredeslitanie"
+
+      - type: item
+        title: "(2) 1e Antifoon"
+        file: "003-(2) 1e antifoon"
+
+      - type: item
+        title: "(3) 1e Kleine Litanie"
+        file: "004-(3) 1e kleine litanie"
+
+      - type: item
+        title: "(4) 2e Antifoon"
+        file: "005-(4) 2e antifoon"
+
+      - type: group
+        title: "(5) Eniggeboren Zoon en 2e Kleine Litanie"
+        items:
+
+          - type: item
+            title: "(5) Eniggeboren Zoon"
+            file: "006-(5a) eniggeboren zoon"
+
+          - type: item
+            title: "2e Kleine Litanie"
+            file: "007-2e kleine litanie"
+
+      - type: item
+        title: "(6) Zaligsprekingen"
+        file: "008-(6b) zaligsprekingen"
+
+      - type: group
+        title: "(7) Kleine intocht met Troparen en Kondaken (zondagen)"
+        items:
+
+          - type: item
+            title: "Kleine intocht"
+            file: "009-(7) kleine intocht"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-1)"
+            file: "010-troparion-kondakion-toon-1"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-2)"
+            file: "011-troparion-kondakion-toon-2"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-3)"
+            file: "012-troparion-kondakion-toon-3"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-4)"
+            file: "013-troparion-kondakion-toon-4"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-5)"
+            file: "014-troparion-kondakion-toon-5"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-6)"
+            file: "015-troparion-kondakion-toon-6"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-7)"
+            file: "016-troparion-kondakion-toon-7"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-8)"
+            file: "017-troparion-kondakion-toon-8"
+
+          - type: item
+            title: "Bescherming der Christenen (toon 6, stichier melodie)"
+            file: "018-Toon 6 (stichier melodie)"
+
+          - type: item
+            title: "Ustav-liturgie met diaken"
+            file: "019-ustav-liturgie met diakon"
+
+      - type: item
+        title: "(8) Trisagion"
+        file: "020-(8a) trisagion"
+
+      - type: group
+        title: "(9) Prokimens en Alleluja's"
+        items:
+
+          - type: group
+            title: "Toon 1"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "021-prokimen-alleluja-toon-1"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "021-prokimen-zondag-toon-1"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "021-alleluja-toon-1"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+          - type: group
+            title: "Toon 2"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "022-prokimen-alleluja-toon-2"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "022-prokimen-zondag-toon-2"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "022-alleluja-toon-2"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+          - type: group
+            title: "Toon 3"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "023-prokimen-alleluja-toon-3"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "023-prokimen-zondag-toon-3"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "023-alleluja-toon-3"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+          - type: group
+            title: "Toon 4"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "024-prokimen-alleluja-toon-4"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "024-prokimen-zondag-toon-4"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "024-alleluja-toon-4"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+          - type: group
+            title: "Toon 5"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "025-prokimen-alleluja-toon-5"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "025-prokimen-zondag-toon-5"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "025-alleluja-toon-5"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+          - type: group
+            title: "Toon 6"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "026-prokimen-alleluja-toon-6"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "026-prokimen-zondag-toon-6"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "026-alleluja-toon-6"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+          - type: group
+            title: "Toon 7"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "027-prokimen-alleluja-toon-7"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "027-prokimen-zondag-toon-7"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "027-alleluja-toon-7"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+          - type: group
+            title: "Toon 8"
+            items:
+
+              - type: item
+                title: "Prokimen en Alleluja (bladmuziek)"
+                file: "028-prokimen-alleluja-toon-8"
+
+              - type: item
+                title: "Prokimen van de zondag (audio)"
+                file: "028-prokimen-zondag-toon-8"
+
+              - type: item
+                title: "Alleluja (audio)"
+                file: "028-alleluja-toon-8"
+
+              - type: include
+                title: "Voetnoot"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
+
+      - type: item
+        title: "(10) Evangelielezing"
+        file: "029-(10) evangelielezing"
+
+      - type: item
+        title: "(11) Dringende litanie"
+        file: "030-(11) dringende litanie"
+
+      - type: item
+        title: "(12) Ontslapenenlitanie"
+        file: "031-(12a) ontslapenenlitanie"
+
+      - type: item
+        title: "(13) Katechumenenlitanie"
+        file: "032-(13) katechumenenlitanie"
+
+      - type: item
+        title: "(14) Gelovigenlitanie"
+        file: "033-(14) gelovigenlitanie"
+
+      - type: group
+        title: "(15) Cherubijnen hymnes"
+        items:
+
+          - type: item
+            title: "(15c) Cherubijnen hymne (NL)"
+            file: "034-(15c) cherubijnen hymne (kastorski - nl)"
+
+          - type: item
+            title: "(15c) Cherubijnen hymne (RU)"
+            file: "034-(15c) cherubijnen hymne (kastorski - ru)"
+
+          - type: link
+            title: "Cherubijnen hymne (copyright)"
+            url: "https://www.universaledition.com/en/Works/Cherubim/P0213837"
+
+      - type: item
+        title: "(16) Vragende Litanie"
+        file: "035-(16) vragende litanie"
+
+      - type: item
+        title: "(17) Vredeswens/Vredeskus"
+        file: "036-(17) vredeswens-vredeskus"
+
+      - type: item
+        title: "(18) Geloofsbelijdenis"
+        file: "037-(18) geloofsbelijdenis"
+
+      - type: group
+        title: "(19) Eucharistische Kanon"
+        items:
+
+          - type: item
+            title: "(19) Eucharistische Kanon"
+            file: "038-(19) eucharistische kanon"
+
+          - type: item
+            title: "a- de engel heeft geroepen (balakirev)"
+            file: "038.a-de engel heeft geroepen (balakirev)"
+
+          - type: item
+            title: "b- over u verheugt zich - toon 8 (griekse melodie)"
+            file: "038.b-over u verheugt zich - toon 8 (griekse melodie)"
+
+      - type: item
+        title: "(20) Waarlijk het is waardig/In waarheid"
+        file: "039-(20 waarlijk het is waardig) in waarheid"
+
+      - type: item
+        title: "(21) En allen"
+        file: "040-(21) en allen"
+
+      - type: item
+        title: "(22) Vragende Litanie"
+        file: "041-(22) vragende litanie"
+
+      - type: group
+        title: "(23) Onze Vader (incl. 'en met Uw Geest')"
+        items:
+
+          - type: item
+            title: "Onze Vader (rimski-korsakov)"
+            file: "042-(23) onze vader (rimski-korsakov)"
+
+          - type: link
+            title: "Onze Vader (copyright)"
+            url: "https://www.universaledition.com/en/Works/Our-Father/P0213839"
+
+          - type: item
+            title: "Vredeswens"
+            file: "043-vredeswens"
+
+      - type: item
+        title: "(24) Eén is heilig en (25) Communievers (zondag)"
+        file: "044-(24-25) een is heilig - communievers"
+
+      - type: item
+        title: "(26) Gezegend Hij die komt"
+        file: "045-(26) gezegend hij die komt"
+
+      - type: item
+        title: "(27) Ontvangt het Lichaam van Christus (NL-RU-GE)"
+        file: "046-(27) ontvangt het lichaam van christus"
+
+      - type: item
+        title: "(28) Wij hebben het ware licht aanschouwd"
+        file: "047-(28) wij hebben het ware licht aanschouwd"
+
+      - type: item
+        title: "(29) De Naam des Heren"
+        file: "048-(29) de naam des heren"

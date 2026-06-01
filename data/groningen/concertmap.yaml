@@ -1,0 +1,127 @@
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+#
+# 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
+#    - item   → bestand of media
+#    - group  → geneste structuur
+#    - include → herbruikbare tekst/snippet
+#    - link   → externe URL
+#
+# 3. group mag alleen bevatten:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item mag alleen bevatten:
+#    - title (verplicht)
+#    - file  (verplicht OF in combinatie met dir)
+#    - dir   (optioneel)
+#
+# 5. GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN
+#    (dus nooit meer: - title: direct op root level)
+# =========================================================
+
+items:
+
+- type: group
+  title: "Concertmap"
+  base: "koormappen/concert"
+  items:
+
+  - type: group
+    title: "Georgisch"
+    items:
+
+      - type: item
+        title: "Dideba senda (georgisch)"
+        file: "dideba senda (georgisch)"
+
+      - type: item
+        title: "Mamao chveno - gebed (georgisch)"
+        file: "mamao chveno - gebed (georgisch)"
+
+      - type: link
+        title: "Pater Noster (Nana Tchikhinashvili - 2015 - copyright)"
+        url: "https://www.universaledition.com/en/Works/Pater-Noster/P0213816"
+
+      - type: item
+        title: "Mamao chveno (nana)"
+        file: "mamao chveno (nana)"
+
+      - type: item
+        title: "Mamao tsjveno (giwi alaznispirely)"
+        file: "mamao tsjveno (giwi alaznispirely)"
+
+      - type: item
+        title: "Mijn smeking (georgisch, nana)"
+        file: "mijn smeking (georgisch, nana)"
+
+      - type: item
+        title: "My soul, my soul, get up, why are you sleeping"
+        file: "my soul, my soul, get up, why are you sleeping (nana - georgisch)"
+
+      - type: item
+        title: "Vai ra kargi sachio - happy easter (georgisch)"
+        file: "vai ra kargi sachio - happy easter (georgisch)"
+
+  - type: group
+    title: "Nederlands"
+    items:
+
+      - type: item
+        title: "Aan de stromen van babylon"
+        file: "aan de stromen van babylon"
+
+      - type: item
+        title: "Cherubijnenhymne (kastorsky)"
+        file: "cherubijnenhymne (kastorsky)"
+
+      - type: item
+        title: "Gij allen die in Christus zijt gedoopt (lirin)"
+        file: "gij allen die in christus zijt gedoopt (lirin)"
+
+  - type: group
+    title: "Kerkslavisch"
+    items:
+
+      - type: item
+        title: "Agni Parthene"
+        file: "agni parthene"
+
+      - type: item
+        title: "bcex ckopsya... (russisch met uitspraak)"
+        file: "bcex ckopsya... (russisch met uitspraak)"
+
+      - type: item
+        title: "bcex ckopsya... (russisch)"
+        file: "bcex ckopsya... (russisch)"
+
+      - type: item
+        title: "Bogoroditse Devo - verheug u maagd"
+        file: "bogoroditse devo - verheug u maagd"
+
+      - type: item
+        title: "Mnogaja ljeta - drievoudig feestelijk"
+        file: "mnogaja ljeta - drievoudig feestelijk"
+
+      - type: item
+        title: "Molitwa Iisusowa"
+        file: "molitwa iisusowa"
+
+      - type: item
+        title: "O pure virgin"
+        file: "o pure virgin (russisch)"
+
+  - type: group
+    title: "Roemeens"
+    items:
+
+      - type: item
+        title: "Miluieste ma (roemeens)"
+        file: "miluieste ma (roemeens - in C)"
+
+      - type: item
+        title: "Miluieste ma (roemeens - 2 mollen)"
+        file: "miluieste ma (roemeens - 2 mollen)"

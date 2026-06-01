@@ -18,7 +18,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build
-        run: hugo --minify --cleanDestinationDir --baseURL "https://orthodox-groningen.github.io/koor/preview/"
+        run: hugo --minify --cleanDestinationDir --config hugo-preview.toml
 
       - name: Deploy Preview
         uses: peaceiris/actions-gh-pages@v4

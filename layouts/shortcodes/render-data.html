@@ -1,0 +1,15 @@
+{{- $group := .Get "group" -}}
+{{- $source := .Get "source" -}}
+
+{{- $raw := index hugo.Data $group $source -}}
+
+{{- if not $raw -}}
+  <pre style="color:red">ERROR: dataset not found</pre>
+  {{- return -}}
+{{- end -}}
+
+{{ partial "render-tree.html" (dict
+  "base" ""
+  "items" $raw.items
+  "site_base" (.Site.BaseURL | replaceRE "^https?://[^/]+" "" | replaceRE "/$" "")
+) }}

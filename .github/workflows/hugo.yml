@@ -19,7 +19,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build
-        run: hugo --minify --cleanDestinationDir
+        run: hugo --minify --cleanDestinationDir --config hugo.toml
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

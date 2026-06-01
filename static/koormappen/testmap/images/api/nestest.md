@@ -1,0 +1,1 @@
+dit is de inhoud van */koormappen/testmap/images/api/nestest.txt*.

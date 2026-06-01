@@ -4,14 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden van (voornamelijk) de russisch-orthodoxe parochie in Groningen" }}">
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta name="site-base-url" content="{{ .Site.BaseURL }}">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-content">
-      <img src="/orthodox-kruis-min.jpg" alt="Orthodox kruis" class="header-logo">
-      <p class="header-title">{{ .Site.Params.headerText | default "Koormappen Groningen" }}</p>
+      <a class="site-brand" href="{{ .Site.BaseURL }}">
+        <span class="header-title">{{ .Site.Params.headerText | default "Orthodoxe Koormappen" }}</span>
+      </a>
     </div>
   </header>
   <main>
@@ -54,8 +56,77 @@
     </div>
   </footer>
   <script>
+    function initTabs() {
+      document.querySelectorAll('.tabs-container').forEach(container => {
+        const triggers = container.querySelectorAll('.tab-trigger');
+        const panes = container.querySelectorAll('.tab-pane');
+
+        triggers.forEach(trigger => {
+          trigger.addEventListener('click', () => {
+            const tabIndex = trigger.getAttribute('data-tab');
+
+            triggers.forEach(t => t.classList.remove('active'));
+            panes.forEach(p => p.classList.remove('active'));
+
+            trigger.classList.add('active');
+            const pane = container.querySelector(`.tab-pane[data-tab="${tabIndex}"]`);
+            if (pane) pane.classList.add('active');
+          });
+        });
+      });
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
+      initTabs();
+
+      // Get site base URL from meta tag, but use window.location for development servers
+      let baseMeta = document.querySelector('meta[name="site-base-url"]');
+      let siteBaseUrl = baseMeta ? baseMeta.getAttribute('content') : '/';
+      
+      if (siteBaseUrl.includes('localhost') && !window.location.origin.includes('localhost:1313')) {
+        const path = new URL(siteBaseUrl).pathname;
+        siteBaseUrl = window.location.origin + path;
+      }
+
+      function resolveUrl(url) {
+        if (url.startsWith('http')) return url;
+        if (url.startsWith('/')) {
+          return siteBaseUrl + url.replace(/^\//, '');
+        }
+        return siteBaseUrl + url;
+      }
+
+      // Normalize root-relative anchor links to include the site base path
+      function normalizeAnchors() {
+        let basePath = '/';
+        try {
+          basePath = new URL(siteBaseUrl).pathname || '/';
+        } catch (e) { /* ignore */ }
+
+        document.querySelectorAll('a[href]').forEach(function(a) {
+          const href = a.getAttribute('href');
+          if (!href) return;
+          if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) return;
+          // If href already begins with the site base path, leave it alone
+          if (href.indexOf(basePath) === 0) return;
+
+          if (href === '/') {
+            a.setAttribute('href', siteBaseUrl);
+            return;
+          }
+
+          if (href.startsWith('/')) {
+            a.setAttribute('href', siteBaseUrl + href.replace(/^\//, ''));
+          } else {
+            // relative path -> make it absolute under siteBaseUrl
+            a.setAttribute('href', siteBaseUrl + href);
+          }
+        });
+      }
+
       // Audio selector functionality
+      // Normalize anchors early so clicks navigate to preview-aware URLs
+      normalizeAnchors();
       document.querySelectorAll('.audio-buttons').forEach(function(container) {
         const buttons = container.querySelectorAll('.audio-select-btn');
         const audioPlayer = container.closest('.koor-item-audio').querySelector('audio');
@@ -70,8 +141,11 @@
         // Add click handlers to buttons
         buttons.forEach(function(button) {
           button.addEventListener('click', function() {
-            const audioSrc = this.dataset.audioSrc;
+            let audioSrc = this.dataset.audioSrc;
             const audioType = this.dataset.audioType;
+
+            // Resolve URL to absolute if needed
+            audioSrc = resolveUrl(audioSrc);
 
             // Update audio player source
             audioPlayer.src = audioSrc;
@@ -93,14 +167,35 @@
 
       // Lazy load PDF iframes when details are opened
       document.querySelectorAll('details.koor-item').forEach(function(details) {
+        // Load iframe when details is opened (toggle) or when its summary is clicked.
+        function loadIframe() {
+          const iframe = details.querySelector('.koor-item-pdf iframe[data-src]');
+          if (iframe && !iframe.src) {
+            // Resolve the data-src URL
+            let src = iframe.dataset.src;
+            src = resolveUrl(src);
+            iframe.src = src;
+          }
+        }
+
         details.addEventListener('toggle', function() {
           if (this.open) {
-            const iframe = this.querySelector('.koor-item-pdf iframe[data-src]');
-            if (iframe && !iframe.src) {
-              iframe.src = iframe.dataset.src;
-            }
+            loadIframe();
           }
         });
+
+        const summary = details.querySelector('summary');
+        if (summary) {
+          summary.addEventListener('click', function() {
+            // If the details will open (click), ensure iframe is loaded.
+            // Use setTimeout to allow the open attribute to update in browsers
+            // where the toggle event fires after click handling.
+            setTimeout(function() {
+              if (!details.open) return; // only load when actually open
+              loadIframe();
+            }, 0);
+          });
+        }
       });
     });
   </script>

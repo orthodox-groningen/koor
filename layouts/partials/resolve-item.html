@@ -1,0 +1,51 @@
+{{- $base := .base | default "" -}}
+{{- $file := .file -}}
+
+{{- $root := $base | replaceRE "//+" "/" -}}
+{{- $folder := printf "static/%s" $root -}}
+
+{{- $out := slice -}}
+
+{{- if fileExists $folder -}}
+
+  {{- $files := readDir $folder -}}
+
+  {{- range $files -}}
+
+    {{- $name := .Name -}}
+
+    {{- if and $file (strings.HasPrefix $name $file) -}}
+
+      {{- $ext := lower (path.Ext $name) -}}
+      {{- $full := printf "%s/%s" $root $name -}}
+
+      {{- if or (eq $ext ".jpg") (eq $ext ".png") -}}
+        {{- $out = $out | append (printf "image|%s" $full) -}}
+
+      {{- else if eq $ext ".pdf" -}}
+        {{- $out = $out | append (printf "pdf|%s" $full) -}}
+
+      {{- else if eq $ext ".mp3" -}}
+
+        {{- $label := "SATB" -}}
+
+        {{- if strings.HasSuffix $name "-S.mp3" -}} {{- $label = "S" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-S2.mp3" -}} {{- $label = "S+" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-A.mp3" -}} {{- $label = "A" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-A2.mp3" -}} {{- $label = "A+" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-T.mp3" -}} {{- $label = "T" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-T2.mp3" -}} {{- $label = "T+" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-B.mp3" -}} {{- $label = "B" -}} {{- end -}}
+        {{- if strings.HasSuffix $name "-B2.mp3" -}} {{- $label = "B+" -}} {{- end -}}
+
+        {{- $out = $out | append (printf "audio|%s|%s" $label $full) -}}
+
+      {{- end -}}
+
+    {{- end -}}
+
+  {{- end -}}
+
+{{- end -}}
+
+{{- return $out -}}
