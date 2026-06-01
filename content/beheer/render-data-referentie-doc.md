@@ -43,10 +43,10 @@ Website toont alle bestanden netjes georganiseerd
 
 ### Parameters
 
-| Parameter | Type | Verplicht | Beschrijving |
-|-----------|------|-----------|-------------|
-| `group` | string | Ja | Subfolder onder `/data/` waar het YAML-bestand staat |
-| `source` | string | Ja | Bestandsnaam zonder `.yaml` extensie |
+| Parameter | Type   | Verplicht | Beschrijving |
+| --------- | ------ | :-------: | ------------ |
+| `group`   | string | Ja | Subfolder onder `/data/` waar het YAML-bestand staat |
+| `source`  | string | Ja | Bestandsnaam zonder `.yaml` extensie |
 
 ### Voorbeeld
 
@@ -91,10 +91,12 @@ Een lied of media-element dat naar bestanden verwijst.
 **Wat gebeurt er?**
 
 Het systeem zoekt naar alle bestanden die beginnen met `002-vredeslitanie`:
-- `002-vredeslitanie.pdf` → PDF-viewer
-- `002-vredeslitanie.mp3` → audiokoppelingen
-- `002-vredeslitanie-s.mp3`, `-a.mp3`, `-t.mp3`, `-b.mp3` → voiceover-knoppen
-- `002-vredeslitanie.jpg`, `.png` → afbeeldingen
+- `~.pdf` → als dit bestand (`002-vredeslitanie.pdf`) bestaat, wordt het door de PDF-viewer gerenderd
+- `~.jpg`, `.png` → afbeeldingen
+- `~.mp3`, `~-s.mp3`, `~-s2.mp3`, `~-a.mp3`, `~-a2.mp3`, `~-t.mp3`, `~-t2.mp3`, `~-b.mp3`  `~-b2.mp3`→ als een of meer van deze bestanden bestaan, worden voor elk van de bestaande bestanden een knop getoond waarmee je het bestand kan selecteren, alsmede een afspeler die het geselecteerde bestand dan kan afspelen. Het idee is dat:
+  - `~.mp3` alle stemmen van het lied laat horen;
+  - `~-s.mp3`, `~-a.mp3`, `~-t.mp3`, `~-b.mp3` de afzonderlijkje stemmen voor Sopraan, Alt, Tenor en Bas laat horen
+  - `~-s2.mp3`, `~-a2.mp3`, `~-t2.mp3`, `~-b2.mp3` de afzonderlijkje stemmen voor Sopraan, Alt, Tenor en Bas laat horen, met zachtjes op de achtergrond ook de andere stemmen
 
 #### Type: `group`
 
@@ -125,21 +127,34 @@ Een container voor meerdere items. Kan genest zijn.
           file: "034-cherubijnen"
 ```
 
-**Padre-child `base` erving:**
+**Parent-child `base` overerving:**
 
-Als een parent-group `base: "koormappen/goddelijke-liturgie"` heeft en een child-item geen eigen `dir` specificeert, erft deze `base`. 
+Als een parent-group `base: "koormappen/goddelijke-liturgie"` heeft en een child-item
+- geen eigen `dir` of `base` specificeert, erft deze `base`. 
+- wel een `base`specificeert, maar geen `dir`, dan wordt `base` gelijk aan die van de parent-group waaraan de gespecificeerde `base` is geconcateneerd
+- wel een `dir` specificeert, dan wordt `base` geljk aan deze `dir`. 
 
 Dus voor het bovenstaande voorbeeld:
 - item "Vredeslitanie" zoekt bestanden in `/static/koormappen/goddelijke-liturgie/`
 - item "Cherubijnen Hymne" zoekt ook in `/static/koormappen/goddelijke-liturgie/` (erft van parent)
 
-Wil je een ander pad voor een item, voeg `dir` toe:
+Wil je dieper nesten in het `base` pad van de parent, voeg dan een `base` toe:
+```yaml
+- type: item
+  title: "Uitzonderingslied"
+  base: "uitzonderingen"
+  file: "999-bijzonder"
+```
+Als de parent een `base: "koormappen/goddelijke-liturgie"` heeft, dan zal bovengenoemd item bestanden zoeken in `koormappen/goddelijke-liturgie/uitzonderingen`.
+
+Wil je een compleet ander pad voor een item, los van de `base` van de parent, dan voeg je `dir` toe:
 ```yaml
 - type: item
   title: "Uitzonderingslied"
   file: "999-bijzonder"
   dir: "/koormappen/andere-locatie"
 ```
+Nu worden bestanden gezocht in `/koormappen/andere-locatie`.
 
 #### Type: `include`
 
@@ -196,7 +211,7 @@ items:
             file: "002-eerste-antifoon"
 
       - type: group
-        title: "Cherubijnen Hymne en Simbolum"
+        title: "Cherubijnen Hymne en Geloofsbeleidenis"
         items:
           
           - type: item
@@ -217,8 +232,8 @@ items:
             url: "https://www.example.com"
 
       - type: item
-        title: "Simbolum (Geloofsbeldennis)"
-        file: "035-simbolum"
+        title: "Geloofsbeleidenis"
+        file: "037-(18) geloofsbelijdenis"
 ```
 
 ---
@@ -292,14 +307,18 @@ Basisbestand + stemming-suffix:
 001-vredeslitanie-a.mp3      (alt)
 001-vredeslitanie-t.mp3      (tenor)
 001-vredeslitanie-b.mp3      (bas)
+001-vredeslitanie-s2.mp3     (sopraan met op de andere stemmen op de achtergrond)
+001-vredeslitanie-a2.mp3     (alt met op de andere stemmen op de achtergrond)
+001-vredeslitanie-t2.mp3     (tenor met op de andere stemmen op de achtergrond)
+001-vredeslitanie-b2.mp3     (bas met op de andere stemmen op de achtergrond)
 ```
 
 **Ondersteunde stemmings-suffixen:**
-- `-s` — sopraan
-- `-a` — alt
-- `-t` — tenor
-- `-b` — bas
-- (meer kunnen worden toegevoegd)
+- `-s.mp3` en `-s2.mp3` — sopraan
+- `-a.mp3` en `-a2.mp3` — alt
+- `-t.mp3` en `-t2.mp3` — tenor
+- `-b.mp3` en `-b2.mp3` — bas
+- (meer kunnen later worden toegevoegd)
 
 ### Ondersteunde bestandstypen
 
