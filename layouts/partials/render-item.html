@@ -31,9 +31,16 @@
     {{- end -}}
 
     {{- range $pdfs -}}
+      {{- $pdfPath := . -}}
+      {{- if not (strings.HasPrefix $pdfPath "/") -}}
+        {{- $pdfPath = printf "/%s" $pdfPath -}}
+      {{- end -}}
+      {{- if not (strings.HasPrefix $pdfPath "/koor/") -}}
+        {{- $pdfPath = printf "/koor%s" $pdfPath -}}
+      {{- end -}}
       <div class="koor-item-pdf">
         <iframe
-          src="{{ printf "/pdfjs/viewer.html?file=%s&v=%d" ((. | relURL) | urlquery) (now.Unix) }}"
+          data-src="/pdfjs/viewer.html?file={{ $pdfPath }}&v={{ now.Unix }}"
           width="100%"
           height="800"
           title="Bladmuziek voor {{ $title }}">
