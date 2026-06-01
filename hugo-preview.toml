@@ -1,6 +1,6 @@
 title = "Koormappen"
-baseURL = "https://orthodox-groningen.github.io/koor/"
-# baseURL = "http://localhost:1313/"
+baseURL = "https://orthodox-groningen.github.io/koor/preview/"
+# baseURL = "http://localhost:1313/koor/"
 defaultContentLanguage = "nl"
 languageCode = "nl-NL"
 enableGitInfo = true
@@ -15,4 +15,3 @@ headerText = "Koormappen Groningen"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-

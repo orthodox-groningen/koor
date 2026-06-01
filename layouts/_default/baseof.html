@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden van (voornamelijk) de russisch-orthodoxe parochie in Groningen" }}">
+  <meta name="site-base-url" content="{{ .Site.BaseURL }}">
   <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-content">
-      <img src="/orthodox-kruis-min.jpg" alt="Orthodox kruis" class="header-logo">
+      <img src="{{ "orthodox-kruis-min.jpg" | relURL }}" alt="Orthodox kruis" class="header-logo">
       <p class="header-title">{{ .Site.Params.headerText | default "Koormappen Groningen" }}</p>
     </div>
   </header>
@@ -76,6 +77,30 @@
 
     document.addEventListener('DOMContentLoaded', function() {
       initTabs();
+
+      // Get site base URL from meta tag, but use window.location for development servers
+      let baseMeta = document.querySelector('meta[name="site-base-url"]');
+      let siteBaseUrl = baseMeta ? baseMeta.getAttribute('content') : '/koor/';
+      
+      // In development, if baseURL contains localhost and current origin doesn't match, 
+      // use the current origin + path
+      if (siteBaseUrl.includes('localhost') && !window.location.origin.includes('localhost:1313')) {
+        // Extract the path from siteBaseUrl (e.g., "/koor/" from "http://localhost:1313/koor/")
+        const path = new URL(siteBaseUrl).pathname;
+        siteBaseUrl = window.location.origin + path;
+      }
+
+      // Resolve URLs: make them absolute when needed for cross-origin contexts
+      function resolveUrl(url) {
+        if (url.startsWith('http')) return url;
+        if (url.startsWith('/')) {
+          // If url starts with /, combine with siteBaseUrl
+          // siteBaseUrl ends with /, so strip leading / from url if needed
+          return siteBaseUrl + url.replace(/^\//, '');
+        }
+        return url;
+      }
+
       // Audio selector functionality
       document.querySelectorAll('.audio-buttons').forEach(function(container) {
         const buttons = container.querySelectorAll('.audio-select-btn');
@@ -91,8 +116,11 @@
         // Add click handlers to buttons
         buttons.forEach(function(button) {
           button.addEventListener('click', function() {
-            const audioSrc = this.dataset.audioSrc;
+            let audioSrc = this.dataset.audioSrc;
             const audioType = this.dataset.audioType;
+
+            // Resolve URL to absolute if needed
+            audioSrc = resolveUrl(audioSrc);
 
             // Update audio player source
             audioPlayer.src = audioSrc;
@@ -118,7 +146,10 @@
         function loadIframe() {
           const iframe = details.querySelector('.koor-item-pdf iframe[data-src]');
           if (iframe && !iframe.src) {
-            iframe.src = iframe.dataset.src;
+            // Resolve the data-src URL
+            let src = iframe.dataset.src;
+            src = resolveUrl(src);
+            iframe.src = src;
           }
         }
 
