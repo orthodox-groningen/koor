@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden van (voornamelijk) de russisch-orthodoxe parochie in Groningen" }}">
   <meta name="site-base-url" content="{{ .Site.BaseURL }}">
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <link rel="stylesheet" href="{{ "style.css" | relURL }}">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-content">
-      <img src="{{ "orthodox-kruis-min.jpg" | relURL }}" alt="Orthodox kruis" class="header-logo">
-      <p class="header-title">{{ .Site.Params.headerText | default "Koormappen Groningen" }}</p>
+      <a class="site-brand" href="{{ .Site.BaseURL }}">
+        <span class="header-title">{{ .Site.Params.headerText | default "Koormappen Groningen" }}</span>
+      </a>
     </div>
   </header>
   <main>
@@ -80,25 +81,19 @@
 
       // Get site base URL from meta tag, but use window.location for development servers
       let baseMeta = document.querySelector('meta[name="site-base-url"]');
-      let siteBaseUrl = baseMeta ? baseMeta.getAttribute('content') : '/koor/';
+      let siteBaseUrl = baseMeta ? baseMeta.getAttribute('content') : '/';
       
-      // In development, if baseURL contains localhost and current origin doesn't match, 
-      // use the current origin + path
       if (siteBaseUrl.includes('localhost') && !window.location.origin.includes('localhost:1313')) {
-        // Extract the path from siteBaseUrl (e.g., "/koor/" from "http://localhost:1313/koor/")
         const path = new URL(siteBaseUrl).pathname;
         siteBaseUrl = window.location.origin + path;
       }
 
-      // Resolve URLs: make them absolute when needed for cross-origin contexts
       function resolveUrl(url) {
         if (url.startsWith('http')) return url;
         if (url.startsWith('/')) {
-          // If url starts with /, combine with siteBaseUrl
-          // siteBaseUrl ends with /, so strip leading / from url if needed
           return siteBaseUrl + url.replace(/^\//, '');
         }
-        return url;
+        return siteBaseUrl + url;
       }
 
       // Audio selector functionality

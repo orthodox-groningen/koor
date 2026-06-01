@@ -26,21 +26,17 @@
 
     {{- range $images -}}
       <figure class="koor-item-image">
-        <img src="{{ . | relURL }}" alt="{{ $title }}">
+        <img src="{{ . | replaceRE "^/+" "" | absURL }}" alt="{{ $title }}">
       </figure>
     {{- end -}}
 
     {{- range $pdfs -}}
-      {{- $pdfPath := . -}}
-      {{- if not (strings.HasPrefix $pdfPath "/") -}}
-        {{- $pdfPath = printf "/%s" $pdfPath -}}
-      {{- end -}}
-      {{- if not (strings.HasPrefix $pdfPath "/koor/") -}}
-        {{- $pdfPath = printf "/koor%s" $pdfPath -}}
-      {{- end -}}
+      {{- $pdfPath := . | replaceRE "^/+" "" -}}
+      {{- $pdfUrl := $pdfPath | absURL -}}
+      {{- $viewerUrl := printf "%s?file=%s" ("pdfjs/viewer.html" | absURL) ($pdfUrl | urlquery) -}}
       <div class="koor-item-pdf">
         <iframe
-          data-src="/pdfjs/viewer.html?file={{ $pdfPath }}&v={{ now.Unix }}"
+          data-src="{{ $viewerUrl }}&v={{ now.Unix }}"
           width="100%"
           height="800"
           title="Bladmuziek voor {{ $title }}">
@@ -51,14 +47,8 @@
     {{- if gt (len $audio) 0 -}}
       {{- $audioNorm := dict -}}
       {{- range $k, $v := $audio -}}
-        {{- $val := $v -}}
-        {{- if not (strings.HasPrefix $val "/") -}}
-          {{- $val = printf "/%s" $val -}}
-        {{- end -}}
-        {{- if not (strings.HasPrefix $val "/koor/") -}}
-          {{- $val = printf "/koor%s" $val -}}
-        {{- end -}}
-        {{- $audioNorm = merge $audioNorm (dict $k $val) -}}
+        {{- $val := $v | replaceRE "^/+" "" -}}
+        {{- $audioNorm = merge $audioNorm (dict $k ($val | absURL)) -}}
       {{- end -}}
       <div class="koor-item-audio">
         <div class="audio-selector">
