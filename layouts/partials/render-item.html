@@ -49,35 +49,46 @@
     {{- end -}}
 
     {{- if gt (len $audio) 0 -}}
+      {{- $audioNorm := dict -}}
+      {{- range $k, $v := $audio -}}
+        {{- $val := $v -}}
+        {{- if not (strings.HasPrefix $val "/") -}}
+          {{- $val = printf "/%s" $val -}}
+        {{- end -}}
+        {{- if not (strings.HasPrefix $val "/koor/") -}}
+          {{- $val = printf "/koor%s" $val -}}
+        {{- end -}}
+        {{- $audioNorm = merge $audioNorm (dict $k $val) -}}
+      {{- end -}}
       <div class="koor-item-audio">
         <div class="audio-selector">
-          <div class="audio-buttons" data-audio-options='{{ $audio | jsonify }}'>
-            {{- if isset $audio "SATB" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "SATB" }}" data-audio-type="SATB">SATB</button>
+          <div class="audio-buttons" data-audio-options='{{ $audioNorm | jsonify }}'>
+            {{- if isset $audioNorm "SATB" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "SATB" }}" data-audio-type="SATB">SATB</button>
             {{- end -}}
-            {{- if isset $audio "S" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "S" }}" data-audio-type="S">S</button>
+            {{- if isset $audioNorm "S" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "S" }}" data-audio-type="S">S</button>
             {{- end -}}
-            {{- if isset $audio "S+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "S+" }}" data-audio-type="S+">S+</button>
+            {{- if isset $audioNorm "S+" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "S+" }}" data-audio-type="S+">S+</button>
             {{- end -}}
-            {{- if isset $audio "A" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "A" }}" data-audio-type="A">A</button>
+            {{- if isset $audioNorm "A" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "A" }}" data-audio-type="A">A</button>
             {{- end -}}
-            {{- if isset $audio "A+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "A+" }}" data-audio-type="A+">A+</button>
+            {{- if isset $audioNorm "A+" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "A+" }}" data-audio-type="A+">A+</button>
             {{- end -}}
-            {{- if isset $audio "T" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "T" }}" data-audio-type="T">T</button>
+            {{- if isset $audioNorm "T" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "T" }}" data-audio-type="T">T</button>
             {{- end -}}
-            {{- if isset $audio "T+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "T+" }}" data-audio-type="T+">T+</button>
+            {{- if isset $audioNorm "T+" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "T+" }}" data-audio-type="T+">T+</button>
             {{- end -}}
-            {{- if isset $audio "B" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "B" }}" data-audio-type="B">B</button>
+            {{- if isset $audioNorm "B" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "B" }}" data-audio-type="B">B</button>
             {{- end -}}
-            {{- if isset $audio "B+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audio "B+" }}" data-audio-type="B+">B+</button>
+            {{- if isset $audioNorm "B+" -}}
+              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "B+" }}" data-audio-type="B+">B+</button>
             {{- end -}}
           </div>
         </div>
