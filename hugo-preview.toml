@@ -8,8 +8,8 @@ relativeURLs = false
 canonifyURLs = false
 
 [params]
-footerText = "(C) YEAR RO Parochie Groningen. "
-headerText = "Koormappen Groningen"
+footerText = "(C) YEAR orthodox-groningen.github.com. "
+headerText = "Orthodoxe Koormappen (preview)"
 
 [markup]
   [markup.goldmark]

@@ -136,7 +136,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
           - type: group
             title: "Toon 2"
@@ -156,7 +156,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
           - type: group
             title: "Toon 3"
@@ -176,7 +176,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
           - type: group
             title: "Toon 4"
@@ -196,7 +196,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
           - type: group
             title: "Toon 5"
@@ -216,7 +216,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
           - type: group
             title: "Toon 6"
@@ -236,7 +236,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
           - type: group
             title: "Toon 7"
@@ -256,7 +256,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
           - type: group
             title: "Toon 8"
@@ -276,7 +276,7 @@ items:
 
               - type: include
                 title: "Voetnoot"
-                file: "voetnoot-bij-prokimen-melodien"
+                file: "/snippets/voetnoot-bij-prokimen-melodien"
 
       - type: item
         title: "(10) Evangelielezing"

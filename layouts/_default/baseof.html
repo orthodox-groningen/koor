@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="site-header-content">
       <a class="site-brand" href="{{ .Site.BaseURL }}">
-        <span class="header-title">{{ .Site.Params.headerText | default "Koormappen Groningen" }}</span>
+        <span class="header-title">{{ .Site.Params.headerText | default "Orthodoxe Koormappen" }}</span>
       </a>
     </div>
   </header>
@@ -96,7 +96,37 @@
         return siteBaseUrl + url;
       }
 
+      // Normalize root-relative anchor links to include the site base path
+      function normalizeAnchors() {
+        let basePath = '/';
+        try {
+          basePath = new URL(siteBaseUrl).pathname || '/';
+        } catch (e) { /* ignore */ }
+
+        document.querySelectorAll('a[href]').forEach(function(a) {
+          const href = a.getAttribute('href');
+          if (!href) return;
+          if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) return;
+          // If href already begins with the site base path, leave it alone
+          if (href.indexOf(basePath) === 0) return;
+
+          if (href === '/') {
+            a.setAttribute('href', siteBaseUrl);
+            return;
+          }
+
+          if (href.startsWith('/')) {
+            a.setAttribute('href', siteBaseUrl + href.replace(/^\//, ''));
+          } else {
+            // relative path -> make it absolute under siteBaseUrl
+            a.setAttribute('href', siteBaseUrl + href);
+          }
+        });
+      }
+
       // Audio selector functionality
+      // Normalize anchors early so clicks navigate to preview-aware URLs
+      normalizeAnchors();
       document.querySelectorAll('.audio-buttons').forEach(function(container) {
         const buttons = container.querySelectorAll('.audio-select-btn');
         const audioPlayer = container.closest('.koor-item-audio').querySelector('audio');
