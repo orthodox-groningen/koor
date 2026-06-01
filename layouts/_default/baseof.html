@@ -114,14 +114,32 @@
 
       // Lazy load PDF iframes when details are opened
       document.querySelectorAll('details.koor-item').forEach(function(details) {
+        // Load iframe when details is opened (toggle) or when its summary is clicked.
+        function loadIframe() {
+          const iframe = details.querySelector('.koor-item-pdf iframe[data-src]');
+          if (iframe && !iframe.src) {
+            iframe.src = iframe.dataset.src;
+          }
+        }
+
         details.addEventListener('toggle', function() {
           if (this.open) {
-            const iframe = this.querySelector('.koor-item-pdf iframe[data-src]');
-            if (iframe && !iframe.src) {
-              iframe.src = iframe.dataset.src;
-            }
+            loadIframe();
           }
         });
+
+        const summary = details.querySelector('summary');
+        if (summary) {
+          summary.addEventListener('click', function() {
+            // If the details will open (click), ensure iframe is loaded.
+            // Use setTimeout to allow the open attribute to update in browsers
+            // where the toggle event fires after click handling.
+            setTimeout(function() {
+              if (!details.open) return; // only load when actually open
+              loadIframe();
+            }, 0);
+          });
+        }
       });
     });
   </script>
