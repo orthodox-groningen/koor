@@ -1,5 +1,7 @@
 # `render-data` Referentie Documentatie
 
+{{< include-md file="/content/snippets/documentatie-disclaimer" >}}
+
 Dit is het naslagwerk voor het `render-data` systeem. Dit document beschrijft alle technische details, syntax-regels en mogelijkheden.
 
 Voor een praktische handleiding met stap-voor-stap instructies, zie de [Beheer Handleiding](render-data-beheer-handleiding.md).

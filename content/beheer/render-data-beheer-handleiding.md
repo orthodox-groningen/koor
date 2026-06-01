@@ -1,5 +1,7 @@
 # `render-data` Beheer Handleiding
 
+{{< include-md file=content/snippets/documentatie-disclaimer >}}
+
 Dit document beschrijft hoe je als beheerder koormappen aanmaakt en beheert met het `render-data` systeem. Je vindt hier praktische stappen voor dagelijks werk: hoe voeg je liederen toe, wijzig je inhoud en voeg je audio- of pdf-bestanden in.
 
 Dit document is geschreven voor beheerders die bekend zijn met GitHub en git-workflows. Zie de [Referentie Documentatie](render-data-referentie-doc.md) voor technische details en alle mogelijkheden.
