@@ -64,37 +64,37 @@ items:
 
 - type: group
   title: "Prokimens van de zondagen"
-  base: "koormappen/goddelijke-liturgie"
+  base: "koormappen/hemelum"
   items:
 
     - type: item
       title: "Toon 1 - Heer, Uw barmhartigheid kome over ons"
-      file: "021-prokimen-zondag-toon-1"
+      file: "prokimen-zondag-toon-1"
 
     - type: item
       title: "Toon 2 - Mijn kracht en lofzang is de Heer"
-      file: "022-prokimen-zondag-toon-2"
+      file: "prokimen-zondag-toon-2"
 
     - type: item
       title: "Toon 3 - Zingt een psalm voor onze God, zingt Hem"
-      file: "023-prokimen-zondag-toon-3"
+      file: "prokimen-zondag-toon-3"
 
     - type: item
       title: "Toon 4 - Hoe groot zijn Uw werken, o Heer"
-      file: "024-prokimen-zondag-toon-4"
+      file: "prokimen-zondag-toon-4"
 
     - type: item
       title: "Toon 5 - Gij, Heer, bewaar en behoed ons tegen dit geslacht"
-      file: "025-prokimen-zondag-toon-5"
+      file: "prokimen-zondag-toon-5"
 
     - type: item
       title: "Toon 6 - Red Uw volk, o Heer, en zegen"
-      file: "026-prokimen-zondag-toon-6"
+      file: "prokimen-zondag-toon-6"
 
     - type: item
       title: "Toon 7 - De Heer schenkt Zijn volk kracht"
-      file: "027-prokimen-zondag-toon-7"
+      file: "prokimen-zondag-toon-7"
 
     - type: item
       title: "Toon 8 - Doet geloften aan de Heer Uw God"
-      file: "028-prokimen-zondag-toon-8"
+      file: "prokimen-zondag-toon-8"
