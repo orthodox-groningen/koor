@@ -27,7 +27,7 @@ items:
 
 - type: group
   title: "Alleluja's"
-  base: "koormappen/goddelijke-liturgie"
+  base: "koormappen/hemelum"
   items:
 
     - type: item
