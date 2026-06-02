@@ -1,21 +1,16 @@
 <!doctype html>
 <html lang="{{ .Lang | default "nl" }}">
 <head>
+  {{ partial "head.html" . }}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden van (voornamelijk) de russisch-orthodoxe parochie in Groningen" }}">
+  <meta name="description" content="{{ .Site.Params.description | default "Koormappen en audio bestanden voor (russisch) orthodoxe diensten" }}">
   <meta name="site-base-url" content="{{ .Site.BaseURL }}">
   <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <link rel="stylesheet" href="{{ "style.css" | relURL }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header-content">
-      <a class="site-brand" href="{{ .Site.BaseURL }}">
-        <span class="header-title">{{ .Site.Params.headerText | default "Orthodoxe Koormappen" }}</span>
-      </a>
-    </div>
-  </header>
+
   <main>
     {{ block "main" . }}{{ end }}
   </main>

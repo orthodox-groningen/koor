@@ -1,7 +1,5 @@
 {{ define "main" }}
-  <header class="page-header">
-    <h1>{{ .Title }}</h1>
-  </header>
+  {{ partial "page-title.html" . }}
 
   {{ if .Pages }}
     <section class="pages-list">
