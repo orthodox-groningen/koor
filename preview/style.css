@@ -1329,3 +1329,17 @@ nav a:hover {
   }
 }
 
+main {
+  padding-top: 0.5rem !important;
+}
+
+h1 {
+  margin-top: 0 !important;
+}
+
+h1 img {
+  display: inline-block !important;
+  margin: 0 !important;
+  height: 1em !important;
+  width: auto !important;
+}
