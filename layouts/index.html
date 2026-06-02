@@ -1,3 +1,6 @@
 {{ define "main" }}
-  {{ .Content }}
+  {{ partial "page-title.html" . }}
+  <div class="page-content">
+    {{ .Content }}
+  </div>
 {{ end }}
