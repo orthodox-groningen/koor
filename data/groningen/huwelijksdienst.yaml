@@ -1,0 +1,35 @@
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+#
+# 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
+#    - item   → bestand of media
+#    - group  → geneste structuur
+#    - include → herbruikbare tekst/snippet
+#    - link   → externe URL
+#
+# 3. group mag alleen bevatten:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item mag alleen bevatten:
+#    - title (verplicht)
+#    - file  (verplicht OF in combinatie met dir)
+#    - dir   (optioneel)
+#
+# 5. GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN
+#    (dus nooit meer: - title: direct op root level)
+# =========================================================
+
+items:
+
+- type: group
+  title: "Huwelijksdienst"
+  base: "koormappen/groningen/huwelijk"
+  items:
+
+    - type: item
+      title: "Huwelijksdienst"
+      file: "huwelijksdienst"

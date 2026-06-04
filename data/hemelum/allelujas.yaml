@@ -27,7 +27,7 @@ items:
 
 - type: group
   title: "Alleluja's"
-  base: "koormappen/hemelum"
+  base: "koormappen/hemelum/allelujas"
   items:
 
     - type: item
@@ -61,40 +61,3 @@ items:
     - type: item
       title: "Alleluja (toon-8)"
       file: "alleluja-toon-8"
-
-- type: group
-  title: "Prokimens van de zondagen"
-  base: "koormappen/hemelum"
-  items:
-
-    - type: item
-      title: "Toon 1 - Heer, Uw barmhartigheid kome over ons"
-      file: "prokimen-zondag-toon-1"
-
-    - type: item
-      title: "Toon 2 - Mijn kracht en lofzang is de Heer"
-      file: "prokimen-zondag-toon-2"
-
-    - type: item
-      title: "Toon 3 - Zingt een psalm voor onze God, zingt Hem"
-      file: "prokimen-zondag-toon-3"
-
-    - type: item
-      title: "Toon 4 - Hoe groot zijn Uw werken, o Heer"
-      file: "prokimen-zondag-toon-4"
-
-    - type: item
-      title: "Toon 5 - Gij, Heer, bewaar en behoed ons tegen dit geslacht"
-      file: "prokimen-zondag-toon-5"
-
-    - type: item
-      title: "Toon 6 - Red Uw volk, o Heer, en zegen"
-      file: "prokimen-zondag-toon-6"
-
-    - type: item
-      title: "Toon 7 - De Heer schenkt Zijn volk kracht"
-      file: "prokimen-zondag-toon-7"
-
-    - type: item
-      title: "Toon 8 - Doet geloften aan de Heer Uw God"
-      file: "prokimen-zondag-toon-8"

@@ -1,0 +1,357 @@
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+#
+# 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
+#    - item   → bestand of media
+#    - group  → geneste structuur
+#    - include → herbruikbare tekst/snippet
+#    - link   → externe URL
+#
+# 3. group mag alleen bevatten:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item mag alleen bevatten:
+#    - title (verplicht)
+#    - file  (verplicht OF in combinatie met dir)
+#    - dir   (optioneel)
+#
+# 5. GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN
+#    (dus nooit meer: - title: direct op root level)
+# =========================================================
+
+items:
+
+  - type: group
+    title: "Goddelijke Liturgie"
+    base: "/koormappen/hemelum/goddelijke-liturgie"
+    items:
+
+      - type: item
+        title: "01 Vredeslitanie"
+        file: "01-vredeslitanie"
+
+      - type: item
+        title: "02 Eerste antifoon"
+        file: "02-eerste-antifoon"
+
+      - type: item
+        title: "03 Eerste Kleine Litanie"
+        file: "03-eerste-kleine-litanie"
+
+      - type: item
+        title: "04 Tweede antifoon"
+        file: "04-tweede-antifoon"
+
+      - type: item
+        title: "05a Eniggeboren Zoon en Tweede Kleine Litanie"
+        file: "05a-eniggeboren-zoon-en-tweede-kleine-litanie"
+
+      - type: item
+        title: "05b Tweede Kleine Litanie"
+        file: "05b-tweede-kleine-litanie"
+
+      - type: item
+        title: "06 Derde antifoon Zaligsprekingen"
+        file: "06-derde-antifoon-zaligsprekingen"
+
+      - type: item
+        title: "07 Kleine intocht weekdagen"
+        file: "07-kleine-intocht-weekdagen"
+
+      - type: group
+        title: "(7) Kleine intocht met Troparen en Kondaken (zondagen)"
+        base: "../../groningen/goddelijke-liturgie"
+        items:
+
+          - type: item
+            title: "Kleine intocht"
+            file: "009-(7) kleine intocht"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-1)"
+            file: "010-troparion-kondakion-toon-1"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-2)"
+            file: "011-troparion-kondakion-toon-2"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-3)"
+            file: "012-troparion-kondakion-toon-3"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-4)"
+            file: "013-troparion-kondakion-toon-4"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-5)"
+            file: "014-troparion-kondakion-toon-5"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-6)"
+            file: "015-troparion-kondakion-toon-6"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-7)"
+            file: "016-troparion-kondakion-toon-7"
+
+          - type: item
+            title: "Troparion en Kondakion (toon-8)"
+            file: "017-troparion-kondakion-toon-8"
+
+          - type: item
+            title: "Bescherming der Christenen (toon 6, stichier melodie)"
+            file: "018-Toon 6 (stichier melodie)"
+
+          - type: item
+            title: "Ustav-liturgie met diaken"
+            file: "019-ustav-liturgie met diakon"
+
+      - type: item
+        title: "08 Trishagion"
+        file: "08-trishagion"
+
+      - type: group
+        title: "Prokimens (zondagen) en Alleluja's"
+        dir: "/koormappen/hemelum"
+        items:
+
+        - type: group
+          title: "Toon 1"
+          items:
+
+            - type: item
+              title: "Toon 1 - Heer, Uw barmhartigheid kome over ons"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-1"
+
+            - type: item
+              title: "Alleluja (toon-1)"
+              base: "allelujas"
+              file: "alleluja-toon-1"
+
+        - type: group
+          title: "Toon 2"
+          items:
+
+            - type: item
+              title: "Toon 2 - Mijn kracht en lofzang is de Heer"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-2"
+
+            - type: item
+              title: "Alleluja (toon-2)"
+              base: "allelujas"
+              file: "alleluja-toon-2"
+
+        - type: group
+          title: "Toon 3"
+          items:
+
+            - type: item
+              title: "Toon 3 - Zingt een psalm voor onze God, zingt Hem"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-3"
+
+            - type: item
+              title: "Alleluja (toon-3)"
+              base: "allelujas"
+              file: "alleluja-toon-3"
+
+        - type: group
+          title: "Toon 4"
+          items:
+
+            - type: item
+              title: "Toon 4 - Hoe groot zijn Uw werken, o Heer"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-4"
+
+            - type: item
+              title: "Alleluja (toon-4)"
+              base: "allelujas"
+              file: "alleluja-toon-4"
+
+        - type: group
+          title: "Toon 5"
+          items:
+
+            - type: item
+              title: "Toon 5 - Gij, Heer, bewaar en behoed ons tegen dit geslacht"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-5"
+
+            - type: item
+              title: "Alleluja (toon-5)"
+              base: "allelujas"
+              file: "alleluja-toon-5"
+
+        - type: group
+          title: "Toon 6"
+          items:
+
+            - type: item
+              title: "Toon 6 - Red Uw volk, o Heer, en zegen"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-6"
+
+            - type: item
+              title: "Alleluja (toon-6)"
+              base: "allelujas"
+              file: "alleluja-toon-6"
+
+        - type: group
+          title: "Toon 7"
+          items:
+
+            - type: item
+              title: "Toon 7 - De Heer schenkt Zijn volk kracht"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-7"
+
+            - type: item
+              title: "Alleluja (toon-7)"
+              base: "allelujas"
+              file: "alleluja-toon-7"
+
+        - type: group
+          title: "Toon 8"
+          items:
+
+            - type: item
+              title: "Toon 8 - Doet geloften aan de Heer Uw God"
+              base: "prokimens-zondag"
+              file: "prokimen-zondag-toon-8"
+
+            - type: item
+              title: "Alleluja (toon-8)"
+              base: "allelujas"
+              file: "alleluja-toon-8"
+
+      - type: item
+        title: "10 Evangelielezing"
+        file: "10-evangelielezing"
+
+      - type: item
+        title: "11a Dringende Litanie"
+        file: "11a-dringende-litanie"
+
+      - type: item
+        title: "11b Dringende Litanie (Bulgaarse Melodie)"
+        file: "11b-dringende-litanie-bulgaarse-melodie"
+
+      - type: item
+        title: "12 Ontslapenenlitanie"
+        file: "12-ontslapenenlitanie"
+
+      - type: item
+        title: "13 Katechumenenlitanie"
+        file: "13-katechumenenlitanie"
+
+      - type: item
+        title: "14 Gelovigenlitanie"
+        file: "14-gelovigenlitanie"
+
+      - type: item
+        title: "15 Cherubijnenhymne"
+        file: "15-cherubijnenhymne"
+
+      - type: item
+        title: "16 Vragende Litanie"
+        file: "16-vragende-litanie"
+
+      - type: item
+        title: "17 Vredeswens"
+        file: "17-Vredeswens"
+
+      - type: item
+        title: "18 Geloofsbelijdenis"
+        file: "18-geloofsbelijdenis"
+
+      - type: item
+        title: "19 Eucharistische Canon"
+        file: "19-eucharistische-canon"
+
+      - type: item
+        title: "20 Waarlijk Het Is Waardig"
+        file: "20-waarlijk-het-is-waardig"
+
+      - type: item
+        title: "21 En allen"
+        file: "21-en-allen"
+
+      - type: item
+        title: "22 Vragende Litanie"
+        file: "22-vragende-litanie"
+
+      - type: item
+        title: "23a Onze Vader"
+        file: "23a-onze-vader"
+
+      - type: item
+        title: "23b Otsje nasj"
+        file: "23b-otsje nasj"
+
+      - type: item
+        title: "24 Een is Heilig"
+        file: "24-een-is-heilig"
+
+      - type: item
+        title: "25 Communievers"
+        file: "25-communievers"
+
+      - type: item
+        title: "26 Gezegend Hij Die Komt"
+        file: "26-gezegend-hij-die-komt"
+
+      - type: item
+        title: "27 Communiezang"
+        file: "27-communiezang"
+
+      - type: item
+        title: "28 Wij Hebben Het Ware Licht"
+        file: "28-wij-hebben-het-ware-licht"
+
+      - type: item
+        title: "29 De Naam des Heren zij gezegend"
+        file: "29-de-naam-des-heren-zij-gezegend"
+
+
+
+
+
+      - type: item
+        title: "(1) Vredeslitanie"
+        file: "002-(1a) vredeslitanie"
+
+      - type: item
+        title: "(2) 1e Antifoon"
+        file: "003-(2) 1e antifoon"
+
+      - type: item
+        title: "(3) 1e Kleine Litanie"
+        file: "004-(3) 1e kleine litanie"
+
+      - type: item
+        title: "(4) 2e Antifoon"
+        file: "005-(4) 2e antifoon"
+
+      - type: group
+        title: "(5) Eniggeboren Zoon en 2e Kleine Litanie"
+        items:
+
+          - type: item
+            title: "(5) Eniggeboren Zoon"
+            file: "006-(5a) eniggeboren zoon"
+
+          - type: item
+            title: "2e Kleine Litanie"
+            file: "007-2e kleine litanie"
+
+      - type: item
+        title: "(6) Zaligsprekingen"
+        file: "008-(6b) zaligsprekingen"

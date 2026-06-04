@@ -27,7 +27,7 @@ items:
 
 - type: group
   title: "Concertmap"
-  base: "koormappen/concert"
+  base: "koormappen/groningen/concert"
   items:
 
   - type: group

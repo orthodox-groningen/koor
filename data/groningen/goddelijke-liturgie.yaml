@@ -27,7 +27,7 @@ items:
 
   - type: group
     title: "Goddelijke Liturgie"
-    base: "koormappen/goddelijke-liturgie"
+    base: "koormappen/groningen/goddelijke-liturgie"
     items:
 
       - type: item
