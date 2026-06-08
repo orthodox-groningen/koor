@@ -1,4 +1,4 @@
-## Troparion toon 5
+## Troparion van de zondag - toon 5
 
 ::: vsa-notatie
 
@@ -9,11 +9,11 @@ het met de {Va_}der en de Geest me{\\de}{/eeu_}wi{\ge} {\woord_},
 {//want} Hij heeft zich ver{-&\&\waar_&~&~}{/digd_},
 om zich in het vlees aan het Kruis te {\\ver}{/&\he_&~}{\fen_},
 {//Hij_} heeft de {/dood_} {\\on}der{gaan_}.
-{//en} door Zijn roemrijke ver{rij_}{\&\ze~&~}{/nis}
-// {/heeft} Jok de {\do_}{\den_} {\op_}{/&\ge~&~}{\wekt_} [:]
+{//en} door Zijn roemrijke ver{rij_}{\&\ze}{/nis}
+// {/heeft} Jok de {\do_}{\den_} {\op_}{/&\ge}{\wekt_} [:]
 
 
-## Kondakion
+## Kondakion van de zondag - toon 5
 
 ::: vsa-notatie
 [F3///:] In de {ha_}des {\zijt} {/Gij} {/ne_}{\\der}ge{daald_}

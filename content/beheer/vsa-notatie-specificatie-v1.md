@@ -1,5 +1,5 @@
 ---
-title: "VSA Notatie Specificatie"
+title: "Vereenvoudigde Slavische Accentnotatie (VSA) - Specificatie (eerste concept)"
 ---
 
 ## Inleiding
