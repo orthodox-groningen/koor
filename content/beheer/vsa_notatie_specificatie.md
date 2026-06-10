@@ -1,6 +1,6 @@
 ---
 title: "VSA Notatie Specificatie"
-status: "concept"
+status: "versie 1"
 ---
 
 ## 1. Inleiding
@@ -202,22 +202,22 @@ Tekst buiten scopes blijft gewone tekst en wordt ongewijzigd weergegeven, behalv
 
 Een EHM beschrijft één relatieve toonhoogtebeweging of een lege grafische positie.
 
-| EHM     | Voorbeeld       | Betekenis                          | Visuele glyph                                               |
-| ------- | --------------- | ---------------------------------- | ----------------------------------------------------------- |
-| `+/`    | `{+/tekst}`     | halve ladderstap omhoog            | `+` gevolgd door één schuine streep omhoog                  |
-| `/`     | `{/tekst}`      | één ladderstap omhoog              | één schuine streep omhoog                                   |
-| `//`    | `{//tekst}`     | twee ladderstappen omhoog          | twee gestapelde schuine strepen omhoog                      |
-| `///`   | `{///tekst}`    | drie ladderstappen omhoog          | drie gestapelde schuine strepen omhoog                      |
-| `////`  | `{////tekst}`   | vier ladderstappen omhoog          | vier gestapelde schuine strepen omhoog                      |
-| `/////` | `{/////tekst}`  | vijf ladderstappen omhoog          | vijf gestapelde schuine strepen omhoog                      |
-| `-`     | `{-tekst}`      | zelfde toonhoogte                  | horizontaal streepje                                        |
-| `-\`    | `{-\tekst}`     | halve ladderstap omlaag            | horizontaal streepje gevolgd door één schuine streep omlaag |
-| `\`     | `{\tekst}`      | één ladderstap omlaag              | één schuine streep omlaag                                   |
-| `\\`    | `{\\tekst}`     | twee ladderstappen omlaag          | twee gestapelde schuine strepen omlaag                      |
-| `\\\`   | `{\\\tekst}`    | drie ladderstappen omlaag          | drie gestapelde schuine strepen omlaag                      |
-| `\\\\`  | `{\\\\tekst}`   | vier ladderstappen omlaag          | vier gestapelde schuine strepen omlaag                      |
-| `\\\\\` | `{\\\\\tekst}`  | vijf ladderstappen omlaag          | vijf gestapelde schuine strepen omlaag                      |
-| `~`     | `{~tekst}`      | lege positie boven het zangelement | geen zichtbare glyph                                        |
+| EHM     | Voorbeeld       | Betekenis                 | Visuele rendering (glyph)                                   |
+| ------- | --------------- | ------------------------- | ----------------------------------------------------------- |
+| `+/`    | `{+/tekst}`     | halve ladderstap omhoog   | `+` gevolgd door één schuine streep omhoog                  |
+| `/`     | `{/tekst}`      | één ladderstap omhoog     | één schuine streep omhoog                                   |
+| `//`    | `{//tekst}`     | twee ladderstappen omhoog | twee gestapelde schuine strepen omhoog                      |
+| `///`   | `{///tekst}`    | drie ladderstappen omhoog | drie gestapelde schuine strepen omhoog                      |
+| `////`  | `{////tekst}`   | vier ladderstappen omhoog | vier gestapelde schuine strepen omhoog                      |
+| `/////` | `{/////tekst}`  | vijf ladderstappen omhoog | vijf gestapelde schuine strepen omhoog                      |
+| `-`     | `{-tekst}`      | zelfde toonhoogte         | horizontaal streepje                                        |
+| `-\`    | `{-\tekst}`     | halve ladderstap omlaag   | horizontaal streepje gevolgd door één schuine streep omlaag |
+| `\`     | `{\tekst}`      | één ladderstap omlaag     | één schuine streep omlaag                                   |
+| `\\`    | `{\\tekst}`     | twee ladderstappen omlaag | twee gestapelde schuine strepen omlaag                      |
+| `\\\`   | `{\\\tekst}`    | drie ladderstappen omlaag | drie gestapelde schuine strepen omlaag                      |
+| `\\\\`  | `{\\\\tekst}`   | vier ladderstappen omlaag | vier gestapelde schuine strepen omlaag                      |
+| `\\\\\` | `{\\\\\tekst}`  | vijf ladderstappen omlaag | vijf gestapelde schuine strepen omlaag                      |
+| `~`     | `{~tekst}`      | zelfde toonhoogte         | geen zichtbare glyph                                        |
 
 Het teken `&` komt nooit in een EHM voor. Het wordt uitsluitend gebruikt om EHMs samen te stellen.
 
@@ -584,22 +584,22 @@ De do-context bepaalt dus het startpunt. De modus bepaalt de interne structuur v
 
 Een EHM is een operator op de actuele toonladderpositie.
 
-| EHM     | Semantisch effect                                                       |
-| ------- | ----------------------------------------------------------------------- |
-| `/`     | verplaats één graad omhoog                                              |
-| `//`    | verplaats twee graden omhoog                                            |
-| `///`   | verplaats drie graden omhoog                                            |
-| `////`  | verplaats vier graden omhoog                                            |
-| `/////` | verplaats vijf graden omhoog                                            |
-| `\`     | verplaats één graad omlaag                                              |
-| `\\`    | verplaats twee graden omlaag                                            |
-| `\\\`   | verplaats drie graden omlaag                                            |
-| `\\\\`  | verplaats vier graden omlaag                                            |
-| `\\\\\` | verplaats vijf graden omlaag                                            |
-| `-`     | behoud de huidige toonhoogte                                            |
-| `~`     | geen zichtbare glyph; semantisch dezelfde toonhoogte als vorige positie |
-| `+/`    | halve ladderstap omhoog                                                 |
-| `-\`    | halve ladderstap omlaag                                                 |
+| EHM     | Semantisch effect            |
+| ------- | ---------------------------- |
+| `/`     | verplaats één graad omhoog   |
+| `//`    | verplaats twee graden omhoog |
+| `///`   | verplaats drie graden omhoog |
+| `////`  | verplaats vier graden omhoog |
+| `/////` | verplaats vijf graden omhoog |
+| `\`     | verplaats één graad omlaag   |
+| `\\`    | verplaats twee graden omlaag |
+| `\\\`   | verplaats drie graden omlaag |
+| `\\\\`  | verplaats vier graden omlaag |
+| `\\\\\` | verplaats vijf graden omlaag |
+| `-`     | behoud de huidige toonhoogte |
+| `~`     | behoud de huidige toonhoogte |
+| `+/`    | halve ladderstap omhoog      |
+| `-\`    | halve ladderstap omlaag      |
 
 EHMs worden sequentieel toegepast. Bij blokmetadata `do="C4"` en `mode="major"` produceert de EHM-reeks `/`, `\\`, `///` de toonreeks:
 
