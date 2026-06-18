@@ -1,0 +1,71 @@
+# =========================================================
+# BEHEERCONSTRAINTS (VERPLICHT)
+#
+# 1. ALTIJD EXACT 1 ROOT KEY: items
+#
+# 2. ALLE ENTITIES MOETEN EEN type HEBBEN:
+#    - item   → bestand of media
+#    - group  → geneste structuur
+#    - include → herbruikbare tekst/snippet
+#    - link   → externe URL
+#
+# 3. group mag alleen bevatten:
+#    - title (verplicht)
+#    - base (optioneel)
+#    - items (verplicht)
+#
+# 4. item mag alleen bevatten:
+#    - title (verplicht)
+#    - file  (verplicht OF in combinatie met dir)
+#    - dir   (optioneel)
+#
+# 5. GEEN ANDERE ROOT STRUCTUREN TOEGESTAAN
+#    (dus nooit meer: - title: direct op root level)
+# =========================================================
+
+items:
+
+- type: group
+  title: "Tonen (Vers, Stichier, Tropaar)"
+  base: "koormappen/diversen/tonen"
+  items:
+
+    - type: item
+      title: "Toon 1"
+      file: "toon-1"
+
+    - type: item
+      title: "Toon 2"
+      file: "toon-2"
+
+    - type: item
+      title: "Toon 3"
+      file: "toon-3"
+
+    - type: item
+      title: "Toon 4"
+      file: "toon-4"
+
+    - type: item
+      title: "Toon 5"
+      file: "toon-5"
+
+    - type: item
+      title: "Toon 6"
+      file: "toon-6"
+
+    - type: item
+      title: "Toon 7"
+      file: "toon-7"
+
+    - type: item
+      title: "Toon 8"
+      file: "toon-8"
+
+    - type: item
+      title: "Alle tonen achterelkaar"
+      file: "tonen-1-8"
+
+    - type: item
+      title: "Boekje met voorkant"
+      file: "tonen-boekje"
