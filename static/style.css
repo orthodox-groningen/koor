@@ -1136,22 +1136,16 @@ nav a:hover {
   }
 
   .koor-item-content {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
   .koor-item-image {
     grid-column: 1 / -1;
-    grid-row: 1 / 3;
-  }
-
-  .koor-item-external-link {
-    grid-column: 1;
   }
 
   .koor-item-pdf {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1 / -1;
   }
 
   .koor-item-audio {
@@ -1181,7 +1175,6 @@ nav a:hover {
   }
 
   .koor-item-content {
-    grid-template-columns: 1fr 2fr;
     gap: 3rem;
   }
 
