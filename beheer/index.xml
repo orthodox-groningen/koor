@@ -76,9 +76,8 @@ Website toont alle bestanden netjes georganiseerd
  &lt;summary&gt;&lt;strong&gt;Testlied&lt;/strong&gt;&lt;/summary&gt;
  &lt;div class="koor-item-content"&gt;&lt;div class="koor-item-pdf"&gt;
  &lt;iframe
- data-src="https://orthodox-groningen.github.io/koor/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fkoormappen%2Ftestmap%2Ftest.pdf&amp;v=1782480916"
+ data-src="https://orthodox-groningen.github.io/koor/pdfjs/viewer.html?file=https%3A%2F%2Forthodox-groningen.github.io%2Fkoor%2Fkoormappen%2Ftestmap%2Ftest.pdf&amp;v=1782483804"
  width="100%"
- height="800"
  title="Bladmuziek voor Testlied"&gt;
  &lt;/iframe&gt;
  &lt;/div&gt;&lt;div class="koor-item-audio"&gt;
