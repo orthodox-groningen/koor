@@ -188,17 +188,11 @@ iframe, video {
   aspect-ratio: 16 / 9;
 }
 
-/* PDF viewer specific */
+/* PDF viewer specific: min-height as loading placeholder only;
+   actual height is set dynamically via postMessage from viewer.html */
 iframe[src*="pdfjs"],
-iframe[src*="pdf"] {
-  min-height: 600px;
-}
-
-@media (max-width: 640px) {
-  iframe[src*="pdfjs"],
-  iframe[src*="pdf"] {
-    min-height: 400px;
-  }
+iframe[data-src*="pdfjs"] {
+  min-height: 200px;
 }
 
 /* ============================================
@@ -739,7 +733,9 @@ nav a:hover {
   margin: 0;
   border-radius: 0;
   width: 100%;
-  height: 800px;
+  min-height: 200px;
+  height: 200px;
+  aspect-ratio: unset;
 }
 
 .koor-item-audio {
@@ -960,7 +956,7 @@ nav a:hover {
   }
 
   .koor-item-pdf iframe {
-    min-height: 300px;
+    min-height: 200px;
     width: 100%;
   }
 
@@ -1145,7 +1141,7 @@ nav a:hover {
   }
 
   .koor-item-pdf iframe {
-    min-height: 700px;
+    min-height: 200px;
     width: 100%;
   }
 
@@ -1164,22 +1160,16 @@ nav a:hover {
   }
 
   .koor-item-content {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
   .koor-item-image {
     grid-column: 1 / -1;
-    grid-row: 1 / 3;
-  }
-
-  .koor-item-external-link {
-    grid-column: 1;
   }
 
   .koor-item-pdf {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1 / -1;
   }
 
   .koor-item-audio {
@@ -1187,7 +1177,7 @@ nav a:hover {
   }
 
   .koor-item-pdf iframe {
-    min-height: 800px;
+    min-height: 200px;
     width: 100%;
   }
 }
@@ -1198,12 +1188,11 @@ nav a:hover {
   }
 
   .koor-item-content {
-    grid-template-columns: 1fr 2fr;
     gap: 3rem;
   }
 
   .koor-item-pdf iframe {
-    min-height: 900px;
+    min-height: 200px;
     width: 100%;
   }
 }
