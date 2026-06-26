@@ -50,40 +50,53 @@
         {{- $val := $v | replaceRE "^/+" "" -}}
         {{- $audioNorm = merge $audioNorm (dict $k ($val | absURL)) -}}
       {{- end -}}
+      {{- $hasSATB := isset $audioNorm "SATB" -}}
+      {{- $hasS    := isset $audioNorm "S" -}}
+      {{- $hasSp   := isset $audioNorm "S+" -}}
+      {{- $hasA    := isset $audioNorm "A" -}}
+      {{- $hasAp   := isset $audioNorm "A+" -}}
+      {{- $hasT    := isset $audioNorm "T" -}}
+      {{- $hasTp   := isset $audioNorm "T+" -}}
+      {{- $hasB    := isset $audioNorm "B" -}}
+      {{- $hasBp   := isset $audioNorm "B+" -}}
+      {{- $hasAnySolo := or $hasS $hasSp $hasA $hasAp $hasT $hasTp $hasB $hasBp -}}
       <div class="koor-item-audio">
-        <div class="audio-selector">
-          <div class="audio-buttons" data-audio-options='{{ $audioNorm | jsonify }}'>
-            {{- if isset $audioNorm "SATB" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "SATB" }}" data-audio-type="SATB">SATB</button>
-            {{- end -}}
-            {{- if isset $audioNorm "S" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "S" }}" data-audio-type="S">S</button>
-            {{- end -}}
-            {{- if isset $audioNorm "S+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "S+" }}" data-audio-type="S+">S+</button>
-            {{- end -}}
-            {{- if isset $audioNorm "A" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "A" }}" data-audio-type="A">A</button>
-            {{- end -}}
-            {{- if isset $audioNorm "A+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "A+" }}" data-audio-type="A+">A+</button>
-            {{- end -}}
-            {{- if isset $audioNorm "T" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "T" }}" data-audio-type="T">T</button>
-            {{- end -}}
-            {{- if isset $audioNorm "T+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "T+" }}" data-audio-type="T+">T+</button>
-            {{- end -}}
-            {{- if isset $audioNorm "B" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "B" }}" data-audio-type="B">B</button>
-            {{- end -}}
-            {{- if isset $audioNorm "B+" -}}
-              <button type="button" class="audio-select-btn" data-audio-src="{{ index $audioNorm "B+" }}" data-audio-type="B+">B+</button>
-            {{- end -}}
-          </div>
+        <div class="audio-controls-row">
+          {{- if $hasSATB -}}
+            <button type="button" class="voice-btn" data-voice="SATB"
+              data-src-base="{{ index $audioNorm "SATB" }}">SATB</button>
+          {{- end -}}
+          {{- if or $hasS $hasSp -}}
+            <button type="button" class="voice-btn" data-voice="S"
+              {{ if $hasS }}data-src-base="{{ index $audioNorm "S" }}"{{ end }}
+              {{ if $hasSp }}data-src-koor="{{ index $audioNorm "S+" }}"{{ end }}>S</button>
+          {{- end -}}
+          {{- if or $hasA $hasAp -}}
+            <button type="button" class="voice-btn" data-voice="A"
+              {{ if $hasA }}data-src-base="{{ index $audioNorm "A" }}"{{ end }}
+              {{ if $hasAp }}data-src-koor="{{ index $audioNorm "A+" }}"{{ end }}>A</button>
+          {{- end -}}
+          {{- if or $hasT $hasTp -}}
+            <button type="button" class="voice-btn" data-voice="T"
+              {{ if $hasT }}data-src-base="{{ index $audioNorm "T" }}"{{ end }}
+              {{ if $hasTp }}data-src-koor="{{ index $audioNorm "T+" }}"{{ end }}>T</button>
+          {{- end -}}
+          {{- if or $hasB $hasBp -}}
+            <button type="button" class="voice-btn" data-voice="B"
+              {{ if $hasB }}data-src-base="{{ index $audioNorm "B" }}"{{ end }}
+              {{ if $hasBp }}data-src-koor="{{ index $audioNorm "B+" }}"{{ end }}>B</button>
+          {{- end -}}
+          {{- if $hasAnySolo -}}
+            <span class="voice-divider"></span>
+            <label class="koor-toggle-label">
+              <input type="checkbox" class="koor-toggle-cb">
+              <span class="koor-toggle-text">met koor</span>
+              <span class="koor-toggle-info" aria-label="Uitleg achtergrondkoor" tabindex="0">ℹ</span>
+            </label>
+          {{- end -}}
         </div>
         <div class="audio-player">
-          <audio controls id="audio-player-{{ $base | urlize }}"></audio>
+          <audio controls></audio>
         </div>
       </div>
     {{- end -}}

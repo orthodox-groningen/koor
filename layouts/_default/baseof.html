@@ -119,44 +119,118 @@
         });
       }
 
-      // Audio selector functionality
-      // Normalize anchors early so clicks navigate to preview-aware URLs
       normalizeAnchors();
-      document.querySelectorAll('.audio-buttons').forEach(function(container) {
-        const buttons = container.querySelectorAll('.audio-select-btn');
-        const audioPlayer = container.closest('.koor-item-audio').querySelector('audio');
-        const audioOptions = JSON.parse(container.dataset.audioOptions);
 
-        // Function to update active button
-        function updateActiveButton(activeBtn) {
-          buttons.forEach(btn => btn.classList.remove('active'));
-          activeBtn.classList.add('active');
+      // Shared preference: does the user want background choir?
+      // Persists as they switch between voices.
+      let koorPreference = false;
+
+      document.querySelectorAll('.koor-item-audio').forEach(function(audioBlock) {
+        const voiceButtons = audioBlock.querySelectorAll('.voice-btn');
+        const player = audioBlock.querySelector('audio');
+        const toggleLabel = audioBlock.querySelector('.koor-toggle-label');
+        const toggleCb = audioBlock.querySelector('.koor-toggle-cb');
+        const toggleInfo = audioBlock.querySelector('.koor-toggle-info');
+
+        if (!voiceButtons.length || !player) return;
+
+        function tooltipForState(hasBase, hasKoor) {
+          if (hasBase && hasKoor) return 'Jouw stem klinkt voorop, het volledige koor zachtjes op de achtergrond';
+          if (!hasBase && hasKoor) return 'Alleen beschikbaar mét achtergrondkoor';
+          return 'Niet beschikbaar: er is geen versie met achtergrondkoor voor deze stem';
         }
 
-        // Add click handlers to buttons
-        buttons.forEach(function(button) {
-          button.addEventListener('click', function() {
-            let audioSrc = this.dataset.audioSrc;
-            const audioType = this.dataset.audioType;
+        function applySrc(btn) {
+          const hasBase = !!btn.dataset.srcBase;
+          const hasKoor = !!btn.dataset.srcKoor;
+          const useKoor = toggleCb ? toggleCb.checked : false;
 
-            // Resolve URL to absolute if needed
-            audioSrc = resolveUrl(audioSrc);
+          let src = (useKoor && hasKoor) ? btn.dataset.srcKoor
+                  : hasBase               ? btn.dataset.srcBase
+                  : hasKoor               ? btn.dataset.srcKoor
+                  : null;
+          if (!src) return;
 
-            // Update audio player source
-            audioPlayer.src = audioSrc;
-            audioPlayer.load();
+          src = resolveUrl(src);
+          const wasPlaying = !player.paused && player.currentTime > 0;
+          const savedTime = player.currentTime;
+          player.src = src;
+          player.load();
+          if (wasPlaying) {
+            player.addEventListener('canplay', function resume() {
+              player.removeEventListener('canplay', resume);
+              player.currentTime = savedTime;
+              player.play().catch(function() {});
+            });
+          }
+        }
 
-            // Update active button
-            updateActiveButton(this);
+        function selectVoice(btn, updateSrc) {
+          voiceButtons.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
 
-            // Optional: Auto-play (commented out for user control)
-            // audioPlayer.play();
+          if (toggleLabel && toggleCb) {
+            const voice = btn.dataset.voice;
+            const hasBase = !!btn.dataset.srcBase;
+            const hasKoor = !!btn.dataset.srcKoor;
+
+            if (voice === 'SATB') {
+              toggleCb.checked = false;
+              toggleCb.disabled = true;
+              toggleLabel.classList.add('toggle-disabled');
+              toggleLabel.classList.remove('toggle-forced');
+              if (toggleInfo) toggleInfo.title = 'Niet van toepassing bij het volledige koor (SATB)';
+            } else if (!hasBase && hasKoor) {
+              toggleCb.checked = true;
+              toggleCb.disabled = true;
+              toggleLabel.classList.add('toggle-disabled', 'toggle-forced');
+              if (toggleInfo) toggleInfo.title = tooltipForState(false, true);
+            } else if (hasBase && !hasKoor) {
+              toggleCb.checked = false;
+              toggleCb.disabled = true;
+              toggleLabel.classList.add('toggle-disabled');
+              toggleLabel.classList.remove('toggle-forced');
+              if (toggleInfo) toggleInfo.title = tooltipForState(true, false);
+            } else {
+              toggleCb.checked = koorPreference;
+              toggleCb.disabled = false;
+              toggleLabel.classList.remove('toggle-disabled', 'toggle-forced');
+              if (toggleInfo) toggleInfo.title = tooltipForState(true, true);
+            }
+          }
+
+          if (updateSrc) applySrc(btn);
+        }
+
+        if (toggleCb) {
+          toggleCb.addEventListener('change', function() {
+            if (!this.disabled) {
+              koorPreference = this.checked;
+              const active = audioBlock.querySelector('.voice-btn.active');
+              if (active) applySrc(active);
+            }
           });
+        }
+
+        voiceButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() { selectVoice(this, true); });
         });
 
-        // Auto-select first available option
-        if (buttons.length > 0) {
-          buttons[0].click();
+        // Lazy init: set audio src only when the accordion is first opened
+        const details = audioBlock.closest('details.koor-item');
+        let initialized = false;
+        function initAudio() {
+          if (initialized) return;
+          initialized = true;
+          selectVoice(voiceButtons[0], true);
+        }
+
+        if (details) {
+          details.addEventListener('toggle', function() {
+            if (this.open) initAudio();
+          });
+        } else {
+          initAudio();
         }
       });
 
