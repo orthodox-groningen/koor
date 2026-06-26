@@ -1,0 +1,224 @@
+<!doctype html><html lang=nl><head><link rel=icon type=image/x-icon href=/koor/preview/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/koor/preview/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/koor/preview/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/koor/preview/apple-touch-icon.png><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Koormappen en audio bestanden voor (russisch) orthodoxe diensten"><meta name=site-base-url content="https://orthodox-groningen.github.io/koor/preview/"><title>Referentie documentatie | Koormappen</title><link rel=stylesheet href=/koor/preview/style.css></head><body><main><article class=page-article><h1 style=display:flex;align-items:center;gap:1rem><img src=/koor/preview/orthodox-kruis-min.jpg alt style=height:1em>
+Referentie documentatie</h1><hr style="border:0;border-bottom:2px solid #ccc;margin:0 0 1rem"><div class=page-content><div class=included-markdown></div><p>Dit is het naslagwerk voor het <code>render-data</code> systeem. Dit document beschrijft alle technische details, syntax-regels en mogelijkheden.</p><p>Voor een praktische handleiding met stap-voor-stap instructies, zie de <a href=/beheer/beheer-handleiding>Beheer Handleiding</a>.</p><hr><h2 id=overzicht-hoe-werkt-het-systeem>Overzicht: hoe werkt het systeem?</h2><p>Het <code>render-data</code> systeem bestaat uit drie onderdelen:</p><ol><li><strong>YAML-bestanden</strong> (<code>/data/.../*.yaml</code>) — beschrijven de structuur en inhoud van koormappen</li><li><strong>Shortcode</strong> (<code>{{&lt; render-data ... */}}</code>) — leest YAML en genereert de webpagina</li><li><strong>Mediabestanden</strong> (<code>/static/koormappen/...</code>) — PDF&rsquo;s, MP3&rsquo;s, afbeeldingen, etc.</li></ol><h3 id=voorbeeld-flow>Voorbeeld flow</h3><pre tabindex=0><code>/data/groningen/goddelijke-liturgie.yaml
+    ↓
+    (bevat: &#34;file: 001-vredeslitanie&#34;)
+    ↓
+/static/koormappen/goddelijke-liturgie/
+    ├── 001-vredeslitanie.pdf
+    ├── 001-vredeslitanie.mp3
+    └── 001-vredeslitanie-s.mp3
+    ↓
+shortcode in /content/groningen/koormap.md
+    ↓
+Website toont alle bestanden netjes georganiseerd
+</code></pre><hr><h2 id=shortcode-syntax>Shortcode Syntax</h2><h3 id=basis>Basis</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span>{{&lt;/* render-data group=&#34;groningen&#34; source=&#34;goddelijke-liturgie&#34; &gt;}}
+</span></span></code></pre></div><h3 id=parameters>Parameters</h3><table><thead><tr><th>Parameter</th><th>Type</th><th style=text-align:center>Verplicht</th><th>Beschrijving</th></tr></thead><tbody><tr><td><code>group</code></td><td>string</td><td style=text-align:center>Ja</td><td>Subfolder onder <code>/data/</code> waar het YAML-bestand staat</td></tr><tr><td><code>source</code></td><td>string</td><td style=text-align:center>Ja</td><td>Bestandsnaam zonder <code>.yaml</code> extensie</td></tr></tbody></table><h3 id=voorbeeld>Voorbeeld</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span>{{&lt; render-data group=&#34;groningen&#34; source=&#34;goddelijke-liturgie&#34; &gt;}}
+</span></span></code></pre></div><p>Dit zoekt en laadt: <code>/data/groningen/goddelijke-liturgie.yaml</code></p><hr><h2 id=yaml-structuur>YAML Structuur</h2><h3 id=algemene-regels>Algemene regels</h3><ol><li><strong>Één root key verplicht</strong>: elk YAML-bestand begint met <code>items:</code> op topniveau</li><li><strong>Alle entities moeten een type hebben</strong>: <code>type: item</code>, <code>type: group</code>, <code>type: include</code>, of <code>type: link</code></li><li><strong>Geen andere root-structuren</strong>: je mag niet direct <code>- title:</code> op topniveau zetten</li></ol><h3 id=entity-types>Entity Types</h3><p>Elk element in je YAML kan een van vier types zijn:</p><h4 id=type-item>Type: <code>item</code></h4><p>Een lied of media-element dat naar bestanden verwijst.</p><p><strong>Vereiste velden:</strong></p><ul><li><code>title</code> (string) — weergegeven naam</li><li><code>file</code> (string) — basisnaam van de bestanden (zonder extensie)</li></ul><p><strong>Optionele velden:</strong></p><ul><li><code>dir</code> (string, pad) — mappad (overriding van <code>base</code> van parent-group)</li></ul><p><strong>Voorbeeld:</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;(1) Vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;002-vredeslitanie&#34;</span>
+</span></span></code></pre></div><p><strong>Wat gebeurt er?</strong></p><p>Het systeem zoekt naar alle bestanden die beginnen met <code>002-vredeslitanie</code>:</p><ul><li><code>~.pdf</code> → als dit bestand (<code>002-vredeslitanie.pdf</code>) bestaat, wordt het door de PDF-viewer gerenderd</li><li><code>~.jpg</code>, <code>.png</code> → afbeeldingen</li><li><code>~.mp3</code>, <code>~-s.mp3</code>, <code>~-s2.mp3</code>, <code>~-a.mp3</code>, <code>~-a2.mp3</code>, <code>~-t.mp3</code>, <code>~-t2.mp3</code>, <code>~-b.mp3</code> <code>~-b2.mp3</code>→ als een of meer van deze bestanden bestaan, worden voor elk van de bestaande bestanden een knop getoond waarmee je het bestand kan selecteren, alsmede een afspeler die het geselecteerde bestand dan kan afspelen. Het idee is dat:<ul><li><code>~.mp3</code> alle stemmen van het lied laat horen;</li><li><code>~-s.mp3</code>, <code>~-a.mp3</code>, <code>~-t.mp3</code>, <code>~-b.mp3</code> de afzonderlijkje stemmen voor Sopraan, Alt, Tenor en Bas laat horen</li><li><code>~-s2.mp3</code>, <code>~-a2.mp3</code>, <code>~-t2.mp3</code>, <code>~-b2.mp3</code> de afzonderlijkje stemmen voor Sopraan, Alt, Tenor en Bas laat horen, met zachtjes op de achtergrond ook de andere stemmen</li></ul></li></ul><h4 id=type-group>Type: <code>group</code></h4><p>Een container voor meerdere items. Kan genest zijn.</p><p><strong>Vereiste velden:</strong></p><ul><li><code>title</code> (string) — groepnaam</li><li><code>items</code> (lijst) — child-elementen</li></ul><p><strong>Optionele velden:</strong></p><ul><li><code>base</code> (string, pad) — mappad voor alle child-items (erft naar beneden)</li></ul><p><strong>Voorbeeld:</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Goddelijke Liturgie&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;koormappen/goddelijke-liturgie&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Cherubijnen Hymnes&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Cherubijnen Hymne&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;034-cherubijnen&#34;</span>
+</span></span></code></pre></div><p><strong>Parent-child <code>base</code> overerving:</strong></p><p>Als een parent-group <code>base: "koormappen/goddelijke-liturgie"</code> heeft en een child-item</p><ul><li>geen eigen <code>dir</code> of <code>base</code> specificeert, erft deze <code>base</code>.</li><li>wel een <code>base</code>specificeert, maar geen <code>dir</code>, dan wordt <code>base</code> gelijk aan die van de parent-group waaraan de gespecificeerde <code>base</code> is geconcateneerd</li><li>wel een <code>dir</code> specificeert, dan wordt <code>base</code> geljk aan deze <code>dir</code>.</li></ul><p>Dus voor het bovenstaande voorbeeld:</p><ul><li>item &ldquo;Vredeslitanie&rdquo; zoekt bestanden in <code>/static/koormappen/goddelijke-liturgie/</code></li><li>item &ldquo;Cherubijnen Hymne&rdquo; zoekt ook in <code>/static/koormappen/goddelijke-liturgie/</code> (erft van parent)</li></ul><p>Wil je dieper nesten in het <code>base</code> pad van de parent, voeg dan een <code>base</code> toe:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Uitzonderingslied&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;uitzonderingen&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;999-bijzonder&#34;</span>
+</span></span></code></pre></div><p>Als de parent een <code>base: "koormappen/goddelijke-liturgie"</code> heeft, dan zal bovengenoemd item bestanden zoeken in <code>koormappen/goddelijke-liturgie/uitzonderingen</code>.</p><p>Wil je een compleet ander pad voor een item, los van de <code>base</code> van de parent, dan voeg je <code>dir</code> toe:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Uitzonderingslied&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;999-bijzonder&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>dir</span>: <span style=color:#e6db74>&#34;/koormappen/andere-locatie&#34;</span>
+</span></span></code></pre></div><p>Nu worden bestanden gezocht in <code>/koormappen/andere-locatie</code>.</p><h4 id=type-include>Type: <code>include</code></h4><p>Voeg herbruikbare Markdown-inhoud in.</p><p><strong>Vereiste velden:</strong></p><ul><li><code>title</code> (string) — weergegeven naam</li><li><code>file</code> (string, pad) — bestand onder <code>/content/</code> (zonder <code>.md</code>)</li></ul><p><strong>Voorbeeld:</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>include</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Veelgestelde vragen&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;snippets/veelgestelde-vragen&#34;</span>
+</span></span></code></pre></div><p>Dit voegt in: <code>/content/snippets/veelgestelde-vragen.md</code></p><h4 id=type-link>Type: <code>link</code></h4><p>Externe hyperlink.</p><p><strong>Vereiste velden:</strong></p><ul><li><code>title</code> (string) — weergegeven tekst</li><li><code>url</code> (string) — externe URL</li></ul><p><strong>Voorbeeld:</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>link</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Originele bron&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>url</span>: <span style=color:#e6db74>&#34;https://example.com/bron&#34;</span>
+</span></span></code></pre></div><h3 id=volledige-structuur-voorbeeld>Volledige structuur-voorbeeld</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Goddelijke Liturgie&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;koormappen/goddelijke-liturgie&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Opening&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>          
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>          
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Eerste Antifoon&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;002-eerste-antifoon&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Cherubijnen Hymne en Geloofsbeleidenis&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>          
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Cherubijnen Hymne (NL)&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;034-cherubijnen-nl&#34;</span>
+</span></span><span style=display:flex><span>          
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Cherubijnen Hymne (RU)&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;034-cherubijnen-ru&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>dir</span>: <span style=color:#e6db74>&#34;/koormappen/varianten&#34;</span>
+</span></span><span style=display:flex><span>          
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>include</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Voetnoot over melodieën&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;snippets/voetnoot-melodien&#34;</span>
+</span></span><span style=display:flex><span>          
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>link</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Copyright bron&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>url</span>: <span style=color:#e6db74>&#34;https://www.example.com&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Geloofsbeleidenis&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;037-(18) geloofsbelijdenis&#34;</span>
+</span></span></code></pre></div><hr><h2 id=directory-structuur>Directory-structuur</h2><h3 id=yaml-bestanden>YAML-bestanden</h3><pre tabindex=0><code>/data/
+  ├── groningen/
+  │   ├── goddelijke-liturgie.yaml
+  │   └── huwelijk.yaml
+  └── hemelum/
+      ├── vespers.yaml
+      └── liturgie.yaml
+</code></pre><p>De <code>group</code> parameter in de shortcode verwijst naar de folder onder <code>/data/</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span>{{&lt; render-data group=&#34;groningen&#34; source=&#34;goddelijke-liturgie&#34; &gt;}}
+</span></span></code></pre></div><p>zoekt <code>/data/groningen/goddelijke-liturgie.yaml</code></p><h3 id=mediabestanden>Mediabestanden</h3><pre tabindex=0><code>/static/koormappen/
+  ├── goddelijke-liturgie/
+  │   ├── 001-vredeslitanie.pdf
+  │   ├── 001-vredeslitanie.mp3
+  │   ├── 001-vredeslitanie-s.mp3
+  │   ├── 002-eerste-antifoon.pdf
+  │   └── ...
+  ├── huwelijk/
+  │   ├── 101-intrede-bruidegom.pdf
+  │   └── ...
+  └── hemelum/
+      └── ...
+</code></pre><p>De <code>base</code> parameter in YAML verwijst naar paden onder <code>/static/</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;koormappen/goddelijke-liturgie&#34;</span>
+</span></span></code></pre></div><p>zoekt bestanden in <code>/static/koormappen/goddelijke-liturgie/</code></p><h3 id=markdown-bestanden-content>Markdown-bestanden (content)</h3><pre tabindex=0><code>/content/
+  ├── _index.md (homepage met links naar koormappen)
+  ├── groningen/
+  │   ├── koormap-goddelijke-liturgie.md (bevat shortcode)
+  │   └── koormap-huwelijk.md
+  └── hemelum/
+      └── koormap.md
+</code></pre><hr><h2 id=bestandsnaamconventies>Bestandsnaamconventies</h2><h3 id=audio-bestanden-met-stemmingen>Audio-bestanden met stemmingen</h3><p>Basisbestand + stemming-suffix:</p><pre tabindex=0><code>001-vredeslitanie.mp3        (volledig lied/mix)
+001-vredeslitanie-s.mp3      (sopraan)
+001-vredeslitanie-a.mp3      (alt)
+001-vredeslitanie-t.mp3      (tenor)
+001-vredeslitanie-b.mp3      (bas)
+001-vredeslitanie-s2.mp3     (sopraan met op de andere stemmen op de achtergrond)
+001-vredeslitanie-a2.mp3     (alt met op de andere stemmen op de achtergrond)
+001-vredeslitanie-t2.mp3     (tenor met op de andere stemmen op de achtergrond)
+001-vredeslitanie-b2.mp3     (bas met op de andere stemmen op de achtergrond)
+</code></pre><p><strong>Ondersteunde stemmings-suffixen:</strong></p><ul><li><code>-s.mp3</code> en <code>-s2.mp3</code> — sopraan</li><li><code>-a.mp3</code> en <code>-a2.mp3</code> — alt</li><li><code>-t.mp3</code> en <code>-t2.mp3</code> — tenor</li><li><code>-b.mp3</code> en <code>-b2.mp3</code> — bas</li><li>(meer kunnen later worden toegevoegd)</li></ul><h3 id=ondersteunde-bestandstypen>Ondersteunde bestandstypen</h3><table><thead><tr><th>Type</th><th>Extensie</th><th>Weergave</th></tr></thead><tbody><tr><td>PDF</td><td><code>.pdf</code></td><td>Viewer met paginanavigatie</td></tr><tr><td>Audio</td><td><code>.mp3</code></td><td>Audioknoppen (+ apart per stem als beschikbaar)</td></tr><tr><td>Afbeeldingen</td><td><code>.jpg</code>, <code>.png</code></td><td>Inline afbeelding</td></tr></tbody></table><hr><h2 id=technische-details>Technische Details</h2><h3 id=pad-resolutie>Pad-resolutie</h3><ol><li><p><strong>Item krijgt <code>dir</code> mee</strong>: gebruik die</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;999-lied&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>dir</span>: <span style=color:#e6db74>&#34;/koormappen/bijzonder&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># zoekt in /static/koormappen/bijzonder/</span>
+</span></span></code></pre></div></li><li><p><strong>Geen <code>dir</code>, wel parent-<code>base</code></strong>: erven van parent</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;koormappen/liturgie&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-lied&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#75715e># zoekt in /static/koormappen/liturgie/ (erft base)</span>
+</span></span></code></pre></div></li><li><p><strong>Geen <code>dir</code>, geen parent-<code>base</code></strong>: error</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-lied&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># ❌ Waar moet ik zoeken?</span>
+</span></span></code></pre></div></li></ol><h3 id=yaml-validatie>YAML-validatie</h3><p>Fouten die voorkomen moeten worden:</p><p>❌ <strong>Fout: geen root <code>items</code></strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Liturgie&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># ← root level moet `items:` zijn</span>
+</span></span></code></pre></div><p>❌ <strong>Fout: entity zonder <code>type</code></strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># ← missing `type`</span>
+</span></span></code></pre></div><p>❌ <strong>Fout: onbekend <code>type</code></strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>playlist</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Mijn playlist&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># ← `type: playlist` bestaat niet</span>
+</span></span></code></pre></div><p>✅ <strong>Goed:</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Goddelijke Liturgie&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-vredeslitanie&#34;</span>
+</span></span></code></pre></div><h3 id=bestandsresolutie>Bestandsresolutie</h3><p>Voor <code>file: "001-vredeslitanie"</code> zoekt het systeem naar:</p><pre tabindex=0><code>/static/{base}/
+  001-vredeslitanie.pdf      ← PDF?
+  001-vredeslitanie.mp3      ← Volledige audio?
+  001-vredeslitanie-s.mp3    ← Sopraan?
+  001-vredeslitanie-a.mp3    ← Alt?
+  001-vredeslitanie-t.mp3    ← Tenor?
+  001-vredeslitanie-b.mp3    ← Bas?
+  001-vredeslitanie.jpg      ← Afbeelding?
+  001-vredeslitanie.png
+</code></pre><p>Gevonden bestanden worden allemaal op de pagina getoond.</p><hr><h2 id=best-practices>Best Practices</h2><h3 id=naamgeving>Naamgeving</h3><ul><li>Begin met nummering: <code>001-</code>, <code>002-</code>, etc. (makkelijk sorteren)</li><li>Gebruik spellingsconventies consistent</li><li>Geen spaties in stemmings-suffixen: <code>001-vredeslitanie-s.mp3</code> niet <code>001-vredeslitanie -s.mp3</code></li></ul><h3 id=organisatie>Organisatie</h3><ul><li><strong>Groepeer logisch</strong>: deel liturgie in onderdelen (Opening, Cherubijnen, etc.)</li><li><strong>Erven <code>base</code> waar mogelijk</strong>: zet <code>base</code> op top-level group, niet op elk item</li><li><strong>Override <code>dir</code> alleen als nodig</strong>: als item in ander mappad staat</li></ul><h3 id=onderhoud>Onderhoud</h3><ul><li>Houd <code>/data/</code> en <code>/static/</code> in sync: als je YAML wijzigt, zorg dat bestanden er zijn</li><li>Commit YAML-wijzigingen atomair: één lied toevoegen = één commit</li><li>Voeg voetnoten toe via <code>type: include</code> voor herbruikbare inhoud</li></ul><hr><h2 id=voorbeelden>Voorbeelden</h2><h3 id=voorbeeld-1-eenvoudige-structuur>Voorbeeld 1: Eenvoudige structuur</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Eenvoudige Liturgie&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;koormappen/eenvoudig&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Intrede&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-intrede&#34;</span>
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;002-vredeslitanie&#34;</span>
+</span></span></code></pre></div><h3 id=voorbeeld-2-geneste-groepen>Voorbeeld 2: Geneste groepen</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Volledige Liturgie&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;koormappen/liturgie&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Deel I: Opening&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-vredeslitanie&#34;</span>
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Deel II: Cherubijnen&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Cherubijnen Hymne&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;034-cherubijnen&#34;</span>
+</span></span><span style=display:flex><span>          
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>include</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Noot over melodie&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;snippets/melodie-noot&#34;</span>
+</span></span></code></pre></div><h3 id=voorbeeld-3-gemengde-content>Voorbeeld 3: Gemengde content</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>group</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Koormap met externe referenties&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>base</span>: <span style=color:#e6db74>&#34;koormappen/gemengd&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>items</span>:
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Hymne&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-hymne&#34;</span>
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>include</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Achtergrond&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;beheer/hymne-achtergrond&#34;</span>
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>link</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Originele bron&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>url</span>: <span style=color:#e6db74>&#34;https://example.com/hymne&#34;</span>
+</span></span><span style=display:flex><span>      
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>type</span>: <span style=color:#ae81ff>item</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Alternatieve versie&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#34;001-hymne-alt&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>dir</span>: <span style=color:#e6db74>&#34;/koormappen/varianten&#34;</span>
+</span></span></code></pre></div><hr><h2 id=veel-voorkomende-vragen>Veel voorkomende vragen</h2><h3 id=kan-ik-bestanden-in-twee-copmappen-gebruiken>Kan ik bestanden in twee copmappen gebruiken?</h3><p>Nee, elk <code>file</code> hoort in één mappad. Wil je hetzelfde bestand ergens anders gebruiken, maak een kopie of voeg het toe aan beide mappen.</p><h3 id=kan-ik-volgorde-van-items-veranderen>Kan ik volgorde van items veranderen?</h3><p>Ja, de volgorde in het YAML-bestand bepaalt de volgorde op de website.</p><h3 id=wat-gebeurt-er-als-een-bestand-niet-bestaat>Wat gebeurt er als een bestand niet bestaat?</h3><p>Het systeem geeft geen foutmelding, maar het bestand verschijnt niet op de pagina. Check je <code>/static/</code> mappen.</p><h3 id=kan-ik-afbeeldingen-inline-tonen>Kan ik afbeeldingen inline tonen?</h3><p>Ja, <code>.jpg</code> en <code>.png</code> worden automatisch weergegeven als afbeelding naast de audioknoppen.</p><h3 id=hoe-voeg-ik-meer-stemmingen-toe-bijv-twee-sopranen>Hoe voeg ik meer stemmingen toe (bijv. twee sopranen)?</h3><p>Momenteel ondersteunen we: <code>-s</code>, <code>-a</code>, <code>-t</code>, <code>-b</code>. Wil je meer, neem contact op met de beheerder van de code.</p><hr><h2 id=zie-ook>Zie ook</h2><ul><li><a href=render-data-beheer-handleiding.md>Beheer Handleiding</a> — praktische stap-voor-stap instructies</li><li>Hugo shortcode documentatie: <code>/layouts/shortcodes/render-data.html</code></li><li>YAML syntax: <a href=https://yaml.org/spec/>https://yaml.org/spec/</a></li></ul></div></article></main><footer class=site-footer><div class=site-footer-content><div class=footer-main><p>(C) 2026 orthodox-groningen.github.com.</p><p class=site-footer-updated>Laatst bijgewerkt: 26-06-2026</p></div></div></footer><script>function initTabs(){document.querySelectorAll(".tabs-container").forEach(e=>{const t=e.querySelectorAll(".tab-trigger"),n=e.querySelectorAll(".tab-pane");t.forEach(s=>{s.addEventListener("click",()=>{const i=s.getAttribute("data-tab");t.forEach(e=>e.classList.remove("active")),n.forEach(e=>e.classList.remove("active")),s.classList.add("active");const o=e.querySelector(`.tab-pane[data-tab="${i}"]`);o&&o.classList.add("active")})})})}document.addEventListener("DOMContentLoaded",function(){initTabs();let t=document.querySelector('meta[name="site-base-url"]'),e=t?t.getAttribute("content"):"/";if(e.includes("localhost")&&!window.location.origin.includes("localhost:1313")){const t=new URL(e).pathname;e=window.location.origin+t}function n(t){return t.startsWith("http")?t:t.startsWith("/")?e+t.replace(/^\//,""):e+t}function s(){let t="/";try{t=new URL(e).pathname||"/"}catch{}document.querySelectorAll("a[href]").forEach(function(n){const s=n.getAttribute("href");if(!s)return;if(s.startsWith("http")||s.startsWith("mailto:")||s.startsWith("tel:")||s.startsWith("#"))return;if(s.indexOf(t)===0)return;if(s==="/"){n.setAttribute("href",e);return}s.startsWith("/")?n.setAttribute("href",e+s.replace(/^\//,"")):n.setAttribute("href",e+s)})}s(),document.querySelectorAll(".audio-buttons").forEach(function(e){const t=e.querySelectorAll(".audio-select-btn"),s=e.closest(".koor-item-audio").querySelector("audio"),i=JSON.parse(e.dataset.audioOptions);function o(e){t.forEach(e=>e.classList.remove("active")),e.classList.add("active")}t.forEach(function(e){e.addEventListener("click",function(){let e=this.dataset.audioSrc;const t=this.dataset.audioType;e=n(e),s.src=e,s.load(),o(this)})}),t.length>0&&t[0].click()}),window.addEventListener("message",function(e){if(!e.data||e.data.type!=="pdf-height")return;document.querySelectorAll(".koor-item-pdf iframe").forEach(function(t){t.contentWindow===e.source&&(t.style.height=e.data.height+"px")})}),document.querySelectorAll("details.koor-item").forEach(function(e){function t(){const t=e.querySelector(".koor-item-pdf iframe[data-src]");if(t&&!t.src){let e=t.dataset.src;e=n(e),t.src=e}}e.addEventListener("toggle",function(){this.open&&t()});const s=e.querySelector("summary");s&&s.addEventListener("click",function(){setTimeout(function(){if(!e.open)return;t()},0)})})})</script></body></html>
