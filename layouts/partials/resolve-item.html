@@ -28,15 +28,16 @@
       {{- else if eq $ext ".mp3" -}}
 
         {{- $label := "SATB" -}}
+        {{- $nameLower := lower $name -}}
 
-        {{- if strings.HasSuffix $name "-S.mp3" -}} {{- $label = "S" -}} {{- end -}}
-        {{- if strings.HasSuffix $name "-S2.mp3" -}} {{- $label = "S+" -}} {{- end -}}
-        {{- if strings.HasSuffix $name "-A.mp3" -}} {{- $label = "A" -}} {{- end -}}
-        {{- if strings.HasSuffix $name "-A2.mp3" -}} {{- $label = "A+" -}} {{- end -}}
-        {{- if strings.HasSuffix $name "-T.mp3" -}} {{- $label = "T" -}} {{- end -}}
-        {{- if strings.HasSuffix $name "-T2.mp3" -}} {{- $label = "T+" -}} {{- end -}}
-        {{- if strings.HasSuffix $name "-B.mp3" -}} {{- $label = "B" -}} {{- end -}}
-        {{- if strings.HasSuffix $name "-B2.mp3" -}} {{- $label = "B+" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-s.mp3" -}} {{- $label = "S" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-s2.mp3" -}} {{- $label = "S+" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-a.mp3" -}} {{- $label = "A" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-a2.mp3" -}} {{- $label = "A+" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-t.mp3" -}} {{- $label = "T" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-t2.mp3" -}} {{- $label = "T+" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-b.mp3" -}} {{- $label = "B" -}} {{- end -}}
+        {{- if strings.HasSuffix $nameLower "-b2.mp3" -}} {{- $label = "B+" -}} {{- end -}}
 
         {{- $out = $out | append (printf "audio|%s|%s" $label $full) -}}
 
