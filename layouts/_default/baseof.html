@@ -160,6 +160,16 @@
         }
       });
 
+      // Resize PDF iframes to fit their content height
+      window.addEventListener('message', function(event) {
+        if (!event.data || event.data.type !== 'pdf-height') return;
+        document.querySelectorAll('.koor-item-pdf iframe').forEach(function(iframe) {
+          if (iframe.contentWindow === event.source) {
+            iframe.style.height = event.data.height + 'px';
+          }
+        });
+      });
+
       // Lazy load PDF iframes when details are opened
       document.querySelectorAll('details.koor-item').forEach(function(details) {
         // Load iframe when details is opened (toggle) or when its summary is clicked.

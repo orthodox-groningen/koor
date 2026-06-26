@@ -70,11 +70,26 @@
     await task;
   }
 
+  function sendHeight() {
+    window.parent.postMessage({ type: 'pdf-height', height: document.body.scrollHeight }, '*');
+  }
+
   for (let i = 1; i <= pdf.numPages; i++) {
     const canvas = document.createElement('canvas');
     document.body.appendChild(canvas);
     canvases.push(canvas);
   }
+
+  // Pre-size all canvases based on page 1 so the parent can size the iframe
+  // before lazy rendering fills in individual pages.
+  const firstPage = await pdf.getPage(1);
+  const firstScale = getScale(firstPage);
+  const firstViewport = firstPage.getViewport({ scale: firstScale });
+  canvases.forEach(canvas => {
+    canvas.width = firstViewport.width;
+    canvas.height = firstViewport.height;
+  });
+  sendHeight();
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -99,17 +114,24 @@
     scaleBase += e.deltaY * -1.5;
     scaleBase = Math.min(Math.max(scaleBase, 400), 3000);
 
-    // rerender visible pages
     renderTasks.clear();
-
-    canvases.forEach((_, i) => {
-      renderPage(i + 1);
-    });
+    canvases.forEach((_, i) => renderPage(i + 1));
   }, { passive: false });
 
   // Reflow on resize
   window.addEventListener('resize', () => {
     scaleBase = window.innerWidth;
+
+    // Re-size all canvases immediately so the parent can resize the iframe
+    // before lazy re-rendering finishes.
+    const scale = getScale(firstPage);
+    const viewport = firstPage.getViewport({ scale });
+    canvases.forEach(canvas => {
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+    });
+    sendHeight();
+
     renderTasks.clear();
     canvases.forEach((_, i) => renderPage(i + 1));
   });
