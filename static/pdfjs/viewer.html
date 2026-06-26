@@ -38,7 +38,10 @@
 
   const pdf = await (await pdfjsLib.getDocument(url)).promise;
 
-  let scaleBase = window.innerWidth;
+  // Use clientWidth so the scale is based on the iframe's actual rendered
+  // width rather than window.innerWidth, which can be stale when the iframe
+  // is lazy-loaded inside a <details> element that just opened.
+  let scaleBase = document.documentElement.clientWidth || window.innerWidth;
 
   const canvases = [];
   const renderTasks = new Map();
@@ -120,7 +123,7 @@
 
   // Reflow on resize
   window.addEventListener('resize', () => {
-    scaleBase = window.innerWidth;
+    scaleBase = document.documentElement.clientWidth || window.innerWidth;
 
     // Re-size all canvases immediately so the parent can resize the iframe
     // before lazy re-rendering finishes.
