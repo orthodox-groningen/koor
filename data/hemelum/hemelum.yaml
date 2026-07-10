@@ -31,6 +31,10 @@ items:
   items:
 
     - type: item
+      title: "Alleluja's 1 t/m 8"
+      file: "allelujas-1-8"
+
+    - type: item
       title: "Alleluja (toon-1)"
       file: "alleluja-toon-1"
 
