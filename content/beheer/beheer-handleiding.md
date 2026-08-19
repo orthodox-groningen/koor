@@ -209,7 +209,7 @@ Antifoon 1.pdf            (onvoorspelbare nummering)
 Na elke wijziging:
 1. Commit en push naar GitHub
 2. Wacht tot de preview-site is gebuild (~2 minuten)
-3. Controleer op `https://orthodox-groningen.github.io/koor/preview/` of alles correct wordt weergegeven
+3. Controleer op `https://orthodox-ronl.github.io/koor/preview/` of alles correct wordt weergegeven
 4. Test de audio- en PDF-links
 
 ### Externe links toevoegen

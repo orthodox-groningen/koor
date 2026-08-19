@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orthodox-groningen/koor.git"
+    "url": "git+https://github.com/orthodox-ronl/koor.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/orthodox-groningen/koor/issues"
+    "url": "https://github.com/orthodox-ronl/koor/issues"
   },
-  "homepage": "https://github.com/orthodox-groningen/koor#readme",
+  "homepage": "https://github.com/orthodox-ronl/koor#readme",
   "dependencies": {
     "pdfjs-dist": "^5.7.284"
   }

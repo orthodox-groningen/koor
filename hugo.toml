@@ -1,5 +1,5 @@
 title = "Koormappen"
-baseURL = "https://orthodox-groningen.github.io/koor/"
+baseURL = "https://orthodox-ronl.github.io/koor/"
 # baseURL = "http://localhost:1313/"
 defaultContentLanguage = "nl"
 languageCode = "nl-NL"
@@ -8,7 +8,7 @@ relativeURLs = false
 canonifyURLs = false
 
 [params]
-footerText = "(C) YEAR orthodox-groningen.github.com. "
+footerText = "(C) YEAR orthodox-ronl.github.com. "
 headerText = "Orthodoxe Koormappen"
 
 [markup]

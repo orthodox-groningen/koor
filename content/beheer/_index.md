@@ -2,7 +2,7 @@
 title: "Beheer en onderhoud"
 ---
 
-Lees de [README op GitHub](https://github.com/orthodox-groningen/koor/blob/main/README.md) (voor ontwikkeltips e.d.)
+Lees de [README op GitHub](https://github.com/orthodox-ronl/koor/blob/main/README.md) (voor ontwikkeltips e.d.)
 
 ## YAML rendering architectuur
 
