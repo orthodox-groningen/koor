@@ -2,7 +2,23 @@
 title: "Beheer en onderhoud"
 ---
 
-Lees de [README op GitHub](https://github.com/orthodox-ronl/koor/blob/main/README.md) (voor ontwikkeltips e.d.)
+Lees de [README op GitHub](https://github.com/orthodox-ronl/koor/blob/main/README.md).
+
+## Commando's (lokaal)
+
+Org-conventie: [repo-scripts](https://github.com/orthodox-ronl/bron/blob/main/docs/specs/repo-scripts.md).
+Hugo Extended 0.160.1; in de repo-root (`.\scripts` op PATH):
+
+| Commando | Doel |
+| -------- | ---- |
+| `serve` | lokale preview |
+| `build` | minify-build zoals CI |
+
+```text
+cd /d C:\Git\orthodox-ronl\koor
+serve
+```
+
 
 ## YAML rendering architectuur
 
