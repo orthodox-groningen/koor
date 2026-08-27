@@ -6,6 +6,7 @@
 
 /materiaal-met-copyright/
 /node_modules/
+.ensure-stamp
 
 /audacity/
 *.aup3
