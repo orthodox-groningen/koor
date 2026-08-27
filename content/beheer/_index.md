@@ -15,7 +15,7 @@ Hugo Extended 0.160.1; in de repo-root (`.\scripts` op PATH):
 | `build` | minify-build zoals CI |
 
 ```text
-cd /d C:\Git\orthodox-groningen\koor
+cd /d C:\Git\orthodox-ronl\koor
 serve
 ```
 

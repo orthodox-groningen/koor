@@ -16,7 +16,7 @@ Hugo Extended **0.160.1** (`C:\Git\tools\hugo`), `.\scripts` op PATH.
 | `build` | productie-achtige minify-build |
 
 ```cmd
-cd /d C:\Git\orthodox-groningen\koor
+cd /d C:\Git\orthodox-ronl\koor
 serve
 ```
 
